@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>stroke-dashoffset</title>
+</head>
+
+<body>
+  <style>
+    .demo{
+      position: relative;
+      width: 1000px;
+      height: 1000px;
+    }
+    .controls {
+      position: absolute;
+      top: 490px;
+      right: 240px;
+    }
+
+    .controls .r1 {
+      color: #E91E63;
+    }
+
+    .controls .r2,
+    .controls .r3 {
+      color: #4e85df;
+    }
+
+    .controls span {
+      display: inline-block;
+      width: 40px;
+      vertical-align: top;
+      font-weight: 700;
+    }
+
+    .controls table {
+      text-align: right;
+    }
+
+    svg {
+      background-color: rgb(245, 245, 245);
+      box-shadow: 1px 1px 8px #00000045;
+    }
+
+    input[type="range"] {
+      width: 400px;
+    }
+  </style>
+  <div class="demo">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="1000" viewBox="0 0 1000 1000">
+<!-- 
+      <line class="bg1" x1="130" y1="10" x2="130" y2="1000" stroke="#ececec" stroke-width="60" stroke-dasharray="100"
+        stroke-dashoffset="0" />
+      <line class="bg2" x1="130" y1="10" x2="130" y2="1000" stroke="#E0E0E0" stroke-width="60" stroke-dasharray="100"
+        stroke-dashoffset="100" />
+      <g>
+        <rect x="100" y="10" width="300" height="200" fill="none" stroke="#E91E63" stroke-dasharray="10"></rect>
+        <text x="260" y="40" style="font-size: 26px;font-weight: 700;fill: #E91E63;">dashoffset</text>
+      </g>
+      <g>
+        <rect x="100" y="210" width="300" height="1000" fill="none" stroke="#4e85df" stroke-dasharray="10"></rect>
+        <text x="260" y="240" style="font-size: 26px;font-weight: 700;fill: #4e85df;">dasharray</text>
+      </g>
+      <line class="up" x1="130" y1="10" x2="130" y2="210" stroke="#880E4F" stroke-width="20" stroke-dasharray="100"
+        stroke-dashoffset="100" />
+      <line class="mask-up" x1="130" y1="10" x2="130" y2="210" stroke="#f5f5f5" stroke-width="60" stroke-dasharray="200"
+        stroke-dashoffset="0" />
+      <line class="offset" x1="130" y1="210" x2="130" y2="1000" stroke="#D81B60" stroke-width="20" stroke-dasharray="100"
+        stroke-dashoffset="0" /> -->
+      <g style="transform: translate(-20%, 25%);">
+        <line class="dasharray1" x1="500" y1="100" x2="900" y2="100" stroke="#BBDEFB" stroke-width="60"/>
+        <line class="dasharray" x1="500" y1="100" x2="900" y2="100" stroke="#03A9F4" stroke-width="60" stroke-dasharray="100"
+          stroke-dashoffset="100" />
+      </g>
+    </svg>
+    <div class="controls">
+      <table>
+        <tbody>
+          <!-- <tr class="r1">
+            <td width="110">dashoffset:</td>
+            <td width="400"><input class="range1" type="range" name="value" min="-200" max="200" step="10"></td>
+            <td width="50" class="txt1">0</td>
+          </tr> -->
+          <tr class="r2">
+            <td width="140">dasharray-value1:</td>
+            <td width="400"><input class="range2" type="range" name="value" min="0" max="200" step="10"></td>
+            <td class="txt2" width="50">0</td>
+          </tr>
+          <tr class="r3">
+            <td>dasharray-value2:</td>
+            <td><input class="range3" type="range" name="value" min="0" max="200" step="10"></td>
+            <td class="txt3">0</td>
+          </tr>
+          <!-- <tr class="r3">
+            <td>dasharray-value3:</td>
+            <td><input class="range4" type="range" name="value" min="0" max="200" step="10"></td>
+            <td class="txt4">0</td>
+          </tr> -->
+        </tbody>
+      </table>
+      <!-- <div class="r1">
+            dashoffset: <input class="js-range" type="range" name="value" min="-200" max="200" step="10" ><span style="margin-left: 10px;" class="txt"></span> 
+        </div>
+        <div class="r2">
+            dasharray-v1: <input class="js-range" type="range" name="value" min="-200" max="200" step="10" ><span style="margin-left: 10px;" class="txt"></span> 
+        </div>
+        <div class="r3">
+            dasharray-v2: <input class="js-range" type="range" name="value" min="-200" max="200" step="10" ><span style="margin-left: 10px;" class="txt"></span> 
+        </div> -->
+    </div>
+  </div>
+
+  <script>
+    // const bg1 = document.querySelector('.bg1');
+    // const bg2 = document.querySelector('.bg2');
+    // const range1 = document.querySelector('.range1');
+    const range2 = document.querySelector('.range2');
+    const range3 = document.querySelector('.range3');
+    // const range4 = document.querySelector('.range4');
+    const offset = document.querySelector('.offset');
+    const up = document.querySelector('.up');
+    const maskUp = document.querySelector('.mask-up');
+    // const txt1 = document.querySelector('.txt1');
+    const txt2 = document.querySelector('.txt2');
+    const txt3 = document.querySelector('.txt3');
+    // const txt4 = document.querySelector('.txt4');
+    const dasharray = document.querySelector('.dasharray');
+    // txt1.innerHTML = range1.value;
+    txt2.innerHTML = range2.value;
+    txt3.innerHTML = range3.value;
+    // txt4.innerHTML = range4.value;
+    // range1.addEventListener('input', (e) => {
+    //   const target = e.target;
+    //   const value = target.value;
+    //   txt1.innerHTML = value;
+    //   offset.style.strokeDashoffset = value
+    //   up.style.strokeDashoffset = value
+    //   maskUp.style.strokeDashoffset = Math.abs(value)
+    // });
+    range2.addEventListener('input', (e) => {
+      const target = e.target;
+      const value = target.value;
+      txt2.innerHTML = value;
+      range3.value = target.value;
+      txt3.innerHTML = value;
+      // range4.value = target.value;
+      // txt4.innerHTML = value;
+      dasharray.style.strokeDasharray = value
+      dasharray.style.strokeDashoffset = 0
+    });
+    range3.addEventListener('input', (e) => {
+      const target = e.target;
+      const value = target.value;
+      txt3.innerHTML = value;
+      dasharray.style.strokeDasharray = [range2.value,value].join(',');
+      dasharray.style.strokeDashoffset = 0
+    });
+    // range4.addEventListener('input', (e) => {
+    //   const target = e.target;
+    //   const value = target.value;
+    //   txt4.innerHTML = value;
+    //   dasharray.style.strokeDasharray = [range2.value,range3.value,value].join(',');
+    //   dasharray.style.strokeDashoffset = 0
+    // });
+  </script>
+</body>
+
+</html>

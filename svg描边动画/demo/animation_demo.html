@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animation</title>
+</head>
+
+<body>
+    <style>
+        .svg {
+            fill: none;
+            stroke: #f4368b;
+            stroke-width: 10px;
+            width: 100%;
+            height: 440px;
+        }
+        
+        .path1 {
+            transform: translate(25%, 10%);
+            stroke-dasharray: 523.1047973632812;
+            stroke-dashoffset: 0;
+            animation: dash 2s linear 3s alternate 1;
+        }
+        
+        .path2 {
+            transform: translate(25%, 10%);
+            /* stroke-dasharray: 523.1047973632812; */
+            /* stroke-dashoffset: 523.1047973632812; */
+        }
+        
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 523.1047973632812;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+    CSS动画
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="10" y="10" viewBox="0 0 400 400" xml:space="preserve">
+        <g>
+          <path class="path1" d="M150.383,18.301c-7.13-3.928-15.308-6.187-24.033-6.187c-15.394,0-29.18,7.015-38.283,18.015    c-9.146-11-22.919-18.015-38.334-18.015c-8.704,0-16.867,2.259-24.013,6.187C10.388,26.792,0,43.117,0,61.878    C0,67.249,0.874,72.4,2.457,77.219c8.537,38.374,85.61,86.771,85.61,86.771s77.022-48.396,85.571-86.771    c1.583-4.819,2.466-9.977,2.466-15.341C176.104,43.124,165.716,26.804,150.383,18.301z"/>
+        </g>
+    </svg> JS动画：<button class="replay">重播</button>
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="10" y="10" viewBox="0 0 400 400" xml:space="preserve">
+      <g>
+        <path class="path2" d="M150.383,18.301c-7.13-3.928-15.308-6.187-24.033-6.187c-15.394,0-29.18,7.015-38.283,18.015    c-9.146-11-22.919-18.015-38.334-18.015c-8.704,0-16.867,2.259-24.013,6.187C10.388,26.792,0,43.117,0,61.878    C0,67.249,0.874,72.4,2.457,77.219c8.537,38.374,85.61,86.771,85.61,86.771s77.022-48.396,85.571-86.771    c1.583-4.819,2.466-9.977,2.466-15.341C176.104,43.124,165.716,26.804,150.383,18.301z"/>
+      </g>
+    </svg>
+    <script>
+        const path2 = document.querySelector('.path2');
+        const replay = document.querySelector('.replay');
+        const totalLength = path2.getTotalLength();
+        path2.style.strokeDasharray = totalLength;
+        path2.style.strokeDashoffset = totalLength;
+
+        let current_frame = 0;
+        let total_frames = 160;
+        const draw = function() {
+            let progress = current_frame / total_frames;
+            if (progress > 1) {
+                window.cancelAnimationFrame(handle);
+            } else {
+                current_frame++;
+                path2.style.strokeDashoffset = totalLength * (1 - progress);
+                handle = window.requestAnimationFrame(draw);
+            }
+        };
+        draw();
+        replay.addEventListener('click', () => {
+            console.log('click');
+            if (current_frame >= 160) {
+                current_frame = 0;
+                total_frames = 160;
+                draw();
+            }
+        });
+    </script>
+</body>
+
+</html>

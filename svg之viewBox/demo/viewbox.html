@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>viewBox</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .svg-container {
+            margin: 120px auto 0;
+            position: relative;
+            height: 600px;
+            width: 600px;
+            /* background-color: aliceblue; */
+            background: url(./dd.svg) no-repeat center;
+            border: 1px solid rgb(184, 203, 214);
+        }
+
+        .controls {
+            position: fixed;
+            padding: 10px;
+            top: 120px;
+            left: 50%;
+            margin-left: 320px;
+        }
+
+        .controls h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .controls input {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        svg{
+            position: relative;
+            left: 10px;
+            top: 10px;
+            height: 580px;
+            width: 580px;
+        }
+        svg rect {
+            /* fill: #4CAF50; */
+        }
+        .intro{
+            position: relative;
+            width: 600px;
+            margin: 40px auto 0;
+            line-height: 26px;
+        }
+        .intro p {
+            margin-bottom: 20px;
+        }
+        .intro img{
+            vertical-align: bottom;
+        }
+        .intro strong{
+            color: brown;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        .intro strong:last-child{
+            margin-right: 0;
+        }
+        .intro i{
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+    <h3 class="title">viewBox</h3>
+    <div class="svg-container" id="container">
+        <svg viewBox="5 5 300 200" height="600" width="600" preserveAspectRatio="xMidYMid meet">
+            <image xlink:href="./da.svg" x="5" y="5" height="200" width="300"/>
+        </svg>
+    </div>
+    <div class="controls" id="controls">
+        <h4>preserveAspectRatio</h4>
+        <div><input type="radio" id="off" name="off" value="off"><label for="off">无 preserveAspectRatio，就会取默认值 "xMidYMid meet"</label></div>
+        <h4>align</h4>
+        <div class="align">
+            <div><input type="radio" id="align1" name="align" value="none"><label for="align1">none</label></div>
+            <div><input type="radio" id="align2" name="align" value="xMinYMin"><label for="align2">xMinYMin</label>
+            </div>
+            <div><input type="radio" id="align3" name="align" value="xMidYMin"><label for="align3">xMidYMin</label>
+            </div>
+            <div><input type="radio" id="align4" name="align" value="xMaxYMin"><label for="align4">xMaxYMin</label>
+            </div>
+            <div><input type="radio" id="align5" name="align" value="xMinYMid"><label for="align5">xMinYMid</label>
+            </div>
+            <div><input type="radio" id="align6" name="align" class="defaultValue" value="xMidYMid" checked><label
+                    for="align6">xMidYMid（默认值）</label></div>
+            <div><input type="radio" id="align7" name="align" value="xMaxYMid"><label for="align7">xMaxYMid</label>
+            </div>
+            <div><input type="radio" id="align8" name="align" value="xMinYMax"><label for="align8">xMinYMax</label>
+            </div>
+            <div><input type="radio" id="align9" name="align" value="xMidYMax"><label for="align9">xMidYMax</label>
+            </div>
+            <div><input type="radio" id="align10" name="align" value="xMaxYMax"><label for="align10">xMaxYMax</label>
+            </div>
+        </div>
+        <h4>meetOrSlice</h4>
+        <div class="ms">
+            <div><input type="radio" id="ms1" name="ms" class="defaultValue" value="meet" checked><label
+                    for="ms1">meet（默认值）</label></div>
+            <div><input type="radio" id="ms2" name="ms" value="slice"><label for="ms2">slice</label></div>
+        </div>
+    </div>
+    <div class="intro">
+        <p>
+            <img src="./dd.svg" alt="dd" height="80" width="80"> 表示 <strong>viewport</strong>
+            <img src="./da.svg" alt="dd" height="80" width="120"> 表示 <strong>viewBox</strong>
+        </p>
+        <p>
+        </p>
+        <p>图中的 9 个点表示：<i>xMinYMin</i>、<i>xMidYMin</i>、<i>xMaxYMin</i>、<i>xMinYMid</i>、<i>xMidYMid</i>、<i>xMaxYMid</i>、<i>xMinYMax</i>、<i>xMidYMax</i>、<i>xMaxYMax</i></p>
+        
+    </div>
+
+    <script>
+        const container = document.querySelector('#container');
+        const svg = container.querySelector('svg');
+        const controls = document.querySelector('#controls');
+        const algin = controls.querySelector('.align');
+        const ms = controls.querySelector('.ms');
+        let preCurrentState = 'on';
+        let preserveAspectRatioValue = ['xMidYMid', 'meet'];
+
+        controls.addEventListener('click', function (event) {
+            const target = event.target;
+            if (target.type === 'radio') {
+                switch (target.name) {
+                    case 'off':
+                        if (preCurrentState === 'on') {
+                            svg.removeAttribute('preserveAspectRatio');
+                            algin.querySelectorAll('input').forEach(i => i.checked = false);
+                            ms.querySelectorAll('input').forEach(i => i.checked = false);
+                            preCurrentState = 'off';
+                        }
+                        break;
+                    default:
+                        if (preCurrentState === 'off') {
+                            controls.querySelector('#off').checked = false;
+                            // controls.querySelector('.defaultValue').forEach(i => i.setAttribute('checked'));
+                            preCurrentState = 'on';
+                        }
+                        if (target.value === 'none') {
+                            preserveAspectRatioValue = ['none'];
+                            ms.querySelectorAll('input').forEach(i => i.checked = false);
+                        } else {
+                            if (target.name === 'align') {
+                                preserveAspectRatioValue = [target.value];
+                                let msChecked = [].slice.call(ms.querySelectorAll('input'), 0).filter(i => i.checked === true)[0];
+                                if (!msChecked) {
+                                    const msDefault = ms.querySelector('.defaultValue');
+                                    msDefault.checked = true;
+                                    msChecked = msDefault;
+                                }
+                                preserveAspectRatioValue = [target.value, msChecked.value];
+                            } else {
+                                let alginChecked = [].slice.call(algin.querySelectorAll('input'), 0).filter(i => i.checked === true)[0];
+                                if (!alginChecked) {
+                                    const alginDefault = algin.querySelector('.defaultValue');
+                                    alginDefault.checked = true;
+                                    alginChecked = alginDefault;
+                                }
+                                preserveAspectRatioValue = [alginChecked.value, target.value];
+                            }
+                        }
+                        svg.setAttribute('preserveAspectRatio', preserveAspectRatioValue.join(' '));
+                }
+                console.log(target.value);
+            }
+        }, false);
+
+    </script>
+</body>
+
+</html>

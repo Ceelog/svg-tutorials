@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>viewBox</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .svg-container {
+            margin: 60px auto 0;
+            position: relative;
+            height: 600px;
+            width: 600px;
+            /* background-color: aliceblue; */
+            background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU4MCIgdmlld0Jv%0D%0AeD0iMCAwIDU4MCA1ODAiPgo8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAg%0D%0AICBmaWxsOiAjOTk5OwogICAgICB9CiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogIzI4Mjgy%0D%0AODsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgICAgIDxyZWN0ICBjbGFzcz0iY2xz%0D%0ALTIiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz4KICA8cmVjdCBpZD0i55+p5b2iXzEiIGRh%0D%0AdGEtbmFtZT0i55+p5b2iIDEiIGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIi8+%0D%0ACiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nSIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fotJ0i%0D%0AIGNsYXNzPSJjbHMtMSIgeT0iNTcwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBp%0D%0AZD0i55+p5b2iXzFf5ou36LSdXzIiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDIiIGNsYXNz%0D%0APSJjbHMtMSIgeD0iNTcwIiB5PSI1NzAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIvPgogIDxyZWN0%0D%0AIGlkPSLnn6nlvaJfMV/mi7fotJ1fMyIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fotJ0gMyIgY2xh%0D%0Ac3M9ImNscy0xIiB4PSIyODUiIHk9IjU3MCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIi8+CiAgPHJl%0D%0AY3QgaWQ9IuefqeW9ol8xX+aLt+i0nV80IiBkYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA0IiBj%0D%0AbGFzcz0iY2xzLTEiIHg9IjI4NSIgeT0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8%0D%0AcmVjdCBpZD0i55+p5b2iXzFf5ou36LSdXzgiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDgi%0D%0AIGNsYXNzPSJjbHMtMSIgeD0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBp%0D%0AZD0i55+p5b2iXzFf5ou36LSdXzUiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDUiIGNsYXNz%0D%0APSJjbHMtMSIgeD0iNTcwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBpZD0i55+p%0D%0A5b2iXzFf5ou36LSdXzYiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDYiIGNsYXNzPSJjbHMt%0D%0AMSIgeT0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBpZD0i55+p5b2iXzFf%0D%0A5ou36LSdXzciIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDciIGNsYXNzPSJjbHMtMSIgeD0i%0D%0ANTcwIiB5PSIyODUiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIvPgo8L3N2Zz4K) no-repeat center;
+            border: 1px solid rgb(184, 203, 214);
+            transform: translateZ(0);
+
+        }
+
+        .controls {
+            position: fixed;
+            padding: 10px;
+            top: 60px;
+            left: 50%;
+            margin-left: 320px;
+        }
+
+        .controls h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .controls input {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        svg {
+            position: relative;
+            left: 10px;
+            top: 10px;
+            height: 580px;
+            width: 580px;
+            transform: translateZ(0);
+        }
+
+        svg rect {
+            /* fill: #4CAF50; */
+        }
+
+        .intro {
+            position: relative;
+            width: 600px;
+            margin: 40px auto 0;
+            line-height: 26px;
+        }
+
+        .intro p {
+            margin-bottom: 20px;
+        }
+
+        .intro img {
+            vertical-align: bottom;
+        }
+
+        .intro strong {
+            color: brown;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .intro strong:last-child {
+            margin-right: 0;
+        }
+
+        .intro i {
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        .svg-vb {
+            background-color: rgba(222, 10, 242, 0.5);
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-align: center;
+            border-width: 1px;
+            border-style: solid;
+            font-size: 20px;
+            border-color: transparent rgb(79, 195, 247) rgb(79, 195, 247) transparent;
+            background: rgba(255, 255, 255, 0.5);
+            box-sizing: border-box;
+        }
+
+        .svg-vb i {
+            position: absolute;
+            color: rgb(79, 195, 247);
+            line-height: 20px;
+            bottom: 2px;
+            right: 2px;
+        }
+
+        .svg-rect {
+            /* background-color: #8BC34A; */
+            height: 200px;
+            width: 200px;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0Jv%0D%0AeD0iMCAwIDIwMCAyMDAiPgo8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAg%0D%0AICBmb250LXNpemU6IDEycHg7CiAgICAgICAgZmlsbDogIzRDQUY1MDsKICAgICAgICBmb250LWZh%0D%0AbWlseTogIkFkb2JlIEhlaXRpIFN0ZCI7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAg%0D%0AZmlsbDogI2U0MDA3ZjsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxyZWN0IGlkPSJpbWFnZSIg%0D%0AIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzRDQUY1MCIvPgogICAgPHJlY3QgaWQ9Imlt%0D%0AYWdlLTIiICB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNlOGY1ZTkiLz4KICA8L2RlZnM+%0D%0ACiAgPHVzZSBpZD0i5Zu+5bGCXzEiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiIHhsaW5rOmhyZWY9IiNp%0D%0AbWFnZSIvPgogIDx1c2UgaWQ9IuWbvuWxgl8xX+aLt+i0nSIgZGF0YS1uYW1lPSLlm77lsYIgMSDm%0D%0Ai7fotJ0iIHg9IjEwMCIgeGxpbms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzFf%0D%0A5ou36LSdXzIiIGRhdGEtbmFtZT0i5Zu+5bGCIDEg5ou36LSdIDIiIHg9IjUwIiB5PSI1MCIgeGxp%0D%0Abms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzFf5ou36LSdXzMiIGRhdGEtbmFt%0D%0AZT0i5Zu+5bGCIDEg5ou36LSdIDMiIHg9IjE1MCIgeT0iNTAiIHhsaW5rOmhyZWY9IiNpbWFnZSIv%0D%0APgogIDx1c2UgaWQ9IuWbvuWxgl8xX+aLt+i0nV80IiBkYXRhLW5hbWU9IuWbvuWxgiAxIOaLt+i0%0D%0AnSA0IiB4PSIxMDAiIHk9IjEwMCIgeGxpbms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+%0D%0A5bGCXzFf5ou36LSdXzUiIGRhdGEtbmFtZT0i5Zu+5bGCIDEg5ou36LSdIDUiIHk9IjEwMCIgeGxp%0D%0Abms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzFf5ou36LSdXzciIGRhdGEtbmFt%0D%0AZT0i5Zu+5bGCIDEg5ou36LSdIDciIHg9IjE1MCIgeT0iMTUwIiB4bGluazpocmVmPSIjaW1hZ2Ui%0D%0ALz4KICA8dXNlIGlkPSLlm77lsYJfMV/mi7fotJ1fNiIgZGF0YS1uYW1lPSLlm77lsYIgMSDmi7fo%0D%0AtJ0gNiIgeD0iNTAiIHk9IjE1MCIgeGxpbms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+%0D%0A5bGCXzIiIGRhdGEtbmFtZT0i5Zu+5bGCIDIiIHg9IjUwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIv%0D%0APgogIDx1c2UgaWQ9IuWbvuWxgl8yX+aLt+i0nSIgZGF0YS1uYW1lPSLlm77lsYIgMiDmi7fotJ0i%0D%0AIHg9IjE1MCIgeGxpbms6aHJlZj0iI2ltYWdlLTIiLz4KICA8dXNlIGlkPSLlm77lsYJfMl/mi7fo%0D%0AtJ1fMiIgZGF0YS1uYW1lPSLlm77lsYIgMiDmi7fotJ0gMiIgeD0iMTUwIiB5PSIxMDAiIHhsaW5r%0D%0AOmhyZWY9IiNpbWFnZS0yIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzJf5ou36LSdXzciIGRhdGEtbmFt%0D%0AZT0i5Zu+5bGCIDIg5ou36LSdIDciIHg9IjEwMCIgeT0iMTUwIiB4bGluazpocmVmPSIjaW1hZ2Ut%0D%0AMiIvPgogIDx1c2UgaWQ9IuWbvuWxgl8yX+aLt+i0nV8zIiBkYXRhLW5hbWU9IuWbvuWxgiAyIOaL%0D%0At+i0nSAzIiB4PSI1MCIgeT0iMTAwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIvPgogIDx1c2UgaWQ9%0D%0AIuWbvuWxgl8yX+aLt+i0nV82IiBkYXRhLW5hbWU9IuWbvuWxgiAyIOaLt+i0nSA2IiB5PSIxNTAi%0D%0AIHhsaW5rOmhyZWY9IiNpbWFnZS0yIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzJf5ou36LSdXzQiIGRh%0D%0AdGEtbmFtZT0i5Zu+5bGCIDIg5ou36LSdIDQiIHk9IjUwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIv%0D%0APgogIDx1c2UgaWQ9IuWbvuWxgl8yX+aLt+i0nV81IiBkYXRhLW5hbWU9IuWbvuWxgiAyIOaLt+i0%0D%0AnSA1IiB4PSIxMDAiIHk9IjUwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIvPgogIDx0ZXh0IGlkPSJf%0D%0ANTBfNTAiIGRhdGEtbmFtZT0iNTAqNTAiIGNsYXNzPSJjbHMtMSIgeD0iNjAuMDkiIHk9IjEzMS4x%0D%0ANzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0IGlkPSJfNTBfNTBf5ou36LSdIiBkYXRhLW5hbWU9IjUw%0D%0AKjUwIOaLt+i0nSIgY2xhc3M9ImNscy0xIiB4PSIxMDkuMDkiIHk9IjgwLjE3NCI+NTAqNTA8L3Rl%0D%0AeHQ+CiAgPHRleHQgaWQ9Il81MF81MF/mi7fotJ1fMiIgZGF0YS1uYW1lPSI1MCo1MCDmi7fotJ0g%0D%0AMiIgY2xhc3M9ImNscy0xIiB4PSI4LjA5IiB5PSI4MC4xNzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0%0D%0AIGlkPSJfNTBfNTBf5ou36LSdXzMiIGRhdGEtbmFtZT0iNTAqNTAg5ou36LSdIDMiIGNsYXNzPSJj%0D%0AbHMtMSIgeD0iMTYxLjA5IiB5PSIxMzAuMTc0Ij41MCo1MDwvdGV4dD4KICA8dGV4dCBpZD0iXzUw%0D%0AXzUwX+aLt+i0nV80IiBkYXRhLW5hbWU9IjUwKjUwIOaLt+i0nSA0IiBjbGFzcz0iY2xzLTEiIHg9%0D%0AIjU4LjA5IiB5PSIzMC4xNzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0IGlkPSJfNTBfNTBf5ou36LSd%0D%0AXzUiIGRhdGEtbmFtZT0iNTAqNTAg5ou36LSdIDUiIGNsYXNzPSJjbHMtMSIgeD0iMTU4LjA5IiB5%0D%0APSIzMC4xNzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0IGlkPSJfNTBfNTBf5ou36LSdXzYiIGRhdGEt%0D%0AbmFtZT0iNTAqNTAg5ou36LSdIDYiIGNsYXNzPSJjbHMtMSIgeD0iMTEwLjA5IiB5PSIxODAuMTc0%0D%0AIj41MCo1MDwvdGV4dD4KICA8dGV4dCBpZD0iXzUwXzUwX+aLt+i0nV83IiBkYXRhLW5hbWU9IjUw%0D%0AKjUwIOaLt+i0nSA3IiBjbGFzcz0iY2xzLTEiIHg9IjkuMDkiIHk9IjE4MC4xNzQiPjUwKjUwPC90%0D%0AZXh0PgogIDxjaXJjbGUgaWQ9IuakreWchl8xIiBkYXRhLW5hbWU9IuakreWchiAxIiBjbGFzcz0i%0D%0AY2xzLTIiIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjIiLz4KICA8cmVjdCBpZD0i55+p5b2iXzEiIGRh%0D%0AdGEtbmFtZT0i55+p5b2iIDEiIGNsYXNzPSJjbHMtMiIgeT0iMTk2IiB3aWR0aD0iNCIgaGVpZ2h0%0D%0APSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nSIgZGF0YS1uYW1lPSLnn6nlvaIgMSDm%0D%0Ai7fotJ0iIGNsYXNzPSJjbHMtMiIgeD0iOTgiIHk9IjE5NiIgd2lkdGg9IjQiIGhlaWdodD0iNCIv%0D%0APgogIDxyZWN0IGlkPSLnn6nlvaJfMV/mi7fotJ1fMyIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fo%0D%0AtJ0gMyIgY2xhc3M9ImNscy0yIiB3aWR0aD0iNCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9Iuef%0D%0AqeW9ol8xX+aLt+i0nV80IiBkYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA0IiBjbGFzcz0iY2xz%0D%0ALTIiIHk9Ijk4IiB3aWR0aD0iNCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aL%0D%0At+i0nV81IiBkYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA1IiBjbGFzcz0iY2xzLTIiIHg9IjE5%0D%0ANiIgeT0iOTgiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiLz4KICA8cmVjdCBpZD0i55+p5b2iXzFf5ou3%0D%0A6LSdXzYiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDYiIGNsYXNzPSJjbHMtMiIgeD0iMTk2%0D%0AIiB3aWR0aD0iNCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nV83IiBk%0D%0AYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA3IiBjbGFzcz0iY2xzLTIiIHg9Ijk4IiB3aWR0aD0i%0D%0ANCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nV8yIiBkYXRhLW5hbWU9%0D%0AIuefqeW9oiAxIOaLt+i0nSAyIiBjbGFzcz0iY2xzLTIiIHg9IjE5NiIgeT0iMTk2IiB3aWR0aD0i%0D%0ANCIgaGVpZ2h0PSI0Ii8+Cjwvc3ZnPgo=') no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .intro-vb {
+            position: relative;
+            display: inline-block;
+            height: 50px;
+            width: 100px;
+            border: 1px solid rgb(79, 195, 247);
+            background: rgba(255, 255, 255, 0.5);
+            box-sizing: border-box;
+            vertical-align: bottom;
+        }
+
+        .intro-vb i {
+            position: absolute;
+            color: rgb(79, 195, 247);
+            line-height: 16px;
+            bottom: 2px;
+            right: 2px;
+        }
+
+        p strong {
+            color: rgb(226, 46, 196);
+        }
+
+        .preview {
+            opacity: 0.5;
+        }
+        .result{
+            margin-bottom: 20px;
+        }
+    </style>
+    <h3 class="title">viewBox</h3>
+    <div class="svg-container" id="container">
+        <div class="svg-rect"></div>
+        <div class="svg-vb"><i>viewBox</i></div>
+        <svg class="js-vb" viewBox="5 5 200 100" height="600" width="600" preserveAspectRatio="xMidYMid meet">
+        </svg>
+    </div>
+    <div class="svg-container" style="margin-top: 20px;">
+        <svg class="js-vb " viewBox="5 5 200 100" height="600" width="600" preserveAspectRatio="xMidYMid meet">
+            <image class="preview" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU4MCIgdmlld0Jv%0D%0AeD0iMCAwIDU4MCA1ODAiPgo8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAg%0D%0AICBmaWxsOiAjOTk5OwogICAgICB9CiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogI2NiY2Jj%0D%0AYjsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgICAgIDxyZWN0ICBjbGFzcz0iY2xz%0D%0ALTIiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz4KICA8cmVjdCBpZD0i55+p5b2iXzEiIGRh%0D%0AdGEtbmFtZT0i55+p5b2iIDEiIGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIi8+%0D%0ACiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nSIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fotJ0i%0D%0AIGNsYXNzPSJjbHMtMSIgeT0iNTcwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBp%0D%0AZD0i55+p5b2iXzFf5ou36LSdXzIiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDIiIGNsYXNz%0D%0APSJjbHMtMSIgeD0iNTcwIiB5PSI1NzAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIvPgogIDxyZWN0%0D%0AIGlkPSLnn6nlvaJfMV/mi7fotJ1fMyIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fotJ0gMyIgY2xh%0D%0Ac3M9ImNscy0xIiB4PSIyODUiIHk9IjU3MCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIi8+CiAgPHJl%0D%0AY3QgaWQ9IuefqeW9ol8xX+aLt+i0nV80IiBkYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA0IiBj%0D%0AbGFzcz0iY2xzLTEiIHg9IjI4NSIgeT0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8%0D%0AcmVjdCBpZD0i55+p5b2iXzFf5ou36LSdXzgiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDgi%0D%0AIGNsYXNzPSJjbHMtMSIgeD0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBp%0D%0AZD0i55+p5b2iXzFf5ou36LSdXzUiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDUiIGNsYXNz%0D%0APSJjbHMtMSIgeD0iNTcwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBpZD0i55+p%0D%0A5b2iXzFf5ou36LSdXzYiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDYiIGNsYXNzPSJjbHMt%0D%0AMSIgeT0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBpZD0i55+p5b2iXzFf%0D%0A5ou36LSdXzciIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDciIGNsYXNzPSJjbHMtMSIgeD0i%0D%0ANTcwIiB5PSIyODUiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIvPgo8L3N2Zz4K" x="5" y="5" height="580" width="580" />
+            <image class="preview" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0Jv%0D%0AeD0iMCAwIDIwMCAyMDAiPgo8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAg%0D%0AICBmb250LXNpemU6IDEycHg7CiAgICAgICAgZmlsbDogIzRDQUY1MDsKICAgICAgICBmb250LWZh%0D%0AbWlseTogIkFkb2JlIEhlaXRpIFN0ZCI7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAg%0D%0AZmlsbDogI2U0MDA3ZjsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxyZWN0IGlkPSJpbWFnZSIg%0D%0AIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzRDQUY1MCIvPgogICAgPHJlY3QgaWQ9Imlt%0D%0AYWdlLTIiICB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNlOGY1ZTkiLz4KICA8L2RlZnM+%0D%0ACiAgPHVzZSBpZD0i5Zu+5bGCXzEiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiIHhsaW5rOmhyZWY9IiNp%0D%0AbWFnZSIvPgogIDx1c2UgaWQ9IuWbvuWxgl8xX+aLt+i0nSIgZGF0YS1uYW1lPSLlm77lsYIgMSDm%0D%0Ai7fotJ0iIHg9IjEwMCIgeGxpbms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzFf%0D%0A5ou36LSdXzIiIGRhdGEtbmFtZT0i5Zu+5bGCIDEg5ou36LSdIDIiIHg9IjUwIiB5PSI1MCIgeGxp%0D%0Abms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzFf5ou36LSdXzMiIGRhdGEtbmFt%0D%0AZT0i5Zu+5bGCIDEg5ou36LSdIDMiIHg9IjE1MCIgeT0iNTAiIHhsaW5rOmhyZWY9IiNpbWFnZSIv%0D%0APgogIDx1c2UgaWQ9IuWbvuWxgl8xX+aLt+i0nV80IiBkYXRhLW5hbWU9IuWbvuWxgiAxIOaLt+i0%0D%0AnSA0IiB4PSIxMDAiIHk9IjEwMCIgeGxpbms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+%0D%0A5bGCXzFf5ou36LSdXzUiIGRhdGEtbmFtZT0i5Zu+5bGCIDEg5ou36LSdIDUiIHk9IjEwMCIgeGxp%0D%0Abms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzFf5ou36LSdXzciIGRhdGEtbmFt%0D%0AZT0i5Zu+5bGCIDEg5ou36LSdIDciIHg9IjE1MCIgeT0iMTUwIiB4bGluazpocmVmPSIjaW1hZ2Ui%0D%0ALz4KICA8dXNlIGlkPSLlm77lsYJfMV/mi7fotJ1fNiIgZGF0YS1uYW1lPSLlm77lsYIgMSDmi7fo%0D%0AtJ0gNiIgeD0iNTAiIHk9IjE1MCIgeGxpbms6aHJlZj0iI2ltYWdlIi8+CiAgPHVzZSBpZD0i5Zu+%0D%0A5bGCXzIiIGRhdGEtbmFtZT0i5Zu+5bGCIDIiIHg9IjUwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIv%0D%0APgogIDx1c2UgaWQ9IuWbvuWxgl8yX+aLt+i0nSIgZGF0YS1uYW1lPSLlm77lsYIgMiDmi7fotJ0i%0D%0AIHg9IjE1MCIgeGxpbms6aHJlZj0iI2ltYWdlLTIiLz4KICA8dXNlIGlkPSLlm77lsYJfMl/mi7fo%0D%0AtJ1fMiIgZGF0YS1uYW1lPSLlm77lsYIgMiDmi7fotJ0gMiIgeD0iMTUwIiB5PSIxMDAiIHhsaW5r%0D%0AOmhyZWY9IiNpbWFnZS0yIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzJf5ou36LSdXzciIGRhdGEtbmFt%0D%0AZT0i5Zu+5bGCIDIg5ou36LSdIDciIHg9IjEwMCIgeT0iMTUwIiB4bGluazpocmVmPSIjaW1hZ2Ut%0D%0AMiIvPgogIDx1c2UgaWQ9IuWbvuWxgl8yX+aLt+i0nV8zIiBkYXRhLW5hbWU9IuWbvuWxgiAyIOaL%0D%0At+i0nSAzIiB4PSI1MCIgeT0iMTAwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIvPgogIDx1c2UgaWQ9%0D%0AIuWbvuWxgl8yX+aLt+i0nV82IiBkYXRhLW5hbWU9IuWbvuWxgiAyIOaLt+i0nSA2IiB5PSIxNTAi%0D%0AIHhsaW5rOmhyZWY9IiNpbWFnZS0yIi8+CiAgPHVzZSBpZD0i5Zu+5bGCXzJf5ou36LSdXzQiIGRh%0D%0AdGEtbmFtZT0i5Zu+5bGCIDIg5ou36LSdIDQiIHk9IjUwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIv%0D%0APgogIDx1c2UgaWQ9IuWbvuWxgl8yX+aLt+i0nV81IiBkYXRhLW5hbWU9IuWbvuWxgiAyIOaLt+i0%0D%0AnSA1IiB4PSIxMDAiIHk9IjUwIiB4bGluazpocmVmPSIjaW1hZ2UtMiIvPgogIDx0ZXh0IGlkPSJf%0D%0ANTBfNTAiIGRhdGEtbmFtZT0iNTAqNTAiIGNsYXNzPSJjbHMtMSIgeD0iNjAuMDkiIHk9IjEzMS4x%0D%0ANzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0IGlkPSJfNTBfNTBf5ou36LSdIiBkYXRhLW5hbWU9IjUw%0D%0AKjUwIOaLt+i0nSIgY2xhc3M9ImNscy0xIiB4PSIxMDkuMDkiIHk9IjgwLjE3NCI+NTAqNTA8L3Rl%0D%0AeHQ+CiAgPHRleHQgaWQ9Il81MF81MF/mi7fotJ1fMiIgZGF0YS1uYW1lPSI1MCo1MCDmi7fotJ0g%0D%0AMiIgY2xhc3M9ImNscy0xIiB4PSI4LjA5IiB5PSI4MC4xNzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0%0D%0AIGlkPSJfNTBfNTBf5ou36LSdXzMiIGRhdGEtbmFtZT0iNTAqNTAg5ou36LSdIDMiIGNsYXNzPSJj%0D%0AbHMtMSIgeD0iMTYxLjA5IiB5PSIxMzAuMTc0Ij41MCo1MDwvdGV4dD4KICA8dGV4dCBpZD0iXzUw%0D%0AXzUwX+aLt+i0nV80IiBkYXRhLW5hbWU9IjUwKjUwIOaLt+i0nSA0IiBjbGFzcz0iY2xzLTEiIHg9%0D%0AIjU4LjA5IiB5PSIzMC4xNzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0IGlkPSJfNTBfNTBf5ou36LSd%0D%0AXzUiIGRhdGEtbmFtZT0iNTAqNTAg5ou36LSdIDUiIGNsYXNzPSJjbHMtMSIgeD0iMTU4LjA5IiB5%0D%0APSIzMC4xNzQiPjUwKjUwPC90ZXh0PgogIDx0ZXh0IGlkPSJfNTBfNTBf5ou36LSdXzYiIGRhdGEt%0D%0AbmFtZT0iNTAqNTAg5ou36LSdIDYiIGNsYXNzPSJjbHMtMSIgeD0iMTEwLjA5IiB5PSIxODAuMTc0%0D%0AIj41MCo1MDwvdGV4dD4KICA8dGV4dCBpZD0iXzUwXzUwX+aLt+i0nV83IiBkYXRhLW5hbWU9IjUw%0D%0AKjUwIOaLt+i0nSA3IiBjbGFzcz0iY2xzLTEiIHg9IjkuMDkiIHk9IjE4MC4xNzQiPjUwKjUwPC90%0D%0AZXh0PgogIDxjaXJjbGUgaWQ9IuakreWchl8xIiBkYXRhLW5hbWU9IuakreWchiAxIiBjbGFzcz0i%0D%0AY2xzLTIiIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjIiLz4KICA8cmVjdCBpZD0i55+p5b2iXzEiIGRh%0D%0AdGEtbmFtZT0i55+p5b2iIDEiIGNsYXNzPSJjbHMtMiIgeT0iMTk2IiB3aWR0aD0iNCIgaGVpZ2h0%0D%0APSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nSIgZGF0YS1uYW1lPSLnn6nlvaIgMSDm%0D%0Ai7fotJ0iIGNsYXNzPSJjbHMtMiIgeD0iOTgiIHk9IjE5NiIgd2lkdGg9IjQiIGhlaWdodD0iNCIv%0D%0APgogIDxyZWN0IGlkPSLnn6nlvaJfMV/mi7fotJ1fMyIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fo%0D%0AtJ0gMyIgY2xhc3M9ImNscy0yIiB3aWR0aD0iNCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9Iuef%0D%0AqeW9ol8xX+aLt+i0nV80IiBkYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA0IiBjbGFzcz0iY2xz%0D%0ALTIiIHk9Ijk4IiB3aWR0aD0iNCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aL%0D%0At+i0nV81IiBkYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA1IiBjbGFzcz0iY2xzLTIiIHg9IjE5%0D%0ANiIgeT0iOTgiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiLz4KICA8cmVjdCBpZD0i55+p5b2iXzFf5ou3%0D%0A6LSdXzYiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDYiIGNsYXNzPSJjbHMtMiIgeD0iMTk2%0D%0AIiB3aWR0aD0iNCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nV83IiBk%0D%0AYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA3IiBjbGFzcz0iY2xzLTIiIHg9Ijk4IiB3aWR0aD0i%0D%0ANCIgaGVpZ2h0PSI0Ii8+CiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nV8yIiBkYXRhLW5hbWU9%0D%0AIuefqeW9oiAxIOaLt+i0nSAyIiBjbGFzcz0iY2xzLTIiIHg9IjE5NiIgeT0iMTk2IiB3aWR0aD0i%0D%0ANCIgaGVpZ2h0PSI0Ii8+Cjwvc3ZnPgo=" x="5" y="5" height="200" width="200" />
+        </svg>
+    </div>
+    <div class="controls" id="controls">
+        <div class="result">
+            <p>宽高比: <strong class="js-ratio-val">0.5</strong></p>
+            <p>viewBox: <strong class="js-vb-val">5 5 200 100</strong></p>
+            <p>preserveAspectRatio: <strong class="js-par-val">xMidYMid meet</strong> </p>
+        </div>
+        <h4>viewBox 宽高比</h4>
+        <input type="range" step="0.5" class="js-ratio-range" max="2" min="0.5" value="0.5">
+        <h4>viewBox 大小</h4>
+        <input type="range" step="10" class="js-vb-range" max="580" min="10" value="200">
+        <h4>preserveAspectRatio</h4>
+        <div><input type="radio" id="off" name="off" value="off"><label for="off">无 preserveAspectRatio，就会取默认值 "xMidYMid
+                meet"</label></div>
+        <h4>align</h4>
+        <div class="align">
+            <div><input type="radio" id="align1" name="align" value="none"><label for="align1">none</label></div>
+            <div><input type="radio" id="align2" name="align" value="xMinYMin"><label for="align2">xMinYMin</label>
+            </div>
+            <div><input type="radio" id="align3" name="align" value="xMidYMin"><label for="align3">xMidYMin</label>
+            </div>
+            <div><input type="radio" id="align4" name="align" value="xMaxYMin"><label for="align4">xMaxYMin</label>
+            </div>
+            <div><input type="radio" id="align5" name="align" value="xMinYMid"><label for="align5">xMinYMid</label>
+            </div>
+            <div><input type="radio" id="align6" name="align" class="defaultValue" value="xMidYMid" checked><label
+                    for="align6">xMidYMid（默认值）</label></div>
+            <div><input type="radio" id="align7" name="align" value="xMaxYMid"><label for="align7">xMaxYMid</label>
+            </div>
+            <div><input type="radio" id="align8" name="align" value="xMinYMax"><label for="align8">xMinYMax</label>
+            </div>
+            <div><input type="radio" id="align9" name="align" value="xMidYMax"><label for="align9">xMidYMax</label>
+            </div>
+            <div><input type="radio" id="align10" name="align" value="xMaxYMax"><label for="align10">xMaxYMax</label>
+            </div>
+        </div>
+        <h4>meetOrSlice</h4>
+        <div class="ms">
+            <div><input type="radio" id="ms1" name="ms" class="defaultValue" value="meet" checked><label
+                    for="ms1">meet（默认值）</label></div>
+            <div><input type="radio" id="ms2" name="ms" value="slice"><label for="ms2">slice</label></div>
+        </div>
+        <div class="intro">
+            <h4>图例</h4>
+            <p>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTgwIiBoZWlnaHQ9IjU4MCIgdmlld0Jv%0D%0AeD0iMCAwIDU4MCA1ODAiPgo8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAg%0D%0AICBmaWxsOiAjOTk5OwogICAgICB9CiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogIzI4Mjgy%0D%0AODsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgICAgIDxyZWN0ICBjbGFzcz0iY2xz%0D%0ALTIiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz4KICA8cmVjdCBpZD0i55+p5b2iXzEiIGRh%0D%0AdGEtbmFtZT0i55+p5b2iIDEiIGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIi8+%0D%0ACiAgPHJlY3QgaWQ9IuefqeW9ol8xX+aLt+i0nSIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fotJ0i%0D%0AIGNsYXNzPSJjbHMtMSIgeT0iNTcwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBp%0D%0AZD0i55+p5b2iXzFf5ou36LSdXzIiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDIiIGNsYXNz%0D%0APSJjbHMtMSIgeD0iNTcwIiB5PSI1NzAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIvPgogIDxyZWN0%0D%0AIGlkPSLnn6nlvaJfMV/mi7fotJ1fMyIgZGF0YS1uYW1lPSLnn6nlvaIgMSDmi7fotJ0gMyIgY2xh%0D%0Ac3M9ImNscy0xIiB4PSIyODUiIHk9IjU3MCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIi8+CiAgPHJl%0D%0AY3QgaWQ9IuefqeW9ol8xX+aLt+i0nV80IiBkYXRhLW5hbWU9IuefqeW9oiAxIOaLt+i0nSA0IiBj%0D%0AbGFzcz0iY2xzLTEiIHg9IjI4NSIgeT0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8%0D%0AcmVjdCBpZD0i55+p5b2iXzFf5ou36LSdXzgiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDgi%0D%0AIGNsYXNzPSJjbHMtMSIgeD0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBp%0D%0AZD0i55+p5b2iXzFf5ou36LSdXzUiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDUiIGNsYXNz%0D%0APSJjbHMtMSIgeD0iNTcwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBpZD0i55+p%0D%0A5b2iXzFf5ou36LSdXzYiIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDYiIGNsYXNzPSJjbHMt%0D%0AMSIgeT0iMjg1IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiLz4KICA8cmVjdCBpZD0i55+p5b2iXzFf%0D%0A5ou36LSdXzciIGRhdGEtbmFtZT0i55+p5b2iIDEg5ou36LSdIDciIGNsYXNzPSJjbHMtMSIgeD0i%0D%0ANTcwIiB5PSIyODUiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIvPgo8L3N2Zz4K" alt="dd" height="100" width="100"> 表示 <strong>viewport</strong>
+                <span class="intro-vb"><i>viewBox</i></span> 表示 <strong>viewBox</strong>
+            </p>
+            <p>
+            </p>
+            <p>图中的 9
+                个点分别表示：<i>xMinYMin</i>、<i>xMidYMin</i>、<i>xMaxYMin</i>、<i>xMinYMid</i>、<i>xMidYMid</i>、<i>xMaxYMid</i>、<i>xMinYMax</i>、<i>xMidYMax</i>、<i>xMaxYMax</i>
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        const viewBoxElements = document.querySelectorAll('.js-vb');
+        const viewBoxFakeElement = document.querySelector('.js-fake-vb');
+        const viewBoxFakeBgElement = document.querySelector('.svg-vb');
+        const rangeOfViewBoxSize = document.querySelector('.js-vb-range');
+        const rangeOfViewBoxRatio = document.querySelector('.js-ratio-range');
+        const ratioValueElement = document.querySelector('.js-ratio-val');
+        const viewBoxValueElement = document.querySelector('.js-vb-val');
+        const preserveAspectRatioValueElement = document.querySelector('.js-par-val');
+
+        const updateViewBox = (size, ratio) => {
+            viewBoxElements.forEach(i => i.setAttribute('viewBox', `5 5 ${size} ${size * ratio}`))
+            viewBoxFakeBgElement.style.width = size + 'px';
+            viewBoxFakeBgElement.style.height = size * ratio + 'px';
+            viewBoxValueElement.innerHTML = `5 5 ${size} ${size * ratio}`;
+        }
+
+        rangeOfViewBoxSize.addEventListener('input', function () {
+            updateViewBox(rangeOfViewBoxSize.value, rangeOfViewBoxRatio.value);
+            // viewBoxElements.forEach(i => i.setAttribute('viewBox', `5 5 ${rangeOfViewBoxSize.value} ${rangeOfViewBoxSize.value * 0.5}`))
+            // viewBoxFakeBgElement.style.width = rangeOfViewBoxSize.value + 'px';
+            // viewBoxFakeBgElement.style.height = rangeOfViewBoxSize.value * .5 + 'px';
+            // viewBoxValueElement.innerHTML = `5 5 ${rangeOfViewBoxSize.value} ${rangeOfViewBoxSize.value * 0.5}`;
+        }, false);
+
+        rangeOfViewBoxRatio.addEventListener('input', function () {
+            ratioValueElement.innerHTML = rangeOfViewBoxRatio.value;
+            updateViewBox(rangeOfViewBoxSize.value, rangeOfViewBoxRatio.value);
+            // viewBoxElements.forEach(i => i.setAttribute('viewBox', `5 5 ${rangeOfViewBoxSize.value} ${rangeOfViewBoxSize.value * 0.5}`))
+            // viewBoxFakeBgElement.style.width = rangeOfViewBoxSize.value + 'px';
+            // viewBoxFakeBgElement.style.height = rangeOfViewBoxSize.value * .5 + 'px';
+            // viewBoxValueElement.innerHTML = `5 5 ${rangeOfViewBoxSize.value} ${rangeOfViewBoxSize.value * 0.5}`;
+        }, false);
+
+        const controls = document.querySelector('#controls');
+        const algin = controls.querySelector('.align');
+        const ms = controls.querySelector('.ms');
+        let preCurrentState = 'on';
+        let preserveAspectRatioValue = ['xMidYMid', 'meet'];
+
+        controls.addEventListener('click', function (event) {
+            const target = event.target;
+            if (target.type === 'radio') {
+                switch (target.name) {
+                    case 'off':
+                        if (preCurrentState === 'on') {
+                            viewBoxElements.forEach(i => i.removeAttribute('preserveAspectRatio'));
+                            preserveAspectRatioValueElement.innerHTML = 'xMidYMid meet';
+                            // svg.removeAttribute('preserveAspectRatio');
+                            algin.querySelectorAll('input').forEach(i => i.checked = false);
+                            ms.querySelectorAll('input').forEach(i => i.checked = false);
+                            preCurrentState = 'off';
+                        }
+                        break;
+                    default:
+                        if (preCurrentState === 'off') {
+                            controls.querySelector('#off').checked = false;
+                            // controls.querySelector('.defaultValue').forEach(i => i.setAttribute('checked'));
+                            preCurrentState = 'on';
+                        }
+                        if (target.value === 'none') {
+                            preserveAspectRatioValue = ['none'];
+                            ms.querySelectorAll('input').forEach(i => i.checked = false);
+                        } else {
+                            if (target.name === 'align') {
+                                preserveAspectRatioValue = [target.value];
+                                let msChecked = [].slice.call(ms.querySelectorAll('input'), 0).filter(i => i.checked === true)[0];
+                                if (!msChecked) {
+                                    const msDefault = ms.querySelector('.defaultValue');
+                                    msDefault.checked = true;
+                                    msChecked = msDefault;
+                                }
+                                preserveAspectRatioValue = [target.value, msChecked.value];
+                            } else {
+                                let alginChecked = [].slice.call(algin.querySelectorAll('input'), 0).filter(i => i.checked === true)[0];
+                                if (!alginChecked) {
+                                    const alginDefault = algin.querySelector('.defaultValue');
+                                    alginDefault.checked = true;
+                                    alginChecked = alginDefault;
+                                }
+                                preserveAspectRatioValue = [alginChecked.value, target.value];
+                            }
+                        }
+                        viewBoxElements.forEach(i => i.setAttribute('preserveAspectRatio', preserveAspectRatioValue.join(' ')));
+                        preserveAspectRatioValueElement.innerHTML = preserveAspectRatioValue.join(' ');
+                    // svg.setAttribute('preserveAspectRatio', preserveAspectRatioValue.join(' '));
+                }
+                console.log(target.value);
+            }
+        }, false);
+    </script>
+</body>
+
+</html>

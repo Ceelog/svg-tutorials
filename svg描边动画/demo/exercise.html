@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercise</title>
+</head>
+
+<body>
+    <style>
+        .profile {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            min-width: 320px;
+            height: 600px;
+            margin: 0 auto;
+            transform: translate(0, 5%);
+        }
+        
+        .wp {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #f5f5f5;
+            transition: opacity 1s ease-in;
+        }
+        
+        .img {
+            position: absolute;
+            height: 304px;
+            width: 304px;
+            overflow: hidden;
+            border-radius: 152px;
+            transform: translate(168px, 54px);
+        }
+        
+        .des {
+            position: absolute;
+            width: 400px;
+            text-align: center;
+            transform: translate(120px, 392px);
+            font-size: 28px;
+        }
+    </style>
+    <section class="profile">
+        <svg id="rectangle" class="line-drawing hide" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+        <g fill="none" stroke-width="4" stroke="#aaa">
+            <path d="M0 0L600 0L600 600L0 600L0 0Z" id="i0"/><path d="M470 206C470 288.79 402.79 356 320 356C237.21 356 170 288.79 170 206C170 123.21 237.21 56 320 56C402.79 56 470 123.21 470 206Z" id="i1"/><path d="M170 418L470 418L470 460.52L170 460.52L170 418Z" id="i2"/>
+        </g>
+      </svg>
+        <div class="wp">
+            <a href="https://github.com/zhansingsong" class="img">
+                <img src="https://avatars2.githubusercontent.com/u/13599801?s=460&v=4" alt="" style="
+          transform: translate(-25%, -10%);
+      ">
+            </a>
+            <p class="des">进化中的“菜鸟”</p>
+        </div>
+    </section>
+    <script>
+        var current_frame, total_frames, path, length, handle, myobj;
+
+        // myobj = document.getElementById('myobj').cloneNode(true);
+        const wp = document.querySelector('.wp');
+        var init = function() {
+            current_frame = 0;
+            total_frames = 60;
+            path = new Array();
+            length = new Array();
+            for (var i = 0; i < 3; i++) {
+                path[i] = document.getElementById('i' + i);
+                l = path[i].getTotalLength();
+                length[i] = l;
+                path[i].style.strokeDasharray = l + ' ' + l;
+                path[i].style.strokeDashoffset = l;
+            }
+            handle = 0;
+        }
+
+        var draw = function() {
+            var progress = current_frame / total_frames;
+            if (progress > 1) {
+                wp.style.opacity = 1;
+                window.cancelAnimationFrame(handle);
+            } else {
+                current_frame++;
+                for (var j = 0; j < path.length; j++) {
+                    path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
+                }
+                handle = window.requestAnimationFrame(draw);
+            }
+        };
+
+        init();
+        draw();
+
+        // var rerun = function() {
+        //   var old = document.getElementsByTagName('div')[0];
+        //   old.parentNode.removeChild(old);
+        //   document.getElementsByTagName('body')[0].appendChild(myobj);
+        //   init();
+        //   draw();
+        // };
+    </script>
+</body>
+
+</html>

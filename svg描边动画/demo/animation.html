@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>animation</title>
+</head>
+
+<body>
+  <style>
+  .path {
+  stroke-width: 1px;
+  stroke: #E91E63;
+  fill: none;
+  stroke-dasharray: 162;
+  stroke-dashoffset: 162;
+  transform: translate(25%, 10%);
+  animation: dash 5s linear alternate infinite;
+
+}
+.svg2{
+  fill: none;
+    stroke: #f4368b;
+    stroke-width: 10px;
+    width:100%;
+}
+.path2{
+  transform: translate(25%, 10%);
+  stroke-dasharray: 524;
+  stroke-dashoffset: 0;
+  animation: dash1 5s linear 5s alternate 1;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 162;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash1 {
+  from {
+    stroke-dashoffset: 524;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+  </style>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="10"
+    y="10" viewBox="0 0 100 100" xml:space="preserve">
+      <path class="path" stroke-miterlimit="10"
+        d="M51.911,16.242C51.152,7.888,45.239,1.827,37.839,1.827c-4.93,0-9.444,2.653-11.984,6.905   c-2.517-4.307-6.846-6.906-11.697-6.906c-7.399,0-13.313,6.061-14.071,14.415c-0.06,0.369-0.306,2.311,0.442,5.478   c1.078,4.568,3.568,8.723,7.199,12.013l18.115,16.439l18.426-16.438c3.631-3.291,6.121-7.445,7.199-12.014   C52.216,18.553,51.97,16.611,51.911,16.242z M49.521,21.261c-0.984,4.172-3.265,7.973-6.59,10.985L25.855,47.481L9.072,32.25   c-3.331-3.018-5.611-6.818-6.596-10.99c-0.708-2.997-0.417-4.69-0.416-4.701l0.015-0.101C2.725,9.139,7.806,3.826,14.158,3.826   c4.687,0,8.813,2.88,10.771,7.515l0.921,2.183l0.921-2.183c1.927-4.564,6.271-7.514,11.069-7.514   c6.351,0,11.433,5.313,12.096,12.727C49.938,16.57,50.229,18.264,49.521,21.261z" />
+  </svg>
+  <svg class="svg2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="10"
+  y="10" viewBox="0 0 400 400" xml:space="preserve">
+        <g>
+          <path class="path2" d="M150.383,18.301c-7.13-3.928-15.308-6.187-24.033-6.187c-15.394,0-29.18,7.015-38.283,18.015    c-9.146-11-22.919-18.015-38.334-18.015c-8.704,0-16.867,2.259-24.013,6.187C10.388,26.792,0,43.117,0,61.878    C0,67.249,0.874,72.4,2.457,77.219c8.537,38.374,85.61,86.771,85.61,86.771s77.022-48.396,85.571-86.771    c1.583-4.819,2.466-9.977,2.466-15.341C176.104,43.124,165.716,26.804,150.383,18.301z"/>
+        </g>
+  </svg>
+</body>
+</html>

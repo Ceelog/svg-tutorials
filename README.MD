@@ -12,5 +12,4 @@
 
 
 ![](./medias/creativecommons-cc.svg)
-
 本作品采用 [知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/) 进行许可。许可人允许他人复制、发行、展览和表演作品，但不允许他人基于该作品创作演绎作品。允许他人出于非商业目的而复制、发行、展览和表演作品。

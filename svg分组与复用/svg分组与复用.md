@@ -1,7 +1,6 @@
 # svg 分组与复用
 
-在讲解之前，先思考一个问题："svg 为什么需要分组，分组能解决什么问题❓"
-
+在讲解之前，先思考一个问题："svg 为什么需要 **“分组”**，**“分组”** 能解决什么问题❓"
 
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 300" width="640" height="300">
@@ -25,7 +24,7 @@
 
 ![svg](./imgs/CSS-COLOR.svg)
 
-现在只修改 `"fill"`，如果要整体移动，或动画，还需要对每个组成部分做计算。但如果将其组成一个整体，事情就变得简单啦！
+现在只修改 `"fill"`，如果要整体移动，或动画，还需要对每个 `<path>` 分别做计算。但如果将其组成一个整体，事情就变得简单啦！
 
 ## `<g>`
 

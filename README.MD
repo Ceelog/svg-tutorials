@@ -7,7 +7,14 @@
 - [svg 描边动画](./svg描边动画/svg描边动画.md)
 - [svg 之 viewBox](./svg之viewBox/svg之viewBox.md)
 - [svg 分组与复用](./svg分组与复用/svg分组与复用.md)
-
+- svg 之 path
+- svg 之 filter
+- svg 之 Patterns
+- svg 填充 fill
+- svg 基本图形
+- svg 填充 fill
+- svg 之 Cliping 和 Masking
+- svg 文本
 
 
 

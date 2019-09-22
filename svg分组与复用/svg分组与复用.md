@@ -129,3 +129,7 @@
 
 ![svg](./imgs/CSS-GROUP-MORE-SYMBOL.svg)
 
+
+## 参考文章
+
+- [SVG: Grouping and Re-using Elements](http://frontendbabel.info/articles/svg-grouping-and-reusing-elements/)

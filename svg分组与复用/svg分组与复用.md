@@ -106,9 +106,9 @@
 
 ## `<symbol>`
 
-`<symbol>` 除了拥有 `<defs>` 不显示内容特性外，还有自己的 `viewBox` 及 `preserveAspectRatio` 特性即有自己的坐标系统。
+`<symbol>` 除了拥有 `<defs>` 不显示内容特性外，还有自己的 `viewBox` 及 `preserveAspectRatio` 特性，即有自己的坐标系统。
 
-通过 `<symbol>` 的 `viewBox` 只显示图形 `CSS 字样` 中的 `C 字样`
+通过 `<symbol>` 的 `viewBox` 及 `preserveAspectRatio` 只显示图形 `CSS 字样` 中的 `C 字样`
 
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 600" width="640" height="300">

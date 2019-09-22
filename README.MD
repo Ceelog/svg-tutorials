@@ -6,6 +6,7 @@
 
 - [svg 描边动画](./svg描边动画/svg描边动画.md)
 - [svg 之 viewBox](./svg之viewBox/svg之viewBox.md)
+- [svg 分组与复用](./svg分组与复用/svg分组与复用.md)
 
 
 

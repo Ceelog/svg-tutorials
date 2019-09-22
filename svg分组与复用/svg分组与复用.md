@@ -12,7 +12,7 @@
 
 ![svg](./imgs/CSS-INIT.svg)
 
-如上图是一个整体，如果想要修改它的颜色，需要设置每个 `<path>` 的 `"fill"` 属性。
+如上图 `CSS 字样` 是一个整体，如果想要修改它的颜色，需要设置每个 `<path>` 的 `"fill"` 属性。
 
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 300" width="640" height="300">
@@ -102,7 +102,7 @@
 
 ![svg](./imgs/CSS-GROUP-MORE-DEFS.svg)
 
-现在还存在一个问题，想在引用时能控制引用图形的具体显示内容，`<defs>` 就无能为力了，只能借助 `<symbol>` 了。
+现在还存在一个问题，如果只想显示引用图形的某个部分（即控制引用图形的具体显示内容），`<defs>` 就无能为力了，此时只能借助 `<symbol>` 了。
 
 ## `<symbol>`
 

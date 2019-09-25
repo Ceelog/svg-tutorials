@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
+  viewBox="-50 -50 450 450" preserveAspectRatio="xMinYMin meet">
+  <g class="coordinate">
+    <rect x="-50" y="-50" width="450" height="450" fill="#E1F5FE" />
+    <line x1="-30" y1="0" x2="400" y2="0" stroke="blue" stroke-width="1" />
+    <line x1="0" y1="-30" x2="0" y2="400" stroke="blue" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="blue" />
+    <g class="y" fill="blue">
+      <line x1="0" y1="50" x2="-4" y2="50" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="100" x2="-10" y2="100" stroke="blue" stroke-width="1" />
+      <text x="-40" y="105">100</text>
+      <line x1="0" y1="150" x2="-4" y2="150" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="200" x2="-10" y2="200" stroke="blue" stroke-width="1" />
+      <text x="-40" y="205">200</text>
+      <line x1="0" y1="250" x2="-4" y2="250" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="300" x2="-10" y2="300" stroke="blue" stroke-width="1" />
+      <text x="-40" y="305">300</text>
+      <line x1="0" y1="350" x2="-4" y2="350" stroke="blue" stroke-width="1" />
+    </g>
+    <g class="x" fill="blue">
+      <line x1="50" y1="0" x2="50" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="100" y1="0" x2="100" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="88" y="-18">100</text>
+      <line x1="150" y1="0" x2="150" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="200" y1="0" x2="200" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="188" y="-18">200</text>
+      <line x1="250" y1="0" x2="250" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="300" y1="0" x2="300" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="288" y="-18">300</text>
+      <line x1="350" y1="0" x2="350" y2="-4" stroke="blue" stroke-width="1" />
+    </g>
+  </g>
+  <g>
+    <style>
+      <![CDATA[
+        *{
+          font-size: 14px;
+          }
+        .path {
+          stroke-dasharray: 282.84271240234375;
+          stroke-dashoffset: 282.84271240234375;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 282.84271240234375;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+      ]]>
+    </style>
+    <g fill="#E91E63">
+      <path class="path" d="M100 100v200" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" id="m" />
+      <text style="font-weight: 700;" dx="80" dy="-10">
+        <textPath xlink:href="#m"> v200 </textPath>
+      </text>
+      <text x="50" y="60" fill="#434343">相对于<tspan fill="#999">（100，100）</tspan>点画直线到<tspan fill="#03A9F4">（0，200）</tspan>点</text>
+      <circle cx="100" cy="100" r="4" fill="#999" />
+      <text x="100" y="100" dx="10" dy="3" fill="#999">(100, 100)</text>
+      <circle cx="100" cy="300" r="4" fill="#03A9F4"/>
+      <text x="100" y="300" dx="10" dy="3" fill="#03A9F4">(100, 300)</text>
+    </g>
+  </g>
+</svg>

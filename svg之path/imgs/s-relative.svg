@@ -140,7 +140,6 @@
             ct1.setAttribute('x', x);
             ct1.setAttribute('y', y);
             ct1.innerHTML = '(' + x + ', ' + y + ')';
-            desc1.innerHTML = '(' + x + ', ' + y + ')';
             path.setAttribute('d', 'M100 200C' + x + ', ' + y + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200s'  + (c4.getAttribute('cx') - 200) + ', ' + (c4.getAttribute('cy')-200) +  ' 100, 0');
             d.innerHTML = 'M100 200C' + x + ', ' + y + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200s'  + (c4.getAttribute('cx') - 200) + ', ' + (c4.getAttribute('cy')-200) +  ' 100, 0';
           }

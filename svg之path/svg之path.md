@@ -69,6 +69,7 @@ path 元素通过属性 **"d"** 定义形状，属性 **"d"** 的值是一个 **
   ![](./imgs/c-relative.svg)
 
 - S / s
+  
   `S`
   
   ![](./imgs/s.svg)
@@ -76,3 +77,23 @@ path 元素通过属性 **"d"** 定义形状，属性 **"d"** 的值是一个 **
   `s`
   
   ![](./imgs/s-relative.svg)
+
+- Q / q
+  
+  `Q`
+  
+  ![](./imgs/q.svg)
+
+  `q`
+  
+  ![](./imgs/q-relative.svg)
+
+- T / t
+  
+  `T`
+  
+  ![](./imgs/t.svg)
+
+  `t`
+  
+  ![](./imgs/t-relative.svg)

@@ -120,3 +120,12 @@ path 元素通过属性 **"d"** 定义形状，属性 **"d"** 的值是一个 **
     `large-arc-flag=1` 为最大角度的弧线，`large-arc-flag=0` 为最小角度的弧线；`sweep-flag=1` 表示顺时针方向，则`sweep-flag=0` 表示逆时针方向。
     
     ![](./imgs/a-3.svg)
+
+  - Z / z
+
+    `Z(z)`：**闭合路径(close path)**，将当前点与第一个点连接起来。
+
+    ![](./imgs/z.svg)
+    
+    ⚠️大小写作用一样❗️
+

@@ -65,7 +65,7 @@
       <text dx="30" dy="-10">
           <textPath xlink:href="#mm"> m0 100 </textPath>
       </text>
-      <text x="110" y="205">相对于（100，100）点移动到（0，100）点</text>
+      <text x="110" y="205">相对于（100，100）点移动（0，100）的距离</text>
     </g>
 
   </g>

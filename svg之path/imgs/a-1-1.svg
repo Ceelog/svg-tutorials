@@ -62,51 +62,50 @@
       <!-- <path d="M175 150L225 150" stroke="#aaa"/> -->
       <!-- <path d="M200 250L200 150" stroke="#E91E63" stroke-dasharray="4"/> -->
       <g>
-        <path class="path js-path" d="M75 150A1 1, 0 0 1 125 150" fill="none" stroke="#E91E63" stroke-width="1"  />
-        <path class="js-path" d="M75 150A1 1, 0 1 0 125 150" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+        <path class="path js-path" d="M75 150A2 1, 0 0 1 125 150" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M75 150A2 1, 0 1 0 125 150" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
 
         <circle cx="75" cy="150" r="2" fill="#aaa" />
         <circle cx="125" cy="150" r="2" fill="#aaa"/>
         <path d="M75 150L125 150" stroke="#aaa"/>
-        <text x="75"  y="150" dy="-40" style="">rx=ry&lt;s </text>
+        <text x="45"  y="150" dy="-40" style="">rx!=ry; rx&lt;s; ry&lt;s </text>
       </g>
 
       <g>
-        <path class="path js-path" d="M255 150A25 25, 0 0 1 305 150" fill="none" stroke="#E91E63" stroke-width="1"  />
-        <path class="js-path" d="M255 150A25 25, 0 1 0 305 150" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+        <path class="path js-path" d="M255 150A30 28, 0 0 1 305 150" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M255 150A30 28, 0 1 0 305 150" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
 
         <circle cx="255" cy="150" r="2" fill="#aaa" />
         <circle cx="305" cy="150" r="2" fill="#aaa"/>
         <path d="M255 150L305 150" stroke="#aaa"/>
-        <text x="255"  y="150" dy="-40" style="">rx=ry=s </text>
+        <text x="225"  y="150" dy="-40" style="">rx!=ry; rx&gt;s; ry&gt;s</text>
       </g>
       <g>
-        <path class="path js-path" d="M75 300A30 30, 0 0 1 125 300" fill="none" stroke="#E91E63" stroke-width="1"  />
-        <path class="js-path" d="M75 300A30 30, 0 1 0 125 300" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+        <path class="path js-path" d="M75 300A20 30, 0 0 1 125 300" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M75 300A20 30, 0 1 0 125 300" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
 
         <circle cx="75" cy="300" r="2" fill="#aaa" />
         <circle cx="125" cy="300" r="2" fill="#aaa"/>
         <path d="M75 300L125 300" stroke="#aaa"/>
-        <text x="75"  y="300" dy="-40" style="">rx=ry&gt;s </text>
+        <text x="45"  y="300" dy="-40" style="">rx!=ry; rx&lt;s; ry&gt;s</text>
       </g>
 
-      <!-- <g>
-        <path class="path js-path" d="M255 300A1 1, 0 0 1 305 300" fill="none" stroke="#E91E63" stroke-width="1"  />
-        <path class="js-path" d="M255 300A1 1, 0 1 0 305 300" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+      <g>
+        <path class="path js-path" d="M255 300A30 20, 0 0 1 305 300" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M255 300A30 20, 0 1 0 305 300" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
 
-        <path class="path js-path" d="M255 300A26 26, 0 0 1 305 300" fill="none" stroke="#4CAF50" stroke-width="1"  />
-        <path class="js-path" d="M255 300A25 25, 0 1 0 305 300" fill="none" stroke="#4CAF50" stroke-width="1" stroke-dasharray="4" />
         <circle cx="255" cy="300" r="2" fill="#aaa" />
         <circle cx="305" cy="300" r="2" fill="#aaa"/>
         <path d="M255 300L305 300" stroke="#aaa"/>
-      </g> -->
+        <text x="225"  y="300" dy="-40" style="">rx!=ry; rx&gt;s; ry&lt;s</text>
+      </g>
 
 
       <!-- <path class="path js-path" d="M55 150A60 60, 0 0 1 105 150" fill="none" stroke="#FF9800" stroke-width="1"  />
       <path class="js-path" d="M55 150A60 60, 0 1 0 105 150" fill="none" stroke="#FF9800" stroke-width="1" stroke-dasharray="4" /> -->
  
-      <text x="30" y="30" fill="#E91E63">rx 大于等于起点至终点的距离 s，则直接</text>
-      <text x="30" y="50" fill="#E91E63">使用 rx，ry。如果小于 s， 则按 s 进行换算。</text>
+      <text x="40" y="30" fill="#E91E63">rx 大于等于起点至终点的距离 s，则直接</text>
+      <text x="40" y="50" fill="#E91E63">使用 rx，ry。如果小于 s， 则按 s 进行换算。</text>
       
       <!-- <text x="175" y="150" dx="-66" dy="3" fill="#aaa">(175, 150)</text> -->
       <!-- <text x="225" y="150" dx="10" dy="3" fill="#03A9F4">(300, 150)</text> -->

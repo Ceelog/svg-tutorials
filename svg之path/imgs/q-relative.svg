@@ -65,7 +65,7 @@
         <textPath xlink:href="#m" class="js-text"> M100 200q100, 100 200, 0 </textPath>
       </text>
       <text x="30" y="50" fill="#434343">相对于<tspan fill="#999">（100，200）</tspan>点画二次贝塞尔曲线到<tspan fill="#03A9F4">（200, 0）</tspan>点</text>
-      <text x="30" y="70" fill="#434343">控制点<tspan fill="#4CAF50" class="js-desc1">（100，100）</tspan>点</text>
+      <text x="30" y="70" fill="#434343">控制点距（100，200）点的距离<tspan fill="#4CAF50" class="js-desc1">（100，100）</tspan></text>
       <circle cx="100" cy="200" r="4" fill="#999" />
       <text x="100" y="200" dx="10" dy="3" fill="#999">(100, 200)</text>
       <circle cx="300" cy="200" r="4" fill="#03A9F4"/>

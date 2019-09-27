@@ -65,7 +65,7 @@
         <textPath xlink:href="#m" class="js-text"> t100, 0 </textPath>
       </text>
       <text x="50" y="50" fill="#434343">相对于<tspan fill="#999">（100，200）</tspan>点画反射二次贝塞尔曲线到</text>
-      <text x="50" y="70" fill="#434343"><tspan fill="#03A9F4">（100，0）</tspan>点</text>
+      <text x="50" y="70" fill="#434343"><tspan fill="#03A9F4">（100，0）</tspan>的距离</text>
       <circle cx="100" cy="200" r="4" fill="#999" />
       <text x="100" y="200" dx="10" dy="3" fill="#999">(100, 200)</text>
       <circle cx="200" cy="200" r="4" fill="#999" />

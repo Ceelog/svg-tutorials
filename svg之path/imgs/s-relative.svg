@@ -64,8 +64,8 @@
       <text style="font-weight: 700;" dx="240" dy="20">
         <textPath xlink:href="#m" class="js-text"> s100, -100 100, 0 </textPath>
       </text>
-      <text x="30" y="50" fill="#434343">相对于<tspan fill="#999">（200，200）</tspan>点画反射贝塞尔曲线到<tspan fill="#03A9F4">（100，0）</tspan>点</text>
-      <text x="30" y="70" fill="#434343">相对于<tspan fill="#999">（200，200）</tspan>点的控制点<tspan fill="#FF9800" class="js-desc4">（100，-100）</tspan>点</text>
+      <text x="30" y="50" fill="#434343">相对于<tspan fill="#999">（200，200）</tspan>点画反射贝塞尔曲线到<tspan fill="#03A9F4">（100，0）</tspan>的距离</text>
+      <text x="30" y="70" fill="#434343">控制点距<tspan fill="#999">（200，200）</tspan>点的距离<tspan fill="#FF9800" class="js-desc4">（100，-100）</tspan></text>
       <text x="30" y="350" class="js-d" style="font-size: 12px;">M100 200C100, 300 200, 300 200, 200s100, -100 100, 0</text>
       <!-- (100, 200) -->
       <circle cx="100" cy="200" r="4" fill="#999" />

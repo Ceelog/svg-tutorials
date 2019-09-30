@@ -73,3 +73,7 @@
 - marker-mid=”url(#marker-id)”
 - marker-end=”url(#marker-id)”
 - marker=”url(#marker-id)”
+
+## 参考文章
+
+- [How To Create SVG Arrowheads and Polymarkers — The marker Element](https://vanseodesign.com/web-design/svg-markers/)

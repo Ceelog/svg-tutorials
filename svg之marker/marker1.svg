@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240"
+  viewBox="-120 -120 240 240">
+  <g>
+    <defs>
+      <marker id="arrow" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="feather" markerUnits="strokeWidth" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="auto">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+    </defs>
+    <rect x="-270" y="-270" width="540" height="540" fill="#E1F5FE" />
+    <line class="path" x1="-100" y1="0" x2="100" y2="0" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000" stroke-width="1" />
+  </g>
+</svg>

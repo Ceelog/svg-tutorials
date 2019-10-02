@@ -10,6 +10,6 @@
       </marker>
     </defs>
     <rect x="-270" y="-270" width="540" height="540" fill="#E1F5FE" />
-    <line class="path" x1="-100" y1="0" x2="100" y2="0" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000" stroke-width="2" />
+    <line class="path" x1="-100" y1="0" x2="100" y2="0" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000" stroke-width="1" />
   </g>
 </svg>

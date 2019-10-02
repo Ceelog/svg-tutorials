@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240"
+  viewBox="-120 -120 240 240">
+  <g>
+    <defs>
+
+      <marker id="feather" markerUnits="userSpaceOnUse" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="auto">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+      <g id="arrow">
+        <path d="M0 12L24 0L0 -12Z"/>
+        <circle cx="0" cy="0" r="4" fill="red"/>
+        <text x="-36"  y="-20" style="">(refX, refY)</text>
+      </g>
+    </defs>
+    <rect x="-270" y="-270" width="540" height="540" fill="#E1F5FE" />
+    <line class="p" x1="-80" y1="0" x2="30" y2="0" marker-start="url(#feather)" stroke="#000" stroke-width="3" />
+    <circle cx="30" cy="0" r="4" fill="red"/>
+    <use class="a" xlink:href="#arrow" x="70" y="0" />
+  </g>
+<style>
+    <![CDATA[
+        .svg *{
+          font-size: 14px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .a {
+          x: 0;
+          animation: dash 1.6s linear infinite;
+        }
+
+        @keyframes dash {
+            from {
+                x: 70px;
+            }
+            to {
+                x: 30px;
+            }
+        }
+    ]]>
+</style>
+</svg>

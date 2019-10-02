@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="300"
+  viewBox="0 0 700 300">
+  <g>
+    <defs>
+      <marker id="arrow" fill="red" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="feather" fill="red" markerUnits="strokeWidth" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="auto">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+    </defs>
+    <rect x="0" y="0" width="700" height="300" fill="#E1F5FE" />
+    <text x="10" y="60">marker-start="url(#marker-id)"</text>
+    <line class="path" x1="30" y1="160" x2="180" y2="160" marker-start="url(#feather)" stroke="#000" stroke-width="1" />
+    <text x="250" y="60">marker-mid=”url(#marker-id)”</text>
+    <path d="M270 160l30 0l30 0l30 0l30 0l30 0" marker-mid="url(#arrow)" stroke="#000" stroke-width="" />
+    <text x="480"  y="60">marker-end=”url(#marker-id)”</text>
+    <line class="path" x1="500" y1="160" x2="630" y2="160" marker-end="url(#arrow)" stroke="#000" stroke-width="1" />
+  </g>
+</svg>

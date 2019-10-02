@@ -29,7 +29,7 @@
     <text x="50"  y="240">stroke-width="2"</text>
     <text x="450"  y="240">stroke-width="2"</text>
     <text x="10"  y="300">箭头、直线、箭羽都会被放大2倍</text>
-    <text x="320"  y="300">直线被放大2倍。箭头、箭羽保持不变</text>
+    <text x="390"  y="300">直线被放大2倍。箭头、箭羽保持不变</text>
     <text dy="-10" dx="60" fill="blue">
       <textPath xlink:href="#l" > strokeWidth </textPath>
     </text>

@@ -14,7 +14,7 @@
   </g>
     <style>
     <![CDATA[
-        .svg *{
+        *{
           font-size: 12px;
           -webkit-touch-callout: none;
           -webkit-user-select: none;

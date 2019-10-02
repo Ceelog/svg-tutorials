@@ -65,7 +65,7 @@
   指定 marker 的方向，默认值为 0。
 
   - auto：以 X 轴的方向为起始方向，旋转到路径的方向上。
-  - auto-start-reverse：如果以 `marker-start` 引用 marker 元素，则旋转 180 度。 其他则以 `auto` 一样。
+  - auto-start-reverse：如果以 `marker-start` 方式引用 marker 元素，则旋转 180 度。 其他则与 `auto` 一样。
   - 弧度：以 X 轴的方向为起始方向，旋转到指定的弧度。
   
   ![orient](./imgs/orient.svg)
@@ -85,9 +85,9 @@
 
 ## 引用
 
-- marker-start="url(#marker-id)"：引用 marker 元素与路径的起点对齐。
-- marker-mid="url(#marker-id)" 引用 marker 元素与除起点、终点外的其他顶点对齐。
-- marker-end="url(#marker-id)"：引用 marker 元素与路径的终点对齐。
+- `marker-start="url(#marker-id)"`：引用 marker 元素与路径的起点对齐。
+- `marker-mid="url(#marker-id)"`： 引用 marker 元素与除起点、终点外的其他顶点对齐。
+- `marker-end="url(#marker-id)"`：引用 marker 元素与路径的终点对齐。
 
 ![](./imgs/use.svg)
 

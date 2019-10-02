@@ -17,4 +17,17 @@
     <text x="480"  y="60">marker-end=”url(#marker-id)”</text>
     <line class="path" x1="500" y1="160" x2="630" y2="160" marker-end="url(#arrow)" stroke="#000" stroke-width="1" />
   </g>
+  <style>
+    <![CDATA[
+        .svg *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+    ]]>
+</style>
 </svg>

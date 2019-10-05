@@ -1,4 +1,4 @@
-# SVG 之 fill
+# SVG 之 fill 及 fill-rule
 
 SVG 中的 `fill` 特性可用于路径填充。路径填充不仅可以填充颜色，还可以填充图案。对于一些不规则的填充，还需要结合 `fill-rule`。
 

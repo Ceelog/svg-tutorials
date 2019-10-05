@@ -9,7 +9,7 @@
 - [svg 分组与复用](./svg分组与复用/svg分组与复用.md)
 - [svg 之 path](./svg之path/svg之path.md)
 - [svg 之 marker](./svg之marker/svg之marker.md)
-- [svg 之 fill](./svg之fill/svg之fill.md)
+- [svg 之 fill 及 fill-rule](./svg之fill及fill-rule/svg之fill及fill-rule.md)
 - svg 之 filter
 - svg 之 Patterns
 - svg 基本图形

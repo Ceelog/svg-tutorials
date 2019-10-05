@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="300"
+  viewBox="0 0 400 300">
+  <g>
+    <rect x="0" y="0" width="400" height="300" fill="#E1F5FE" />
+    <path d="M80 120L320 120L100 250L200 50L300 250Z" fill="#ffc8c8" fill-rule="evenodd" stroke="red" stroke-width="2" />
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+    ]]>
+</style>
+</svg>

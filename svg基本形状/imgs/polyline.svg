@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200"
+  viewBox="0 0 400 200">
+  <defs>
+      <marker id="arrow" fill="red" markerUnits="strokeWidth" markerWidth="8" markerHeight="8" refX="0" refY="0" viewBox="-4 -4 8 8" orient="auto">
+        <circle cx="0" cy="0" r="4" fill="red"/>
+      </marker>
+  </defs>
+  <g>
+    <rect x="0" y="0" width="400" height="200" fill="#E1F5FE" />
+    <polyline class="path" points="100, 150 150, 50 200, 100 250, 50 300, 100" marker-mid="url(#arrow)" marker-start="url(#arrow)" marker-end="url(#arrow)" fill="none" stroke="#ffabc8" style=""/>
+    <text x="100"  y="150" style="" fill="red" dx="-18" dy="20">(x1, y1)</text>
+    <text x="150"  y="50" style="" fill="red" dx="-16" dy="-10">(x2, y2)</text>
+    <text x="200"  y="100" style="" fill="red" dx="-16" dy="20">(x3, y3)</text>
+    <text x="250"  y="50" style="" fill="red" dx="-16" dy="-10">(x4, y4)</text>
+    <text x="300"  y="100" style="" fill="red" dx="-16" dy="20">(x5, y5)</text>
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 400;
+          stroke-dashoffset: 400;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 400;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

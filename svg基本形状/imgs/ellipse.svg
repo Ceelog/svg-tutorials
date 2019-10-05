@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200"
+  viewBox="0 0 400 200">
+
+  <g>
+    <rect x="0" y="0" width="400" height="200" fill="#E1F5FE" />
+    <text x="200"  y="100" fill="red" dx="-30" dy="-10">(cx, cy)</text>
+    <path d="M200 100L300 100" stroke="#2196F3" stroke-width="3" />
+    <path d="M200 100L200 160" stroke="#4CAF50" stroke-width="3" />
+    <circle cx="200" cy="100" r="4" fill="red"/>
+    <text x="240" y="100" dy="16" fill="#2196F3" >rx</text>
+    <text x="180" y="120" dy="16" fill="#4CAF50" >ry</text>
+    <ellipse cx="200" cy="100" rx="100" ry="60" fill="none" stroke="#ffabc8"/>
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 200;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

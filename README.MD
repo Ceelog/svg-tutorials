@@ -4,15 +4,15 @@
 
 本教程是作者精心制作的，尽量做到简洁，好理解。并对一些难于理解的概念以实例演示的形式呈现给各位读者。
 
+- [svg 基本图形](./svg基本图形/svg基本图形.md)
+- [svg 之 path](./svg之path/svg之path.md)
 - [svg 描边动画](./svg描边动画/svg描边动画.md)
+- [svg 之 fill 及 fill-rule](./svg之fill及fill-rule/svg之fill及fill-rule.md)
 - [svg 之 viewBox](./svg之viewBox/svg之viewBox.md)
 - [svg 分组与复用](./svg分组与复用/svg分组与复用.md)
-- [svg 之 path](./svg之path/svg之path.md)
 - [svg 之 marker](./svg之marker/svg之marker.md)
-- [svg 之 fill 及 fill-rule](./svg之fill及fill-rule/svg之fill及fill-rule.md)
 - svg 之 filter
 - svg 之 Patterns
-- svg 基本图形
 - svg 之 Cliping 和 Masking
 - svg 文本
 

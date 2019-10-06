@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200"
+  viewBox="0 0 400 200">
+
+  <g>
+    <rect x="0" y="0" width="400" height="200" fill="#E1F5FE" />
+    <text class="t" x="100" y="20" dx="0 14 14 14 14 14" dy="0 30 30 30 30 30" fill="red">这是一段文本</text>
+    <g fill="#2196F3">
+      <circle cx="100" cy="20" r="2" style=""/>
+      <circle cx="100" cy="20" r="2"/>
+      <text x="100" y="20" dx="-50" dy="8"></text>
+      <circle cx="130" cy="50" r="2"/>
+      <text x="110" y="40" dx="-36" dy="8">(14, 30)</text>
+      <path d="M100 20L130 50" stroke="#2196F3" stroke-width="" />
+      <circle cx="160" cy="80" r="2"/>
+      <text x="155" y="70" dx="-50" dy="8">(14, 30)</text>
+      <path d="M130 50L160 80" stroke="#2196F3" stroke-width="" />
+      <circle cx="190" cy="110" r="2"/>
+      <text x="190" y="100" dx="-55" dy="8">(14, 30)</text>
+      <path d="M160 80L190 110" stroke="#2196F3" stroke-width="" />
+      <circle cx="220" cy="140" r="2"/>
+      <text x="220" y="130" dx="-55" dy="8">(14, 30)</text>
+      <path d="M190 110L220 140" stroke="#2196F3" stroke-width="" />
+      <circle cx="250" cy="170" r="2"/>
+      <text x="250" y="160" dx="-55" dy="8">(14, 30)</text>
+      <path d="M220 140L250 170" stroke="#2196F3" stroke-width="" />
+    </g>
+
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .t{
+          font-size: 16px;
+        }
+        .path {
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 200;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

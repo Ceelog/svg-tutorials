@@ -5,6 +5,7 @@
     <rect x="0" y="0" width="400" height="200" fill="#E1F5FE" />
     <text class="t" x="100" y="20" dx="0 14 14 14 14 14" dy="0 30 30 30 30 30" fill="red">这是一段文本</text>
     <g fill="#2196F3">
+      <text x="100" y="20" dx="-50" dy="8">(100, 20)</text>
       <circle cx="100" cy="20" r="2" style=""/>
       <circle cx="100" cy="20" r="2"/>
       <text x="100" y="20" dx="-50" dy="8"></text>

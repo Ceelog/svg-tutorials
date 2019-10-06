@@ -60,20 +60,19 @@ SVG 中文本相关的元素包括 `<text>`、`<tspan>`、`<textPath>`。
 
 - textLength 与 lengthAdjust
 
-
 `textLength` 与 `lengthAdjust` 是密切相关的两个属性，用于设置文本的长度及、字间距及字形。
 
 - `textLength`：设置文本的长度，默认置为 `none`。
 - `lengthAdjust`：设置文本的字间距及字形。
-  - `spacing` 默认值
-  - `spacingAndGlyphs`
+  - `spacing`：字间距，默认值。
+  - `spacingAndGlyphs`：字间距及字形。
 
 ![la](./imgs/la.svg)
 
 
 ## `<tspan>` 元素
 
-SVG 中文本不能像 HTML 那样能自动换行。如果需要换行，只能使用 `<tspan>` 元素手动换行。
+SVG 中文本不能像 HTML 那样能自动换行。如果需要换行，只能使用 `<tspan>` 元素手动换行。与 `<text>` 元素一样拥有 `x`、`y`、`dx`、`dy`、`rotate`、`textLength`、`lengthAdjust`等特性。
 
 ![tspan](./imgs/tspan.svg)
 
@@ -88,7 +87,7 @@ SVG 中文本不能像 HTML 那样能自动换行。如果需要换行，只能�
 
 虽然 SVG 文本不如 HTML 文本那样方便，不过 SVG 使用上更加灵活。如可以将 SVG 文本应用到路径上。`<textPath>` 元素就是将文本应用到路径元素。
 
-![tp]](./imgs/tp.svg)
+![tp](./imgs/tp.svg)
 
 ```html
 <text class="t" dx="30 30 30 30 30 30" dy="-10" fill="red" >

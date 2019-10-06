@@ -11,10 +11,10 @@
 - [svg 之 viewBox](./svg之viewBox/svg之viewBox.md)
 - [svg 分组与复用](./svg分组与复用/svg分组与复用.md)
 - [svg 之 marker](./svg之marker/svg之marker.md)
+- [svg 文本](./svg文本/svg文本.md)
 - svg 之 filter
 - svg 之 Patterns
 - svg 之 Cliping 和 Masking
-- svg 文本
 
 
 

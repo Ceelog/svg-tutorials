@@ -100,5 +100,5 @@ SVG 中文本不像 HTML 中文本那样能自动换行。如果需要换行，�
   <textPath xlink:href="#path">这是一段文本</textPath>
 </text>
 <!-- 定义路径 -->
-<path class="path" id="path" d="M100 50C100 150 300 150 300 50" fill="none" stroke="#f1c7c4" stroke-width="" />
+<path class="path" id="path" d="M100 50C100 150 300 150 300 50" fill="none" stroke="#f1c7c4" />
 ```

@@ -9,6 +9,7 @@ SVG 中文本相关的元素包括 `<text>`、`<tspan>`、`<textPath>`。
 ```html
 <text x="150" y="100" fill="red">这是一段文本</text>
 ```
+### 特性
 
 - x 与 y
 
@@ -29,7 +30,7 @@ SVG 中文本相关的元素包括 `<text>`、`<tspan>`、`<textPath>`。
 
 - dx 与 dy
 
-`dx`、`dy` 与 `x`、`y` 作用很类似。只是 `x`、`y` 是绝对坐标，而 `dx`、`dy` 是相对的。
+`dx`、`dy` 与 `x`、`y` 作用很类似。只是 `x`、`y` 是绝对坐标，而 `dx`、`dy` 是相对于 `(0, 0)` 进行计算。
 
 ![dxy](./imgs/dxy0.svg)
 
@@ -37,7 +38,7 @@ SVG 中文本相关的元素包括 `<text>`、`<tspan>`、`<textPath>`。
 <text dx="150" dy="100" fill="red">这是一段文本</text>
 ```
 
-同样， `dx` 与 `dy` 特性取值也可以是个数列。
+同样， `dx` 与 `dy` 特性取值也可以是个数列。第一个文字相对于 `(0, 0)`，第二个文字相对于第一个文字的坐标，依次类推进行计算。
 
 ![dxy](./imgs/dxy1.svg)
 
@@ -58,9 +59,13 @@ SVG 中文本相关的元素包括 `<text>`、`<tspan>`、`<textPath>`。
 
 ![rotate1](./imgs/rotate1.svg)
 
+```html
+<text x="150" y="100" fill="red" rotate="-90 -60 -30 0 30 60">这是一段文本</text>
+```
+
 - textLength 与 lengthAdjust
 
-`textLength` 与 `lengthAdjust` 是密切相关的两个属性，用于设置文本的长度及、字间距及字形。
+`textLength` 与 `lengthAdjust` 是密切相关的两个属性，用于设置文本的长度、字间距及字形。
 
 - `textLength`：设置文本的长度，默认置为 `none`。
 - `lengthAdjust`：设置文本的字间距及字形。
@@ -72,7 +77,7 @@ SVG 中文本相关的元素包括 `<text>`、`<tspan>`、`<textPath>`。
 
 ## `<tspan>` 元素
 
-SVG 中文本不能像 HTML 那样能自动换行。如果需要换行，只能使用 `<tspan>` 元素手动换行。与 `<text>` 元素一样拥有 `x`、`y`、`dx`、`dy`、`rotate`、`textLength`、`lengthAdjust`等特性。
+SVG 中文本不像 HTML 中文本那样能自动换行。如果需要换行，只能使用 `<tspan>` 元素手动实现换行。`<tspan>` 元素 与 `<text>` 元素一样拥有 `x`、`y`、`dx`、`dy`、`rotate`、`textLength`、`lengthAdjust`等特性。
 
 ![tspan](./imgs/tspan.svg)
 
@@ -85,7 +90,7 @@ SVG 中文本不能像 HTML 那样能自动换行。如果需要换行，只能�
 
 ## `<textPath>` 元素
 
-虽然 SVG 文本不如 HTML 文本那样方便，不过 SVG 使用上更加灵活。如可以将 SVG 文本应用到路径上。`<textPath>` 元素就是将文本应用到路径元素。
+虽然 SVG 文本不如 HTML 文本那样方便，不过 SVG 使用上更加灵活。如可以将 SVG 文本应用到路径上。`<textPath>` 元素就是将文本应用到路径的元素。
 
 ![tp](./imgs/tp.svg)
 

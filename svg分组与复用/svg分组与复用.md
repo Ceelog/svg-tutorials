@@ -24,7 +24,7 @@
 
 ![svg](./imgs/CSS-COLOR.svg)
 
-现在只修改 `"fill"`，如果要整体移动，或动画，还需要对每个 `<path>` 分别做计算。但如果将其组成一个整体，事情就变得简单啦！
+现在只修改了 `"fill"`。如果要整体移动，或动画，还需要对每个 `<path>` 分别做计算。但如果将其组成一个整体，事情就变得简单啦！
 
 ## `<g>`
 
@@ -74,7 +74,7 @@
     <use xlink:href="#v" x="0" y="60"  fill="#4CAF50" stroke="#0c2d0f" stroke-width="6" style="transform: scale(0.2) rotate(180deg) translate(-460%, -460%);"/>
 </svg>
 ```
-要引用已定义的图形，需要对已定义图形设置一个 `id`。 在通过 `<use xlink:href="#id" />` 进行引用。同时还可以对引用图形进行位置、样式、动画等定制。
+要引用已定义的图形，需要对已定义图形设置一个 `id`。 再通过 `<use xlink:href="#id" />` 进行引用。同时还可以对引用图形进行位置、样式、动画等定制。
 
 ![svg](./imgs/CSS-GROUP-MORE-USE.svg)
 
@@ -82,7 +82,7 @@
 
 ## `<defs>`
 
-`<g>` 与 `<defs>` 最大的不同的在于 `<defs>` 内定义的内容不会显示。只要在通过`<use>` 引用时才会显示。
+`<g>` 与 `<defs>` 最大的不同的在于 `<defs>` 内定义的内容不会显示。只有在通过`<use>` 引用时才会显示。
 
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 600" width="640" height="300">

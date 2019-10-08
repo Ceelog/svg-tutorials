@@ -1,0 +1,11 @@
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
+  viewBox="0 0 450 450" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <pattern id="p" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="10" height="10" fill="#f99" x="0" y="0"></rect>
+    </pattern>
+  </defs>
+  <rect width="300" height="200" fill="url(#p)" x="0" y="0" />
+  <circle cx="150" cy="80" r="50" stroke="#000" fill="url(#p)" />
+  <rect width="60" height="60" x="0" y="0" stroke="#00f" stroke-width="1" fill="url(#p)" />
+</svg>

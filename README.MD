@@ -13,8 +13,8 @@
 - [svg 之 marker](./svg之marker/svg之marker.md)
 - [svg 文本](./svg文本/svg文本.md)
 - [svg 之 pattern](./svg之pattern/svg之pattern.md)
+- [svg 之 clipPath 和 mask](./svg之clipPath和mask/svg之clipPath和mask.md)
 - svg 之 filter
-- svg 之 Cliping 和 Masking
 
 
 

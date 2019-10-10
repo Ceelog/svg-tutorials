@@ -81,7 +81,7 @@
   ![units](./imgs/units.svg)
 - viewBox 与 preserveAspectRatio
 
-  关于 viewBox 与 preserveAspectRatio 已做过相关介绍，可以参考之前文章：[svg之viewBox](./svg之viewBox/svg之viewBox.md)。
+  关于 viewBox 与 preserveAspectRatio 已做过相关介绍，可以参考之前文章：[svg之viewBox](../svg之viewBox/svg之viewBox.md)。
 
 ## 引用
 

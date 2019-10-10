@@ -4,19 +4,13 @@
   <pattern id="pattern1" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20" >
     <rect x="0" y="0" width="10" height="10" fill="#03A9F4"></rect>
   </pattern> 
-  <pattern id="pattern2" patternUnits="objectBoundingBox" fill="#03A9F4" x="0" y="0" width=".2" height=".2">
-    <rect x="0" y="0" width="10" height="10" fill="#03A9F4"></rect>
-  </pattern> 
-  <pattern id="pattern3" patternUnits="objectBoundingBox" fill="#03A9F4" x="0" y="0" width="1.5" height="1.5">
-    <rect x="0" y="0" width="10" height="10" fill="#03A9F4"></rect>
-  </pattern> 
 </defs>
   <g>
     <rect x="0" y="0" width="400" height="200" fill="#E1F5FE" />
-    <rect x="0" y="0" width="400" height="200" fill="url(#pattern1)" stroke="red"/>
-    <rect x="60" y="60" width="20" height="20" fill="url(#pattern1)" stroke="red"/>
-    <rect x="250" y="60" width="100" height="100" fill="url(#pattern2)" stroke="red"/>
-    <rect x="250" y="60" width="40" height="40" fill="url(#pattern3)" stroke="red"/>
+    <rect x="100" y="40" width="200" height="100" fill="url(#pattern1)" stroke="red" stroke-dasharray="4"/>
+    <rect x="100" y="40" width="20" height="20" fill="url(#pattern1)" stroke="red"/>
+    <text x="40"  y="170" fill="red" style="">虚线框区域：引用元素</text>
+    <text x="240"  y="170" fill="red" style="">实线框区域：pattern</text>
   </g>
     <style>
       <![CDATA[

@@ -1,0 +1,58 @@
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="400"
+  viewBox="0 0 600 400">
+  <rect x="0" y="0" width="600" height="400" fill="#E1F5FE"/>
+  <rect x="0" y="0" width="600" height="400" fill="url(#p0)"/>
+  <defs>
+    <pattern id="p0" width="20" height="20" patternUnits="userSpaceOnUse"  >
+      <rect width="10" height="10" fill="#bbdff0" x="0" y="0"></rect>
+    </pattern>
+    <pattern id="p1" width=".1" height=".2" >
+      <rect width="10" height="10" fill="#03A9F4" x="0" y="0"></rect>
+    </pattern>
+    <pattern id="p2" width=".1" height=".2" x=".02" y=".02" >
+      <rect width="10" height="10" fill="#03A9F4" x="0" y="0"></rect>
+    </pattern>
+    <pattern id="p3" width=".2" height=".2" x="0" y="0" >
+      <rect width="10" height="10" fill="#03A9F4" x="0" y="0"></rect>
+    </pattern>
+    <pattern id="p4" width="1" height="1" x="0" y="0" >
+      <rect width="10" height="10" fill="#FF9800" x="0" y="0"></rect>
+    </pattern>
+  </defs>
+  <rect width="200" height="100" fill="url(#p0)" x="100" y="20" stroke="#03A9F4" stroke-dasharray="4"/>
+  <rect width="200" height="100" fill="url(#p2)" x="100" y="140" stroke="#03A9F4" stroke-dasharray="4"/>
+  <rect width="200" height="100" fill="url(#p3)" x="100" y="280" stroke="#03A9F4" stroke-dasharray="4"/>
+  <g>
+    <rect x="330" y="60" width="245" height="300" fill="#E1F5FE" style=""/>
+
+    <rect width="20" height="20" fill="none" x="100" y="140" stroke="#03A9F4"/>
+    <rect width="20" height="20" fill="none" x="104" y="142" stroke="rgba(245, 10, 0, 0.8)"/>
+    <rect width="20" height="20" fill="none" x="100" y="280" stroke="#03A9F4"/>
+    <rect width="40" height="20" fill="none" x="100" y="280" stroke="rgba(245, 10, 0, 0.8)"/>
+    <text x="40"  y="150" style="font-weight: 700" fill="red">(x, y)</text>
+    <text x="40"  y="265" style="font-weight: 700" fill="red">width、height</text>
+    <rect width="20" height="20" fill="none" x="200" y="60" stroke="#03A9F4"/>
+
+    <circle cx="200" cy="60" r="2" fill="#03A9F4"/>
+    <text x="200" y="60" dx="-40" fill="red" style="font-size: 12px;">(x0, y0)</text>
+    <text x="224" y="75" fill="red" style="font-size: 12px;">h0</text>
+    <text x="204" y="90" fill="red" style="font-size: 12px;">w0</text>
+    <circle cx="100" cy="20" r="4" fill="#03A9F4"/>
+    <text x="100" y="20" dx="-50" fill="red" style="font-size: 14px;">(x1, y1)</text>
+    <text x="304" y="75" fill="red">h1</text>
+    <text x="190" y="134" fill="red">w1</text>
+    <text x="400"  y="80" style="font-weight: 700;" fill="#E91E63">patternUnits</text>
+    <text x="338"  y="120" style="font-size: 14px;" fill="#E91E63">userSpaceOnUse
+      <tspan x="338" dy="30" style="font-size: 14px;font-weight: 700;">x = x0</tspan>
+      <tspan x="338" dy="20" style="font-size: 14px;font-weight: 700;">y = y0</tspan>
+      <tspan x="338" dy="120" style="font-size: 14px;font-weight: 700;">width = w0</tspan>
+      <tspan x="338" dy="20" style="font-size: 14px;font-weight: 700;">height = h0</tspan>
+    </text>
+    <text x="454"  y="120" style="font-size: 14px;" fill="#E91E63">objectBoundingBox
+        <tspan x="454" dy="30" style="font-size: 14px;font-weight: 700;">x = x0 * w1</tspan>
+        <tspan x="454" dy="20" style="font-size: 14px;font-weight: 700;">y = y0 * h1</tspan>
+        <tspan x="454" dy="120" style="font-size: 14px;font-weight: 700;">width = w0 * w1</tspan>
+        <tspan x="454" dy="20" style="font-size: 14px;font-weight: 700;">height = h0 * h1</tspan>
+    </text>
+  </g>
+</svg>

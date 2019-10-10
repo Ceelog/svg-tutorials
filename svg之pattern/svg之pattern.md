@@ -160,4 +160,4 @@
 
 ## viewBox 与 preserveAspectRatio
 
-关于 viewBox 与 preserveAspectRatio 已做过相关介绍，可以参考之前文章：[svg之viewBox](./svg之viewBox/svg之viewBox.md)。
+`pattern` 元素也有自己的 viewBox 与 preserveAspectRatio 特性。关于 viewBox 与 preserveAspectRatio 已做过相关介绍，可以参考之前文章：[svg之viewBox](./svg之viewBox/svg之viewBox.md)。

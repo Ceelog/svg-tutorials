@@ -12,8 +12,8 @@
 - [svg 分组与复用](./svg分组与复用/svg分组与复用.md)
 - [svg 之 marker](./svg之marker/svg之marker.md)
 - [svg 文本](./svg文本/svg文本.md)
+- [svg 之 pattern](./svg之pattern/svg之pattern.md)
 - svg 之 filter
-- svg 之 Patterns
 - svg 之 Cliping 和 Masking
 
 

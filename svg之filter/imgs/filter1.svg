@@ -1,5 +1,5 @@
-<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
-  viewBox="-50 -50 450 450" preserveAspectRatio="xMinYMin meet">
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200"
+  viewBox="0 0 400 200" preserveAspectRatio="xMinYMin meet">
 <filter id="blur">
    <feGaussianBlur stdDeviation="5"/>
  </filter>

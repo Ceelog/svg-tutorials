@@ -1,0 +1,9 @@
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
+  viewBox="-50 -50 450 450" preserveAspectRatio="xMinYMin meet">
+<filter id="blur">
+   <feGaussianBlur stdDeviation="5"/>
+ </filter>
+ <circle cx="60" cy="60" r="50" fill="#E91E63" />
+ <circle cx="170" cy="60" r="50" fill="#E91E63"
+          filter="url(#blur)" />
+</svg>

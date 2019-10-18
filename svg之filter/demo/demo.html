@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #999;
+  background-color: #333;
+  height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em;
+  display: inline-block;
+  font-weight: bold;
+}
+
+svg {
+  margin: 1em;
+  display: inline-block;
+  border: 1px solid #777;
+}
+
+table td {
+  border: 1px solid #777;
+  width: calc( 400px / 6);
+  /* 67px;*/
+  height: calc( 400px / 5);
+  /*80px;*/
+  text-align: center;
+  vertical-align: middle;
+}
+
+td[contenteditable] {
+  font-weight: normal;
+}
+
+section {
+  width: 900px;
+  margin: auto;
+}
+
+h4 {
+  font-size: 150%;
+  margin: .5em;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin: 1em;
+  line-height: 150%;
+}
+
+a {
+  color: #abcdef;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  font-family: monospace, serif;
+  line-height: 150%;
+  font-size: 14px;
+  display:block;
+  width:840px;
+  margin:1em auto;
+}
+pre .output{ color:white;}
+</style>
+<body>
+  <h4>feColorMatrix</h4>
+<p>You may edit the values for the feColorMatrix<br>Also you may drag & drop another image<br>
+It may be useful reading this article: <a href="http://alistapart.com/article/finessing-fecolormatrix">Finessing feColorMatrix</a></p>
+<section>
+  <table>
+    <tr>
+      <td> </td>
+      <td style="color:#d00">R</td>
+      <td style="color:#0d0">G</td>
+      <td style="color:#7af">B</td>
+      <td>A</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td style="color:#d00">R</td>
+      <td contenteditable="true">1</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <td style="color:#0d0">G</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">1</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <td style="color:#7af">B</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">1</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">0</td>
+      <td contenteditable="true">1</td>
+      <td contenteditable="true">0</td>
+    </tr>
+  </table>
+
+  <svg width="400" height="400">
+<defs>
+  
+ <pattern id="line" width="2.5%" height="2.5%">
+      <line x1="2.5%" y1="0" x2="0" y2="2.5%" style="stroke:#f00; stroke-width:1"></line>
+ </pattern>
+  
+  
+  
+  <filter id="filtroDeColor">
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix>
+  </filter>
+</defs>	
+    
+<!-- <rect height ="400" width ="400" fill="url(#line)"/> -->
+  
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./matric.png" width="400" height="400" filter="url(#filtroDeColor)"></image>
+
+  <rect x="10" y="10" width="50" height="50" fill="rgb(150, 150, 150)" filter="url(#filtroDeColor)" style=""/>
+</svg>
+  <pre>
+&lt;filter id="filtroDeColor"&gt;
+   &lt;feColorMatrix in="SourceGraphic" 
+                  type="matrix" 
+                  values="<span class="output">1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0</span>"&gt;&lt;/feColorMatrix&gt;
+&lt;/filter&gt;
+  </pre> 
+</section>
+<script>
+var filtroDeColor = document.querySelector("svg #filtroDeColor feColorMatrix");
+var output = document.querySelector(".output");
+var tds = document.querySelectorAll("td[contenteditable]");
+tds[0].focus();
+document.addEventListener("input",function(evt){
+  //console.log(evt.target.parentNode);
+  var Values = "";
+  for( var i= 0; i < tds.length; i++){
+    var val = tds[i].innerHTML.match( /^.?[0-9]+$/) || "0";
+    Values += val+ " ";
+  }
+  filtroDeColor.setAttributeNS(null, 'values', Values);
+  output.innerHTML = Values;
+},false);
+
+
+////////////////////// File Handler////////////////////////////////
+var XLink_NS = 'http://www.w3.org/1999/xlink';
+
+document.body.addEventListener("dragenter", dragenter, false);
+document.body.addEventListener("dragover", dragover, false);
+document.body.addEventListener("drop", drop, false);
+
+function dragenter(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function dragover(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function drop(e) {
+  e.stopPropagation();
+  e.preventDefault();
+
+  var datos = e.dataTransfer;
+  var archivos = datos.files;
+
+  manejarArchivos(archivos);
+}
+
+function manejarArchivos(archivos) {
+  for (var i = 0; i < archivos.length; i++) {
+    var archivo = archivos[i];
+    var esImagen = /^image\//;
+    
+    if (!esImagen.test(archivo.type)) {
+      continue;
+    }
+    
+    var img = new Image(); 
+    img.src = window.URL.createObjectURL(archivo);
+    img.onload = function() {   
+    var w = img.width;
+    var h = img.height;
+    // centrar la imagen  
+    
+    document.querySelector("svg image").setAttributeNS(XLink_NS, 'xlink:href', this.src);
+      
+      
+   window.URL.revokeObjectURL(this.src);  
+      }
+  }
+}
+</script>
+</body>
+</html>

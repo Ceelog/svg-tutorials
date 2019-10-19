@@ -92,7 +92,7 @@ document.getElementById('svg-embed').getSVGDocument();
     background-image: url('data:image/svg+xml;<DATA>');
   }
   ```
-  内联引用方式可以有效地减少 http 的请求数，但不能很好地利用缓存，同时会增加文档大小。
+  **内联引用方式可以有效地减少 http 的请求数，但不能很好地利用缓存，同时会增加文档大小。**
 
 ## 交互
 
@@ -135,7 +135,7 @@ SVG 与传统的位图相比最大的亮点在于可以通过 JavaScript/CSS 对
       <text x="5" y="30">A nice text</text>
     </svg>
   ```
-优先级：style > css > attributes
+**优先级：style > css > attributes**
 
 ## CSS 和 JavaScript 的引入方式
 
@@ -184,11 +184,11 @@ SVG 与传统的位图相比最大的亮点在于可以通过 JavaScript/CSS 对
   <rect x="0" y="0" width="10" height="10" fill="blue" id="rect" />
 </svg>
 ```
-优先级： SVG 内部样式 > SVG 外部样式
+**优先级： SVG 内部样式 > SVG 外部样式**
 
 ### SVG 内部脚本
 
-可以将JavaScript写SVG内部，同样，为了避免JavaScript被解析为XML标签，需要将JavaScript写在 `CDATA` 中
+可以将 JavaScript 写 SVG 内部。同样，为了避免 JavaScript 被解析为 XML 标签，需要将 JavaScript 写在 `CDATA` 中
 ```html
 <!-- 确保节点已准备好 -->
 <svg>
@@ -231,11 +231,16 @@ SVG 与传统的位图相比最大的亮点在于可以通过 JavaScript/CSS 对
   document.getElementById('rect').setAttribute('fill', 'red')
 </script>
 ```
-### SVG vs Canvas API
+### SVG vs Canvas
 
-Canvas API 是 Web 平台的一个很好的补充，它具有与 SVG 类似的浏览器支持。与 SVG 的主要差异在于 Canvas 不是基于矢量的，而是基于像素的。
-- Canvas 与基于像素的PNG, JPG 和 GIF 图像一样存在缩放问题。
-- Canvas 不能像 SVG 那样使用 CSS 与 JavaScript 编辑。
+Canvas API 是 Web 平台的一个很好的补充，它具有与 SVG 类似的浏览器支持。与 SVG 的主要差异在于 Canvas 是基于像素的绘图。
+
+|  | Canvas | SVG |
+| -- | -- | --- |
+| 历史 | 新兴，由 Apple 私有的技术发展而来  | 历史悠久，2003 年成为 W3C 标准  |
+| 操作对象 | 基于像素  | 基于图形元素  |
+| 驱动 | 脚本   | 脚本和 CSS  |
+| 事件对象 | 像素点  | 图形元素  |
 
 
 ## 参考文章

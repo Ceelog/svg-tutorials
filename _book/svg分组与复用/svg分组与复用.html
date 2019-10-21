@@ -1,0 +1,484 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>svg 分组与复用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../svg之marker/svg之marker.html" />
+    
+    
+    <link rel="prev" href="../svg之viewBox/svg之viewBox.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../svg基础/svg基础.html">
+            
+                <a href="../svg基础/svg基础.html">
+            
+                    
+                    svg 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../svg基本图形/svg基本图形.html">
+            
+                <a href="../svg基本图形/svg基本图形.html">
+            
+                    
+                    svg 基本图形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../svg之path/svg之path.html">
+            
+                <a href="../svg之path/svg之path.html">
+            
+                    
+                    svg 之 path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../svg描边动画/svg描边动画.html">
+            
+                <a href="../svg描边动画/svg描边动画.html">
+            
+                    
+                    svg 描边动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../svg之fill及fill-rule/svg之fill及fill-rule.html">
+            
+                <a href="../svg之fill及fill-rule/svg之fill及fill-rule.html">
+            
+                    
+                    svg 之 fill 及 fill-rule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../svg之viewBox/svg之viewBox.html">
+            
+                <a href="../svg之viewBox/svg之viewBox.html">
+            
+                    
+                    svg 之 viewBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="svg分组与复用.html">
+            
+                <a href="svg分组与复用.html">
+            
+                    
+                    svg 分组与复用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../svg之marker/svg之marker.html">
+            
+                <a href="../svg之marker/svg之marker.html">
+            
+                    
+                    svg 之 marker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../svg文本/svg文本.html">
+            
+                <a href="../svg文本/svg文本.html">
+            
+                    
+                    svg 文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../svg之pattern/svg之pattern.html">
+            
+                <a href="../svg之pattern/svg之pattern.html">
+            
+                    
+                    svg 之 pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../svg之clipPath和mask/svg之clipPath和mask.html">
+            
+                <a href="../svg之clipPath和mask/svg之clipPath和mask.html">
+            
+                    
+                    svg 之 clipPath 和 mask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../svg之filter/svg之filter.html">
+            
+                <a href="../svg之filter/svg之filter.html">
+            
+                    
+                    svg 之 filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >svg 分组与复用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="svg-&#x5206;&#x7EC4;&#x4E0E;&#x590D;&#x7528;">svg &#x5206;&#x7EC4;&#x4E0E;&#x590D;&#x7528;</h1>
+<p>&#x5728;&#x8BB2;&#x89E3;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x601D;&#x8003;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;&quot;svg &#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981; <strong>&#x201C;&#x5206;&#x7EC4;&#x201D;</strong>&#xFF0C;<strong>&#x201C;&#x5206;&#x7EC4;&#x201D;</strong> &#x80FD;&#x89E3;&#x51B3;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x2753;&quot;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid meet&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 640 300&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;640&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><img src="imgs/CSS-INIT.svg" alt="svg"></p>
+<p>&#x5982;&#x4E0A;&#x56FE; <code>CSS &#x5B57;&#x6837;</code> &#x662F;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x5B83;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E2A; <code>&lt;path&gt;</code> &#x7684; <code>&quot;fill&quot;</code> &#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid meet&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 640 300&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;640&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><img src="imgs/CSS-COLOR.svg" alt="svg"></p>
+<p>&#x73B0;&#x5728;&#x53EA;&#x4FEE;&#x6539;&#x4E86; <code>&quot;fill&quot;</code>&#x3002;&#x5982;&#x679C;&#x8981;&#x6574;&#x4F53;&#x79FB;&#x52A8;&#xFF0C;&#x6216;&#x52A8;&#x753B;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x5BF9;&#x6BCF;&#x4E2A; <code>&lt;path&gt;</code> &#x5206;&#x522B;&#x505A;&#x8BA1;&#x7B97;&#x3002;&#x4F46;&#x5982;&#x679C;&#x5C06;&#x5176;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#xFF0C;&#x4E8B;&#x60C5;&#x5C31;&#x53D8;&#x5F97;&#x7B80;&#x5355;&#x5566;&#xFF01;</p>
+<h2 id="g"><code>&lt;g&gt;</code></h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid meet&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 640 300&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;640&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><img src="imgs/CSS-GROUP.svg" alt="svg"></p>
+<p>&#x901A;&#x8FC7; <code>&lt;g&gt;&lt;/g&gt;</code> &#x5BF9;&#x6BCF;&#x4E2A; <code>&lt;path&gt;</code> &#x8FDB;&#x884C;&#x5305;&#x88F9;&#xFF0C;&#x7EC4;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#xFF08;&#x5373;&#x8BA9; <code>&lt;g&gt;</code> &#x6210;&#x4E3A;&#x6240;&#x6709;&#x7684; <code>&lt;path&gt;</code> &#x7236;&#x8282;&#x70B9;&#xFF09;&#x3002;&#x518D;&#x8BBE;&#x7F6E; <code>&lt;g&gt;</code> &#x7684; <code>fill=&quot;#4CAF50&quot;</code>&#xFF0C;&#x8FD9;&#x6837;&#x6BCF;&#x4E2A; <code>&lt;path&gt;</code> &#x90FD;&#x4F1A;&#x7EE7;&#x627F; <code>&lt;g&gt;</code> &#x7684; <code>fill=&quot;#4CAF50&quot;</code>&#x3002;&#x5F53;&#x7136;&#x5982;&#x679C; <code>&lt;path&gt;</code> &#x81EA;&#x5DF1;&#x8BBE;&#x7F6E;&#x4E86; <code>fill</code>&#xFF0C; &#x4F1A;&#x8986;&#x76D6;&#x7EE7;&#x627F;&#x7684; <code>fill</code>&#x3002;&#x7C7B;&#x4F3C;&#x4E8E; HTML &#x8282;&#x70B9;&#x5143;&#x7D20;&#x7684;&#x7EE7;&#x627F;&#x7279;&#x6027;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid meet&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 640 300&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;640&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.8) rotate(180deg) translate(-100%, -100%);&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><img src="imgs/CSS-GROUP-MORE.svg" alt="svg"></p>
+<p><strong>&#x201C;&#x5206;&#x7EC4;&#x201D;</strong> &#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x6574;&#x4F53;&#x63A7;&#x5236;&#x72B6;&#x6001;&#x5916;&#xFF0C;&#x8FD8;&#x80FD;&#x65B9;&#x4FBF; <strong>&#x201C;&#x590D;&#x7528;&#x201D;</strong>&#x3002;</p>
+<h2 id="use"><code>&lt;use&gt;</code></h2>
+<p>&#x8981; <strong>&#x201C;&#x590D;&#x7528;&#x201D;</strong> &#x5DF2;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#x56FE;&#x5F62;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>&lt;use&gt;</code> &#x8FDB;&#x884C;&#x5F15;&#x7528;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid meet&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 640 600&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;640&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v&quot;</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.6) rotate(180deg) translate(-20%, -170%);&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.4) rotate(180deg) translate(-150%, -240%);&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.2) rotate(180deg) translate(-460%, -460%);&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p>&#x8981;&#x5F15;&#x7528;&#x5DF2;&#x5B9A;&#x4E49;&#x7684;&#x56FE;&#x5F62;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x5DF2;&#x5B9A;&#x4E49;&#x56FE;&#x5F62;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A; <code>id</code>&#x3002; &#x518D;&#x901A;&#x8FC7; <code>&lt;use xlink:href=&quot;#id&quot; /&gt;</code> &#x8FDB;&#x884C;&#x5F15;&#x7528;&#x3002;&#x540C;&#x65F6;&#x8FD8;&#x53EF;&#x4EE5;&#x5BF9;&#x5F15;&#x7528;&#x56FE;&#x5F62;&#x8FDB;&#x884C;&#x4F4D;&#x7F6E;&#x3001;&#x6837;&#x5F0F;&#x3001;&#x52A8;&#x753B;&#x7B49;&#x5B9A;&#x5236;&#x3002;</p>
+<p><img src="imgs/CSS-GROUP-MORE-USE.svg" alt="svg"></p>
+<p>&#x26A0;&#xFE0F; &#x4F46;&#x73B0;&#x5728;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5F15;&#x7528;&#x53EA;&#x80FD;&#x5BF9;&#x5DF2;&#x5B9A;&#x4E49;&#x5E76;&#x663E;&#x793A;&#x7684;&#x56FE;&#x5F62;&#x3002;&#x8FD9;&#x79CD; <strong>&quot;&#x590D;&#x7528;&quot;</strong> &#x65B9;&#x5F0F;&#x4E0D;&#x662F;&#x5F88;&#x597D;&#xFF0C;&#x66F4;&#x5E0C;&#x671B;&#x5B9A;&#x4E49;&#x7684;&#x56FE;&#x5F62;&#x4E0D;&#x663E;&#x793A;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x5F15;&#x7528;&#x65F6;&#x624D;&#x4F1A;&#x663E;&#x793A;&#x3002;&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD; <strong>&quot;&#x590D;&#x7528;&quot;</strong> &#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>&lt;defs&gt;</code>&#x3002;</p>
+<h2 id="defs"><code>&lt;defs&gt;</code></h2>
+<p><code>&lt;g&gt;</code> &#x4E0E; <code>&lt;defs&gt;</code> &#x6700;&#x5927;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x5728;&#x4E8E; <code>&lt;defs&gt;</code> &#x5185;&#x5B9A;&#x4E49;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x3002;&#x53EA;&#x6709;&#x5728;&#x901A;&#x8FC7;<code>&lt;use&gt;</code> &#x5F15;&#x7528;&#x65F6;&#x624D;&#x4F1A;&#x663E;&#x793A;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid meet&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 640 600&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;640&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">defs</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v&quot;</span> &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">defs</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#E91E63&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.6) rotate(180deg) translate(-20%, -170%);&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.4) rotate(180deg) translate(-150%, -240%);&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.2) rotate(180deg) translate(-460%, -460%);&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><img src="imgs/CSS-GROUP-MORE-DEFS.svg" alt="svg"></p>
+<p>&#x73B0;&#x5728;&#x8FD8;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x60F3;&#x663E;&#x793A;&#x5F15;&#x7528;&#x56FE;&#x5F62;&#x7684;&#x67D0;&#x4E2A;&#x90E8;&#x5206;&#xFF08;&#x5373;&#x63A7;&#x5236;&#x5F15;&#x7528;&#x56FE;&#x5F62;&#x7684;&#x5177;&#x4F53;&#x663E;&#x793A;&#x5185;&#x5BB9;&#xFF09;&#xFF0C;<code>&lt;defs&gt;</code> &#x5C31;&#x65E0;&#x80FD;&#x4E3A;&#x529B;&#x4E86;&#xFF0C;&#x6B64;&#x65F6;&#x53EA;&#x80FD;&#x501F;&#x52A9; <code>&lt;symbol&gt;</code> &#x4E86;&#x3002;</p>
+<h2 id="symbol"><code>&lt;symbol&gt;</code></h2>
+<p><code>&lt;symbol&gt;</code> &#x9664;&#x4E86;&#x62E5;&#x6709; <code>&lt;defs&gt;</code> &#x4E0D;&#x663E;&#x793A;&#x5185;&#x5BB9;&#x7279;&#x6027;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x81EA;&#x5DF1;&#x7684; <code>viewBox</code> &#x53CA; <code>preserveAspectRatio</code> &#x7279;&#x6027;&#xFF0C;&#x5373;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x7EDF;&#x3002;</p>
+<p>&#x901A;&#x8FC7; <code>&lt;symbol&gt;</code> &#x7684; <code>viewBox</code> &#x53CA; <code>preserveAspectRatio</code> &#x53EA;&#x663E;&#x793A;&#x56FE;&#x5F62; <code>CSS &#x5B57;&#x6837;</code> &#x4E2D;&#x7684; <code>C &#x5B57;&#x6837;</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="hljs-attr">preserveAspectRatio</span>=<span class="hljs-string">&quot;xMidYMid meet&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 640 600&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;640&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">symbol</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;v&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 3 400&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">g</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">symbol</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;-340&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#E91E63&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.6) rotate(180deg) translate(-20%, -180%);&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.4) rotate(180deg) translate(-150%, -250%);&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">&quot;#v&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;60&quot;</span>  <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;#4CAF50&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;#0c2d0f&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;transform: scale(0.2) rotate(180deg) translate(-460%, -470%);&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><img src="imgs/CSS-GROUP-MORE-SYMBOL.svg" alt="svg"></p>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;">&#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+<ul>
+<li><a href="http://frontendbabel.info/articles/svg-grouping-and-reusing-elements/" target="_blank">SVG: Grouping and Re-using Elements</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../svg之viewBox/svg之viewBox.html" class="navigation navigation-prev " aria-label="Previous page: svg 之 viewBox">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../svg之marker/svg之marker.html" class="navigation navigation-next " aria-label="Next page: svg 之 marker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"svg 分组与复用","level":"1.8","depth":1,"next":{"title":"svg 之 marker","level":"1.9","depth":1,"path":"svg之marker/svg之marker.md","ref":"./svg之marker/svg之marker.md","articles":[]},"previous":{"title":"svg 之 viewBox","level":"1.7","depth":1,"path":"svg之viewBox/svg之viewBox.md","ref":"./svg之viewBox/svg之viewBox.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"svg分组与复用/svg分组与复用.md","mtime":"2019-10-08T10:15:17.568Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-21T06:03:10.264Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

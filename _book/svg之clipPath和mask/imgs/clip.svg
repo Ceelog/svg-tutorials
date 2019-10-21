@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <clipPath id="clip">
+      <rect class="r" x="100" y="50" width="200" height="100" />
+    </clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="300" fill="#E1F5FE" />
+  <rect class="r" x="100" y="50" width="200" height="100" fill="none" stroke="red" stroke-dasharray="4" />
+  <circle cx="200" cy="150" r="100" fill="#4c0101" />
+  <circle cx="200" cy="150" r="100" clip-path="url(#clip)" fill="red" />
+  <style>
+    <![CDATA[
+        *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .r {
+          animation: dash 4s linear infinite alternate;
+        }
+        @keyframes dash {
+            from {
+              height: 0;
+            }
+            to {
+              height: 200px;
+            }
+        }
+    ]]>
+</style>
+</svg>

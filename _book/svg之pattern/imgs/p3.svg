@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="200"
+  viewBox="0 0 600 200" preserveAspectRatio="xMinYMin meet">
+<defs>
+  <pattern id="pattern1" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20" >
+    <rect width="10" height="10" fill="#03A9F4"></rect>
+  </pattern> 
+  <pattern id="pattern2" patternUnits="objectBoundingBox" x="0" y="0" width="0.1" height="0.2" >
+    <rect width="10" height="10" fill="#03A9F4"></rect>
+  </pattern> 
+</defs>
+  <g>
+    <rect x="0" y="0" width="600" height="200" fill="#E1F5FE" />
+    <rect x="60" y="40" width="200" height="100" fill="url(#pattern1)" stroke="red" stroke-dasharray="4"/>
+    <rect x="60" y="40" width="20" height="20" fill="url(#pattern1)" stroke="red"/>
+    <text x="84"  y="55" fill="red" style="">20</text>
+    <text x="64"  y="72" fill="red" style="">20</text>
+
+    <rect x="320" y="40" width="200" height="100" fill="url(#pattern2)" stroke="red" stroke-dasharray="4"/>
+    <rect x="320" y="40" width="20" height="20" fill="url(#pattern1)" stroke="red"/>
+    <text x="60"  y="160" fill="red" style="">patternUnits="userSpaceOnUse"</text>
+    <text x="60"  y="180" fill="#0366d6" style="">width=20
+     <tspan dx="20">height=20</tspan>
+    </text>
+    <text x="320"  y="160" fill="red" style="">patternUnits="objectBoundingBox"</text>
+    <text x="320"  y="180" fill="#0366d6" style="">width=200*0.1
+     <tspan dx="20">height=100*0.2</tspan>
+    </text>
+    <text x="344"  y="55" fill="red" style="">0.2</text>
+    <text x="324"  y="72" fill="red" style="">0.1</text>
+    <text x="410"  y="36" fill="red" style="">200</text>
+    <text x="522"  y="95" fill="red" style="">100</text>
+  </g>
+    <style>
+      <![CDATA[
+        *{
+          font-size: 14px;
+          }
+        .path {
+          stroke-dasharray: 282.84271240234375;
+          stroke-dashoffset: 282.84271240234375;
+          animation: dash 1.6s linear infinite;
+        }
+        #pattern1{
+          patternTransform: rotate(4);
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 282.84271240234375;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+      ]]>
+    </style>
+    <script>
+      document.querySelector('#pattern1').patternTransform = "rotate(4)";
+    </script>
+</svg>

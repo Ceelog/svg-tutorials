@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="200"
+  viewBox="0 0 600 200">
+
+  <g>
+    <rect x="0" y="0" width="600" height="200" fill="#E1F5FE" />
+
+    <text class="t" x="100" y="70" fill="red">这是一段文本</text>
+    <text class="t" x="100" y="100" fill="red" textLength="120" lengthAdjust="spacing">这是一段文本</text>
+    <path d="M60 80L260 80" fill="" stroke="#2196f3" />
+    <path d="M100 110L220 110" fill="" stroke="#2196f3" />
+    <path d="M100 20L100 140" fill="" stroke="#2196f3" />
+    <path d="M220 20L220 140" fill="" stroke="#2196f3" />
+    <path d="M100 50L220 50" fill="" stroke="#2196f3" />
+    <text x="120" y="40" fill="#2196f3" style="">textLength=none</text>
+    <text x="120" y="130" fill="#2196f3" style="">textLength=120</text>
+    <text x="98" y="170" fill="#2196f3" style="font-size: 14px">lengthAdjust=spacing</text>
+
+    <text class="t" x="400" y="70" fill="red" lengthAdjust="spacingAndGlyphs">这是一段文本</text>
+    <text class="t" x="400" y="100" fill="red" textLength="120" lengthAdjust="spacingAndGlyphs">这是一段文本</text>
+    <path d="M360 80L560 80" fill="" stroke="#2196f3" />
+    <path d="M400 110L520 110" fill="" stroke="#2196f3" />
+    <path d="M400 20L400 140" fill="" stroke="#2196f3" />
+    <path d="M520 20L520 140" fill="" stroke="#2196f3" />
+    <path d="M400 50L520 50" fill="" stroke="#2196f3" />
+    <text x="420" y="40" fill="#2196f3" style="">textLength=none</text>
+    <text x="420" y="130" fill="#2196f3" style="">textLength=120</text>
+    <text x="380" y="170" fill="#2196f3" style="font-size: 14px">lengthAdjust=spacingAndGlyphs</text>
+
+  </g>
+    <style>
+    <![CDATA[
+      
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .t{
+          font-size: 16px;
+        }
+
+        .path {
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 200;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

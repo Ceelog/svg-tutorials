@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="300"
+  viewBox="0 0 600 300">
+  <defs>
+      <marker id="arrow" fill="red" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="6" refY="0" viewBox="0 -6 12 13" orient="auto-start-reverse">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="arrow1" fill="#2196f3" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="12" refX="6" refY="0" viewBox="0 -6 12 13" orient="auto-start-reverse">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+  </defs>
+  <g>
+    <rect x="0" y="0" width="600" height="300" fill="#E1F5FE" />
+    <path d="M150 50L200 250L100 250Z" fill="none" stroke="red" stroke-width="2" />
+    <path class="path" d="M150 150L230 150" fill="" stroke="#2196f3" stroke-width="2"  />
+    <text x="40"  y="270" style="font-size: 16px;" fill="#2196f3">1 个交点（奇数），点在内部</text>
+    <circle cx="150" cy="150" r="4" fill="red" style=""/>
+    <circle cx="175" cy="150" r="5" fill="#2196f3" style=""/>
+
+   
+
+    <path d="M450 50L500 250L400 250Z" fill="none" stroke="red" stroke-width="2" />
+    <path class="path" d="M500 150L400 150" fill="" stroke="#2196f3" stroke-width="2" />
+    <circle cx="425" cy="150" r="5" fill="#2196f3" style=""/>
+    <circle cx="475" cy="150" r="5" fill="#2196f3" style=""/>
+    <text x="350"  y="270" style="font-size: 16px;" fill="#2196f3">2 个交点（偶数），点在外部</text>
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 4;
+          stroke-dashoffset: 4;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 80;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

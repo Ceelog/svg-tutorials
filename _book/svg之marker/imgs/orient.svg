@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="300"
+  viewBox="-300 -150 600 300">
+  <g>
+    <defs>
+      <marker id="arrow" fill="red" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="feather" markerUnits="strokeWidth" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="auto">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+      <marker id="arrow1" fill="red" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="60">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="feather1" markerUnits="strokeWidth" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="60">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+      <marker id="arrow2" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto-start-reverse" fill="red">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="arrow3" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto-start-reverse">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="feather2" markerUnits="strokeWidth" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="auto-start-reverse">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+    </defs>
+    <rect x="-300" y="-150" width="600" height="300" fill="#E1F5FE" />
+    <text x="-250" y="-60">orient: auto</text>
+    <line class="path" x1="-280" y1="-40" x2="-150" y2="-40" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000" stroke-width="1" />
+    <line class="path" x1="-280" y1="-20" x2="-150" y2="10" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000" stroke-width="1" />
+    <line class="path" x1="-280" y1="0" x2="-160" y2="60" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000" stroke-width="1" />
+    <text x="-30" y="-60">orient: 60</text>
+    <line class="path" x1="-70" y1="-40" x2="60" y2="-40" marker-start="url(#feather)" marker-end="url(#arrow1)" stroke="#000" stroke-width="1" />
+    <line class="path" x1="-70" y1="-20" x2="60" y2="10" marker-start="url(#feather)" marker-end="url(#arrow1)" stroke="#000" stroke-width="1" />
+    <line class="path" x1="-70" y1="0" x2="70" y2="60" marker-start="url(#feather)" marker-end="url(#arrow1)" stroke="#000" stroke-width="1" />
+    <text x="120"  y="-60">orient: auto-start-reverse</text>
+    <line class="path" x1="210" y1="-40" x2="210" y2="100" marker-start="url(#arrow2)" marker-end="url(#arrow3)" stroke="#000" stroke-width="1" />
+    <line class="path" x1="140" y1="20" x2="280" y2="20" marker-start="url(#arrow2)" marker-end="url(#arrow3)" stroke="#000" stroke-width="1" />
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+    ]]>
+</style>
+</svg>

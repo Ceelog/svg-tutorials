@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="300"
+  viewBox="0 0 400 300">
+  <defs>
+      <marker id="arrow" fill="red" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="6" refY="0" viewBox="0 -6 12 13" orient="auto">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="arrow1" fill="#2196f3" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="12" refX="6" refY="0" viewBox="0 -6 12 13" orient="auto-start-reverse">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+  </defs>
+  <g>
+    <rect x="0" y="0" width="400" height="300" fill="#E1F5FE" />
+    <path d="M80 120L320 120L100 250L200 50L300 250Z" fill="#ffc8c8" fill-rule="nonzero" stroke="red" stroke-width="2" />
+    <g>
+      <path d="M80 120L320 120" fill="" stroke="#2196f3" stroke-width="2"/>
+      <path d="M80 120L310 120" fill="" stroke="#2196f3" stroke-width="1" marker-end="url(#arrow1)" />
+      <path d="M320 120L110 244" fill="" stroke="red" stroke-width="1" marker-end="url(#arrow)" />
+      <path d="M100 250L195 60" fill="" stroke="red" stroke-width="1" marker-end="url(#arrow)" />
+      <path d="M200 50L300 250" fill="" stroke="#2196f3" stroke-width="2" />
+      <path d="M200 50L295 240" fill="" stroke="#2196f3" stroke-width="1" marker-end="url(#arrow1)" />
+      <path d="M300 250L90 126" fill="" stroke="red" stroke-width="1" marker-end="url(#arrow)" />
+    </g>
+    <path class="path" d="M200 150L250 40" fill="" stroke="#2196f3" stroke-width="2" marker-end="url(#arrow1)" />
+     <circle cx="200" cy="150" r="4" fill="red"/>
+    <circle cx="224" cy="98" r="4" fill="#2196f3"/>
+    <circle cx="214" cy="120" r="4" fill="#2196f3"/>
+    <path class="path" d="M254 200L320 160" stroke="#2196f3" stroke-width="2" marker-end="url(#arrow1)" />
+    <circle cx="270" cy="190" r="4" fill="#2196f3"/>
+    <circle cx="254" cy="200" r="4" fill="red"/>
+
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 4;
+          stroke-dashoffset: 4;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 80;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

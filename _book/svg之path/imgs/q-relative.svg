@@ -1,0 +1,118 @@
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
+  viewBox="-50 -50 450 450" preserveAspectRatio="xMinYMin meet">
+  <g class="coordinate">
+    <rect x="-50" y="-50" width="450" height="450" fill="#E1F5FE" class="js-coordinate" />
+    <line x1="-30" y1="0" x2="400" y2="0" stroke="blue" stroke-width="1" />
+    <line x1="0" y1="-30" x2="0" y2="400" stroke="blue" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="blue" />
+    <g class="y" fill="blue">
+      <line x1="0" y1="50" x2="-4" y2="50" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="100" x2="-10" y2="100" stroke="blue" stroke-width="1" />
+      <text x="-40" y="105">100</text>
+      <line x1="0" y1="150" x2="-4" y2="150" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="200" x2="-10" y2="200" stroke="blue" stroke-width="1" />
+      <text x="-40" y="205">200</text>
+      <line x1="0" y1="250" x2="-4" y2="250" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="300" x2="-10" y2="300" stroke="blue" stroke-width="1" />
+      <text x="-40" y="305">300</text>
+      <line x1="0" y1="350" x2="-4" y2="350" stroke="blue" stroke-width="1" />
+    </g>
+    <g class="x" fill="blue">
+      <line x1="50" y1="0" x2="50" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="100" y1="0" x2="100" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="88" y="-18">100</text>
+      <line x1="150" y1="0" x2="150" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="200" y1="0" x2="200" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="188" y="-18">200</text>
+      <line x1="250" y1="0" x2="250" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="300" y1="0" x2="300" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="288" y="-18">300</text>
+      <line x1="350" y1="0" x2="350" y2="-4" stroke="blue" stroke-width="1" />
+    </g>
+  </g>
+  <g>
+    <style>
+      <![CDATA[
+        .svg *{
+          font-size: 14px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 600;
+          stroke-dashoffset: 600;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 600;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+      ]]>
+    </style>
+
+    <g fill="#E91E63">
+      <path class="path js-path" d="M100 200q100, 100 200, 0" fill="none" stroke="#E91E63" stroke-width="1"  id="m" />
+      <text style="font-weight: 700;" dx="40" dy="-10">
+        <textPath xlink:href="#m" class="js-text"> M100 200q100, 100 200, 0 </textPath>
+      </text>
+      <text x="30" y="50" fill="#434343">相对于<tspan fill="#999">（100，200）</tspan>点画二次贝塞尔曲线到<tspan fill="#03A9F4">（200, 0）</tspan>点</text>
+      <text x="30" y="70" fill="#434343">控制点距（100，200）点的距离<tspan fill="#4CAF50" class="js-desc1">（100，100）</tspan></text>
+      <circle cx="100" cy="200" r="4" fill="#999" />
+      <text x="100" y="200" dx="10" dy="3" fill="#999">(100, 200)</text>
+      <circle cx="300" cy="200" r="4" fill="#03A9F4"/>
+      <text x="300" y="200" dx="10" dy="3" fill="#03A9F4">(300, 200)</text>
+      <!-- 控制点 -->
+      <circle class="js-c1" cx="200" cy="300" r="8" fill="#4CAF50"/>
+      <text class="js-ct1" x="200" y="300" dx="-30" dy="25" fill="#4CAF50">(200, 300)</text>
+      <path class="js-cp1" d="M100 200L200 300" stroke="#4CAF50" stroke-dasharray="4" />
+      <path class="js-cp2" d="M300 200L200 300" stroke="#4CAF50" stroke-dasharray="4" />
+    </g>
+    <script>
+      <![CDATA[
+        var path = document.querySelector('.js-path');
+        var coordinate = document.querySelector('.js-coordinate');
+        var text = document.querySelector('.js-text');
+        var c1 = document.querySelector('.js-c1');
+        var ct1 = document.querySelector('.js-ct1');
+        var cp1 = document.querySelector('.js-cp1');
+        var desc1 = document.querySelector('.js-desc1');
+        var cp2 = document.querySelector('.js-cp2');
+        var isMove1 = false;
+        var isMove2 = false;
+        c1.addEventListener('mousedown', function(){
+          isMove1 = true;
+        }, false);
+
+        coordinate.addEventListener('mousemove', function(event){
+          var x = event.clientX - 50;
+          var y = event.clientY - 50;
+          if(isMove1){
+            c1.setAttribute('cx', x);
+            c1.setAttribute('cy', y);
+            cp1.setAttribute('d', 'M100 200L' + x + ' ' + y);
+            cp2.setAttribute('d', 'M300 200L' + x + ' ' + y);
+            ct1.setAttribute('x', x);
+            ct1.setAttribute('y', y);
+            ct1.innerHTML = '(' + x + ', ' + y + ')';
+            desc1.innerHTML = '(' + (x - 100) + ', ' + (y - 200) + ')';
+            path.setAttribute('d', 'M100 200q' + (x - 100) + ' ' + (y - 200) + ' 200, 0');
+            text.innerHTML = 'M100 200q' + (x - 100) + ' ' + (y - 200) + ' 200, 0';
+          }
+        }, false);
+        c1.addEventListener('mouseup', function(){
+          isMove1 = false;
+        }, false);
+
+      ]]>
+    </script>
+  </g>
+</svg>

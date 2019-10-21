@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400"
+  viewBox="0 0 400 400">
+
+  <g>
+    <rect x="0" y="0" width="400" height="400" fill="#E1F5FE" />
+
+      <path d="M200 50V350" stroke="#2196F3" />
+      <path d="M100 100H300" stroke="#2196F3" />
+      <path d="M100 200H300" stroke="#2196F3" />
+      <path d="M100 300H300" stroke="#2196F3" />
+
+
+      <circle cx="200" cy="100" r="2" fill="red"/>
+      <circle cx="200" cy="200" r="2" fill="red"/>
+      <circle cx="200" cy="300" r="2" fill="red"/>
+
+    <text x="200" y="100" text-anchor="start" style="font-size:50px">A</text>
+    <text x="200" y="200" text-anchor="middle" style="font-size:50px">A</text>
+    <text x="200" y="300" text-anchor="end" style="font-size:50px">A</text>
+    <g fill="#2196F3">
+      <text x="200" y="100" dx="-64" dy="14">(200, 100)</text>
+      <text x="200" y="200" dx="-64" dy="14">(200, 200)</text>
+      <text x="200" y="300" dx="-64" dy="14">(200, 300)</text>
+    </g>
+    <g fill="#E91E63">
+      <text x="300" y="50" dx="-54" dy="14">text-anchor: start</text>
+      <text x="300" y="150" dx="-54" dy="14">text-anchor: middle</text>
+      <text x="300" y="250" dx="-54" dy="14">text-anchor: end</text>
+    </g>
+
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .t{
+          font-size: 16px;
+        }
+        .path {
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 200;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

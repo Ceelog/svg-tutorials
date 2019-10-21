@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200"
+  viewBox="0 0 400 200">
+  <defs>
+    <text id="s">
+      Referenced character data
+    </text>
+  </defs>
+  <g>
+    <rect x="0" y="0" width="400" height="200" fill="#E1F5FE" />
+    <text class="t" dx="30 30 30 30 30 30" dy="-10" fill="red" >
+      <textPath xlink:href="#path">这是一段文本</textPath>
+    </text>
+    <path class="path" id="path" d="M100 50C100 150 300 150 300 50" fill="none" stroke="#f1c7c4" stroke-width="" />
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .t{
+          font-size: 16px;
+        }
+
+        .path {
+          stroke-dasharray: 6;
+          stroke-dashoffset: 80;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 80;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

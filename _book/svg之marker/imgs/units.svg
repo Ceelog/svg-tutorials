@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="400"
+  viewBox="0 0 600 400">
+  <g>
+    <defs>
+      <marker id="a" markerUnits="strokeWidth" fill="blue" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="arrow" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="feather" markerUnits="strokeWidth" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="auto">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+      <marker id="arrow1" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto">
+        <path d="M0 6L12 0L0 -6Z"/>
+      </marker>
+      <marker id="feather1" markerUnits="userSpaceOnUse" markerWidth="30" markerHeight="12" refX="8" refY="0" viewBox="0 -6 30 12" orient="auto">
+        <path d="M0 -6L22 -6L30 0L22 6L0 6L8 0Z"/>
+      </marker>
+    </defs>
+
+    <rect x="0" y="0" width="600" height="600" fill="#E1F5FE" />
+    <path id="l" class="path" d="M300 90L120 210" stroke="blue" stroke-width="1" marker-end="url(#a)" />
+    <path id="r" class="path" d="M300 90L500 210" stroke="blue" stroke-width="1" marker-end="url(#a)" />
+    <line class="p" x1="250" y1="60" x2="350" y2="60" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000"  />
+    <line class="p" x1="50" y1="260" x2="150" y2="260" marker-start="url(#feather)" marker-end="url(#arrow)" stroke="#000" stroke-width="2"  />
+    <line class="p" x1="450" y1="260" x2="550" y2="260" marker-start="url(#feather1)" marker-end="url(#arrow1)" stroke="#000" stroke-width="2"/>
+    <text x="250"  y="45">stroke-width="1"</text>
+    <text x="50"  y="240">stroke-width="2"</text>
+    <text x="450"  y="240">stroke-width="2"</text>
+    <text x="10"  y="300">箭头、直线、箭羽都会被放大2倍</text>
+    <text x="390"  y="300">直线被放大2倍。箭头、箭羽保持不变</text>
+    <text dy="-10" dx="60" fill="blue">
+      <textPath xlink:href="#l" > strokeWidth </textPath>
+    </text>
+    <text dy="-10" dx="70" fill="blue">
+      <textPath xlink:href="#r" > userSpaceOnUse </textPath>
+    </text>
+  </g>
+<style>
+    <![CDATA[
+        *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 4;
+          stroke-dashoffset: 4;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 80;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="580" height="580" viewBox="0 0 580 580">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #999;
+      }
+      .cls-2 {
+        fill: #cbcbcb;
+      }
+    </style>
+  </defs>
+      <rect  class="cls-2" width="100%" height="100%"/>
+  <rect id="矩形_1" data-name="矩形 1" class="cls-1" width="10" height="10"/>
+  <rect id="矩形_1_拷贝" data-name="矩形 1 拷贝" class="cls-1" y="570" width="10" height="10"/>
+  <rect id="矩形_1_拷贝_2" data-name="矩形 1 拷贝 2" class="cls-1" x="570" y="570" width="10" height="10"/>
+  <rect id="矩形_1_拷贝_3" data-name="矩形 1 拷贝 3" class="cls-1" x="285" y="570" width="10" height="10"/>
+  <rect id="矩形_1_拷贝_4" data-name="矩形 1 拷贝 4" class="cls-1" x="285" y="285" width="10" height="10"/>
+  <rect id="矩形_1_拷贝_8" data-name="矩形 1 拷贝 8" class="cls-1" x="285" width="10" height="10"/>
+  <rect id="矩形_1_拷贝_5" data-name="矩形 1 拷贝 5" class="cls-1" x="570" width="10" height="10"/>
+  <rect id="矩形_1_拷贝_6" data-name="矩形 1 拷贝 6" class="cls-1" y="285" width="10" height="10"/>
+  <rect id="矩形_1_拷贝_7" data-name="矩形 1 拷贝 7" class="cls-1" x="570" y="285" width="10" height="10"/>
+</svg>

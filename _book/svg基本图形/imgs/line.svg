@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="200"
+  viewBox="0 0 400 200">
+
+  <g>
+    <rect x="0" y="0" width="400" height="200" fill="#E1F5FE" />
+    <line class="path" x1="100" y1="100" x2="300" y2="100" stroke="#ffabc8" stroke-width="2"/>
+    <circle cx="100" cy="100" r="4" fill="red" style=""/>
+    <circle cx="300" cy="100" r="4" fill="red" style=""/>
+    <text x="100"  y="100" style="" fill="red" dx="-16" dy="-10">(x1, y1)</text>
+    <text x="300"  y="100" style="" fill="red" dx="-16" dy="-10">(x2, y2)</text>
+  </g>
+    <style>
+    <![CDATA[
+         *{
+          font-size: 12px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 200;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    ]]>
+</style>
+</svg>

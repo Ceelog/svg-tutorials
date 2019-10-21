@@ -1,0 +1,150 @@
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
+  viewBox="-50 -50 450 450" preserveAspectRatio="xMinYMin meet">
+  <g class="coordinate">
+    <rect x="-50" y="-50" width="450" height="450" fill="#E1F5FE" class="js-coordinate" />
+    <line x1="-30" y1="0" x2="400" y2="0" stroke="blue" stroke-width="1" />
+    <line x1="0" y1="-30" x2="0" y2="400" stroke="blue" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="blue" />
+    <g class="y" fill="blue">
+      <line x1="0" y1="50" x2="-4" y2="50" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="100" x2="-10" y2="100" stroke="blue" stroke-width="1" />
+      <text x="-40" y="105">100</text>
+      <line x1="0" y1="150" x2="-4" y2="150" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="200" x2="-10" y2="200" stroke="blue" stroke-width="1" />
+      <text x="-40" y="205">200</text>
+      <line x1="0" y1="250" x2="-4" y2="250" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="300" x2="-10" y2="300" stroke="blue" stroke-width="1" />
+      <text x="-40" y="305">300</text>
+      <line x1="0" y1="350" x2="-4" y2="350" stroke="blue" stroke-width="1" />
+    </g>
+    <g class="x" fill="blue">
+      <line x1="50" y1="0" x2="50" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="100" y1="0" x2="100" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="88" y="-18">100</text>
+      <line x1="150" y1="0" x2="150" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="200" y1="0" x2="200" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="188" y="-18">200</text>
+      <line x1="250" y1="0" x2="250" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="300" y1="0" x2="300" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="288" y="-18">300</text>
+      <line x1="350" y1="0" x2="350" y2="-4" stroke="blue" stroke-width="1" />
+    </g>
+  </g>
+  <g>
+    <style>
+      <![CDATA[
+        .svg *{
+          font-size: 14px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 600;
+          stroke-dashoffset: 600;
+          animation: dash 1.6s linear infinite;
+        }
+
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 600;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        .btn{
+          opacity: 0;
+        }
+        .a{
+          transition: opacity 1s;
+        }
+        .hide{
+          opacity: 0;
+        }
+        .show{
+          opacity: 1;
+        }
+      ]]>
+    </style>
+
+    <g fill="#E91E63">
+      <g class="a a1">
+        <path d="M100 200L300 200" stroke="#E91E63" id="a1" />
+        <path class="js-path" d="M100 200A2 1, 0 0 1 300 200" fill="none" stroke="#E91E63" stroke-width="1"  id="m" />
+        <path class="js-path" d="M100 200A2 1, 0 0 0 300 200" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" id="m" />
+        <text dx="10" dy="-2">
+          <textPath xlink:href="#a1">
+            x-axis-rotation: 0
+          </textPath>
+        </text>
+      </g>
+
+      <g class="a a2">
+        <path class="js-path" d="M100 200A2 1, 45 0 1 300 200" fill="none" stroke="#4CAF50" stroke-width="1"  />
+        <path class="js-path" d="M100 200A2 1, 45 0 0 300 200" fill="none" stroke="#4CAF50" stroke-width="1" stroke-dasharray="4" id="m" />
+        <path d="M88 88L312 312" stroke="#4CAF50" id="a2" />
+        <text dx="10" dy="-2" fill="#4CAF50">
+          <textPath xlink:href="#a2">
+            x-axis-rotation: 45
+          </textPath>
+        </text>
+      </g>
+
+      <g class="a a4">
+        <path class="js-path" d="M100 200A2 1, 90 0 1 300 200" fill="none" stroke="#FF9800" stroke-width="1"/>
+        <path class="js-path" d="M100 200A2 1, 90 0 0 300 200" fill="none" stroke="#FF9800" stroke-width="1" stroke-dasharray="4" id="m" />
+        <path d="M200 0L200 400" stroke="#FF9800" id="a4"/>
+        <text dx="10" dy="-2" fill="#FF9800">
+          <textPath xlink:href="#a4">
+            x-axis-rotation: 90
+          </textPath>
+        </text>
+      </g>
+
+      <g class="a a3">
+        <path class="js-path" d="M100 200A2 1, -45 0 1 300 200" fill="none" stroke="#9C27B0" stroke-width="1"  />
+        <path class="js-path" d="M100 200A2 1, -45 0 0 300 200" fill="none" stroke="#9C27B0" stroke-width="1" stroke-dasharray="4" id="m" />
+        <path d="M312 88L88 312" stroke="#9C27B0" id="a3" />
+        <text dx="10" dy="-2" fill="#9C27B0">
+          <textPath xlink:href="#a3">
+            x-axis-rotation: -45
+          </textPath>
+        </text>
+      </g>
+      <g class="btn">
+        <rect x="20" y="20" width="80" height="30" />
+        <text x="34" y="40" fill="#fff" class="js-click">单击演示</text>
+      </g>
+      <circle cx="100" cy="200" r="4" fill="#999" />
+      <text x="100" y="200" dx="-66" dy="3" fill="#999">(100, 200)</text>
+      <circle cx="300" cy="200" r="4" fill="#03A9F4"/>
+      <text x="300" y="200" dx="10" dy="3" fill="#03A9F4">(300, 200)</text>
+    </g>
+    <script>
+      <![CDATA[
+       var click = document.querySelector('.js-click');
+       var btn = document.querySelector('.btn');
+        btn.classList.add('show');
+       click.addEventListener('click', function(){
+         run();
+       }, false);
+       var run = function(){
+         var as = document.querySelectorAll('.a');
+        [].slice.call(as, 0).forEach(function(item, i){
+          item.classList.remove('show');
+          item.classList.add('hide');
+          setTimeout(function(){
+              item.classList.remove('hide');
+              item.classList.add('show');
+            }, i*1000 + 1000);
+          });
+        }
+
+      ]]>
+    </script>
+  </g>
+</svg>

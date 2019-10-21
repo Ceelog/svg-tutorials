@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="540" height="540"
+  viewBox="-270 -270 540 540">
+  <g class="coordinate">
+    <defs>
+      <marker id="markerArrow" markerUnits="strokeWidth" markerWidth="13" markerHeight="12" refX="0" refY="0" viewBox="0 -6 12 13" orient="auto-start-reverse">
+        <path d="M0 6L12 0L0 -6Z" style="fill: blue;" />
+      </marker>
+    </defs>
+
+    <rect x="-270" y="-270" width="540" height="540" fill="#E1F5FE" />
+    <line x1="-250" y1="0" x2="250" y2="0" marker-start="url(#markerArrow)" marker-end="url(#markerArrow)" stroke="blue" stroke-width="1" />
+    <line x1="0" y1="-250" x2="0" y2="250" marker-start="url(#markerArrow)" marker-end="url(#markerArrow)" stroke="blue" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="blue" />
+
+    <g class="y" fill="blue">
+      <line x1="0" y1="-50" x2="-4" y2="-50" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="-100" x2="-10" y2="-100" stroke="blue" stroke-width="1" />
+      <text x="-40" y="-95">-100</text>
+      <line x1="0" y1="-150" x2="-4" y2="-150" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="-200" x2="-10" y2="-200" stroke="blue" stroke-width="1" />
+      <text x="-40" y="-195">-200</text>
+      <line x1="0" y1="50" x2="-4" y2="50" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="100" x2="-10" y2="100" stroke="blue" stroke-width="1" />
+      <text x="-40" y="105">100</text>
+      <line x1="0" y1="150" x2="-4" y2="150" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="200" x2="-10" y2="200" stroke="blue" stroke-width="1" />
+      <text x="-40" y="205">200</text>
+    </g>
+    <g class="x" fill="blue">
+      <line x1="-50" y1="0" x2="-50" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="-100" y1="0" x2="-100" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="-115" y="-18">-100</text>
+      <line x1="-150" y1="0" x2="-150" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="-200" y1="0" x2="-200" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="-215" y="-18">-200</text>
+      <line x1="50" y1="0" x2="50" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="100" y1="0" x2="100" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="88" y="-18">100</text>
+      <line x1="150" y1="0" x2="150" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="200" y1="0" x2="200" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="188" y="-18">200</text>
+    </g>
+  </g>
+  <g>
+    <style>
+      <![CDATA[
+        *{
+          font-size: 14px;
+          }
+        .path {
+          stroke-dasharray: 282.84271240234375;
+          stroke-dashoffset: 282.84271240234375;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 282.84271240234375;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+      ]]>
+    </style>
+
+  </g>
+</svg>

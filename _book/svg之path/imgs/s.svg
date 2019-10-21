@@ -1,0 +1,210 @@
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
+  viewBox="-50 -50 450 450" preserveAspectRatio="xMinYMin meet">
+  <g class="coordinate">
+    <rect x="-50" y="-50" width="450" height="450" fill="#E1F5FE" class="js-coordinate" />
+    <line x1="-30" y1="0" x2="400" y2="0" stroke="blue" stroke-width="1" />
+    <line x1="0" y1="-30" x2="0" y2="400" stroke="blue" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="blue" />
+    <g class="y" fill="blue">
+      <line x1="0" y1="50" x2="-4" y2="50" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="100" x2="-10" y2="100" stroke="blue" stroke-width="1" />
+      <text x="-40" y="105">100</text>
+      <line x1="0" y1="150" x2="-4" y2="150" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="200" x2="-10" y2="200" stroke="blue" stroke-width="1" />
+      <text x="-40" y="205">200</text>
+      <line x1="0" y1="250" x2="-4" y2="250" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="300" x2="-10" y2="300" stroke="blue" stroke-width="1" />
+      <text x="-40" y="305">300</text>
+      <line x1="0" y1="350" x2="-4" y2="350" stroke="blue" stroke-width="1" />
+    </g>
+    <g class="x" fill="blue">
+      <line x1="50" y1="0" x2="50" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="100" y1="0" x2="100" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="88" y="-18">100</text>
+      <line x1="150" y1="0" x2="150" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="200" y1="0" x2="200" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="188" y="-18">200</text>
+      <line x1="250" y1="0" x2="250" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="300" y1="0" x2="300" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="288" y="-18">300</text>
+      <line x1="350" y1="0" x2="350" y2="-4" stroke="blue" stroke-width="1" />
+    </g>
+  </g>
+  <g>
+    <style>
+      <![CDATA[
+        .svg *{
+          font-size: 14px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 600;
+          stroke-dashoffset: 600;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 600;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+      ]]>
+    </style>
+
+    <g fill="#E91E63">
+      <path class="path js-path" d="M100 200C100, 300 200, 300 200, 200S300, 100 300, 200" fill="none" stroke="#E91E63" stroke-width="1"  id="m" />
+      <text style="font-weight: 700;" dx="240" dy="20">
+        <textPath xlink:href="#m" class="js-text"> S100, 300 300, 200 </textPath>
+      </text>
+      <text x="30" y="50" fill="#434343">从<tspan fill="#999">（200，200）</tspan>点画反射贝塞尔曲线到<tspan fill="#03A9F4">（300，200）</tspan>点</text>
+      <text x="30" y="70" fill="#434343">控制点<tspan fill="#FF9800" class="js-desc4">（300，100）</tspan>点</text>
+      <text x="30" y="350" class="js-d" style="font-size: 12px;">M100 200C100, 300 200, 300 200, 200S300, 100 300, 200</text>
+      <!-- (100, 200) -->
+      <circle cx="100" cy="200" r="4" fill="#999" />
+      <text x="100" y="200" dx="10" dy="3" fill="#999">(100, 200)</text>
+      <!-- (200, 200) -->
+      <circle cx="200" cy="200" r="4" fill="#03A9F4" />
+      <text x="200" y="200" dx="10" dy="3" fill="#03A9F4">(200, 200)</text>
+      <!-- (300, 100) -->
+      <circle cx="300" cy="200" r="4" fill="#4CAF50"/>
+      <text x="300" y="200" dx="10" dy="3" fill="#4CAF50">(300, 200)</text>
+      <!-- 控制点(100, 300) -->
+      <circle class="js-c1" cx="100" cy="300" r="8" fill="#999"/>
+      <path class="js-cp1" d="M100 200L100 300" stroke="#999" stroke-dasharray="4" />
+      <text class="js-ct1" x="100" y="300" dx="10" dy="3" fill="#999">(100, 300)</text>
+      <!-- 控制点(200, 300) -->
+      <circle class="js-c2" cx="200" cy="300" r="8" fill="#03A9F4"/>
+      <path class="js-cp2" d="M200 200L200 300" stroke="#03A9F4" stroke-dasharray="4" />
+      <text class="js-ct2" x="200" y="300" dx="10" dy="3" fill="#03A9F4">(200, 300)</text>
+      <!-- 控制点(200, 100) -->
+      <circle class="js-c3" cx="200" cy="100" r="8" fill="#03A9F4"/>
+      <path class="js-cp3" d="M200 200L200 100" stroke="#03A9F4" stroke-dasharray="4" />
+      <text class="js-ct3" x="200" y="100" dx="10" dy="3" fill="#03A9F4">(200, 100)</text>
+      <!-- 控制点(300, 100) -->
+      <circle class="js-c4" cx="300" cy="100" r="8" fill="#4CAF50"/>
+      <path class="js-cp4" d="M300 100L300 200" stroke="#4CAF50" stroke-dasharray="4" />
+      <text class="js-ct4" x="300" y="100" dx="10" dy="3" fill="#4CAF50">(300, 100)</text>
+    </g>
+    <script>
+      <![CDATA[
+        var path = document.querySelector('.js-path');
+        var d = document.querySelector('.js-d');
+        var coordinate = document.querySelector('.js-coordinate');
+        var text = document.querySelector('.js-text');
+        var c1 = document.querySelector('.js-c1');
+        var ct1 = document.querySelector('.js-ct1');
+        var cp1 = document.querySelector('.js-cp1');
+        var desc1 = document.querySelector('.js-desc1');
+        var c2 = document.querySelector('.js-c2');
+        var ct2 = document.querySelector('.js-ct2');
+        var cp2 = document.querySelector('.js-cp2');
+        var desc2 = document.querySelector('.js-desc2');
+        var c3 = document.querySelector('.js-c3');
+        var ct3 = document.querySelector('.js-ct3');
+        var cp3 = document.querySelector('.js-cp3');
+        var c4 = document.querySelector('.js-c4');
+        var ct4 = document.querySelector('.js-ct4');
+        var cp4 = document.querySelector('.js-cp4');
+        var desc4 = document.querySelector('.js-desc4');
+        var isMove1 = false;
+        var isMove2 = false;
+        var isMove3 = false;
+        var isMove4 = false;
+        c1.addEventListener('mousedown', function(){
+          isMove1 = true;
+        }, false);
+        c2.addEventListener('mousedown', function(){
+          isMove2 = true;
+        }, false);
+        c3.addEventListener('mousedown', function(){
+          isMove3 = true;
+        }, false);
+        c4.addEventListener('mousedown', function(){
+          isMove4 = true;
+        }, false);
+        coordinate.addEventListener('mousemove', function(event){
+          var x = event.clientX - 50;
+          var y = event.clientY - 50;
+          if(isMove1){
+            c1.setAttribute('cx', x);
+            c1.setAttribute('cy', y);
+            cp1.setAttribute('d', 'M100 200L' + x + ' ' + y);
+            ct1.setAttribute('x', x);
+            ct1.setAttribute('y', y);
+            ct1.innerHTML = '(' + x + ', ' + y + ')';
+            desc1.innerHTML = '(' + x + ', ' + y + ')';
+            path.setAttribute('d', 'M100 200C' + x + ', ' + y + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200S'  + c4.getAttribute('cx') + ', ' + c4.getAttribute('cy') +  ' 300, 200');
+            d.innerHTML = 'M100 200C' + x + ', ' + y + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200S'  + c4.getAttribute('cx') + ', ' + c4.getAttribute('cy') +  ' 300, 200';
+          }
+          if(isMove2){
+            c2.setAttribute('cx', x);
+            c2.setAttribute('cy', y);
+            cp2.setAttribute('d', 'M200 200L' + x + ' ' + y);
+            ct2.setAttribute('x', x);
+            ct2.setAttribute('y', y);
+            ct2.innerHTML = '(' + x + ', ' + y + ')';
+            c3.setAttribute('cx', 400 - x);
+            c3.setAttribute('cy', 400 - y);
+            cp3.setAttribute('d', 'M200 200L' + (400 - x) + ' ' + (400 - y));
+            ct3.setAttribute('x', 400 - x);
+            ct3.setAttribute('y', 400 - y);
+            ct3.innerHTML = '(' + (400 - x) + ', ' + (400 - y) + ')';
+
+            path.setAttribute('d', 'M100 200C' + c1.getAttribute('cx') + ', ' + c1.getAttribute('cy') + ' ' + x + ', ' + y + ' 200, 200S'  + c4.getAttribute('cx') + ', ' + c4.getAttribute('cy') +  ' 300, 200');
+            d.innerHTML = 'M100 200C' + c1.getAttribute('cx') + ', ' + c1.getAttribute('cy') + ' ' + x + ', ' + y + ' 200, 200S'  + c4.getAttribute('cx') + ', ' + c4.getAttribute('cy') +  ' 300, 200';
+          }
+          if(isMove3){
+            c3.setAttribute('cx', x);
+            c3.setAttribute('cy', y);
+            cp3.setAttribute('d', 'M200 200L' + x + ' ' + y);
+            ct3.setAttribute('x', x);
+            ct3.setAttribute('y', y);
+            ct3.innerHTML = '(' + x + ', ' + y + ')';
+            c2.setAttribute('cx', 400 - x);
+            c2.setAttribute('cy', 400 - y);
+            cp2.setAttribute('d', 'M200 200L' + (400 - x) + ' ' + (400 - y));
+            ct2.setAttribute('x', 400 - x);
+            ct2.setAttribute('y', 400 - y);
+            ct2.innerHTML = '(' + (400 - x) + ', ' + (400 - y) + ')';
+
+            path.setAttribute('d', 'M100 200C' + c1.getAttribute('cx') + ', ' + c1.getAttribute('cy') + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200S'  + c4.getAttribute('cx') + ', ' + c4.getAttribute('cy') +  ' 300, 200');
+            d.innerHTML = 'M100 200C' + c1.getAttribute('cx') + ', ' + c1.getAttribute('cy') + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200S'  + c4.getAttribute('cx') + ', ' + c4.getAttribute('cy') +  ' 300, 200';
+          }
+
+          if(isMove4){
+            c4.setAttribute('cx', x);
+            c4.setAttribute('cy', y);
+            cp4.setAttribute('d', 'M300 200L' + x + ' ' + y);
+            ct4.setAttribute('x', x);
+            ct4.setAttribute('y', y);
+            ct4.innerHTML = '(' + x + ', ' + y + ')';
+            desc4.innerHTML = '(' + x + ', ' + y + ')';
+            path.setAttribute('d', 'M100 200C' + c1.getAttribute('cx') + ', ' + c1.getAttribute('cy') + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200S'  + x + ', ' + y +  ' 300, 200');
+            d.innerHTML = 'M100 200C' + c1.getAttribute('cx') + ', ' + c1.getAttribute('cy') + ' ' + c2.getAttribute('cx') + ', ' + c2.getAttribute('cy') + ' 200, 200S'  + x + ', ' + y +  ' 300, 200';
+            text.innerHTML = 'S'  + x + ', ' + y +  ' 300, 200';
+          }
+        }, false);
+        c1.addEventListener('mouseup', function(){
+          isMove1 = false;
+        }, false);
+        c2.addEventListener('mouseup', function(){
+          isMove2 = false;
+        }, false);
+        c3.addEventListener('mouseup', function(){
+          isMove3 = false;
+        }, false);
+        c4.addEventListener('mouseup', function(){
+          isMove4 = false;
+        }, false);
+      ]]>
+    </script>
+  </g>
+</svg>

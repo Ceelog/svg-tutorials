@@ -1,0 +1,122 @@
+<svg class="js-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450"
+  viewBox="-50 -50 450 450" preserveAspectRatio="xMinYMin meet">
+  <g class="coordinate">
+    <rect x="-50" y="-50" width="450" height="450" fill="#E1F5FE" class="js-coordinate" />
+    <line x1="-30" y1="0" x2="400" y2="0" stroke="blue" stroke-width="1" />
+    <line x1="0" y1="-30" x2="0" y2="400" stroke="blue" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="blue" />
+    <g class="y" fill="blue">
+      <line x1="0" y1="50" x2="-4" y2="50" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="100" x2="-10" y2="100" stroke="blue" stroke-width="1" />
+      <text x="-40" y="105">100</text>
+      <line x1="0" y1="150" x2="-4" y2="150" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="200" x2="-10" y2="200" stroke="blue" stroke-width="1" />
+      <text x="-40" y="205">200</text>
+      <line x1="0" y1="250" x2="-4" y2="250" stroke="blue" stroke-width="1" />
+      <line x1="0" y1="300" x2="-10" y2="300" stroke="blue" stroke-width="1" />
+      <text x="-40" y="305">300</text>
+      <line x1="0" y1="350" x2="-4" y2="350" stroke="blue" stroke-width="1" />
+    </g>
+    <g class="x" fill="blue">
+      <line x1="50" y1="0" x2="50" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="100" y1="0" x2="100" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="88" y="-18">100</text>
+      <line x1="150" y1="0" x2="150" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="200" y1="0" x2="200" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="188" y="-18">200</text>
+      <line x1="250" y1="0" x2="250" y2="-4" stroke="blue" stroke-width="1" />
+      <line x1="300" y1="0" x2="300" y2="-10" stroke="blue" stroke-width="1" />
+      <text x="288" y="-18">300</text>
+      <line x1="350" y1="0" x2="350" y2="-4" stroke="blue" stroke-width="1" />
+    </g>
+  </g>
+  <g>
+    <style>
+      <![CDATA[
+        .svg *{
+          font-size: 14px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .path {
+          stroke-dasharray: 600;
+          stroke-dashoffset: 600;
+          animation: dash 1.6s linear infinite;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 600;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+      ]]>
+    </style>
+
+    <g fill="#E91E63">
+      <!-- <path d="M175 150L225 150" stroke="#aaa"/> -->
+      <!-- <path d="M200 250L200 150" stroke="#E91E63" stroke-dasharray="4"/> -->
+      <g>
+        <path class="path js-path" d="M75 150A1 1, 0 0 1 125 150" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M75 150A1 1, 0 1 0 125 150" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+
+        <circle cx="75" cy="150" r="2" fill="#aaa" />
+        <circle cx="125" cy="150" r="2" fill="#aaa"/>
+        <path d="M75 150L125 150" stroke="#aaa"/>
+        <text x="75"  y="150" dy="-40" style="">rx=ry&lt;s </text>
+      </g>
+
+      <g>
+        <path class="path js-path" d="M255 150A25 25, 0 0 1 305 150" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M255 150A25 25, 0 1 0 305 150" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+
+        <circle cx="255" cy="150" r="2" fill="#aaa" />
+        <circle cx="305" cy="150" r="2" fill="#aaa"/>
+        <path d="M255 150L305 150" stroke="#aaa"/>
+        <text x="255"  y="150" dy="-40" style="">rx=ry=s </text>
+      </g>
+      <g>
+        <path class="path js-path" d="M75 300A30 30, 0 0 1 125 300" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M75 300A30 30, 0 1 0 125 300" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+
+        <circle cx="75" cy="300" r="2" fill="#aaa" />
+        <circle cx="125" cy="300" r="2" fill="#aaa"/>
+        <path d="M75 300L125 300" stroke="#aaa"/>
+        <text x="75"  y="300" dy="-40" style="">rx=ry&gt;s </text>
+      </g>
+
+      <!-- <g>
+        <path class="path js-path" d="M255 300A1 1, 0 0 1 305 300" fill="none" stroke="#E91E63" stroke-width="1"  />
+        <path class="js-path" d="M255 300A1 1, 0 1 0 305 300" fill="none" stroke="#E91E63" stroke-width="1" stroke-dasharray="4" />
+
+        <path class="path js-path" d="M255 300A26 26, 0 0 1 305 300" fill="none" stroke="#4CAF50" stroke-width="1"  />
+        <path class="js-path" d="M255 300A25 25, 0 1 0 305 300" fill="none" stroke="#4CAF50" stroke-width="1" stroke-dasharray="4" />
+        <circle cx="255" cy="300" r="2" fill="#aaa" />
+        <circle cx="305" cy="300" r="2" fill="#aaa"/>
+        <path d="M255 300L305 300" stroke="#aaa"/>
+      </g> -->
+
+
+      <!-- <path class="path js-path" d="M55 150A60 60, 0 0 1 105 150" fill="none" stroke="#FF9800" stroke-width="1"  />
+      <path class="js-path" d="M55 150A60 60, 0 1 0 105 150" fill="none" stroke="#FF9800" stroke-width="1" stroke-dasharray="4" /> -->
+ 
+      <text x="30" y="30" fill="#E91E63">rx 大于等于起点至终点的距离 s，则直接</text>
+      <text x="30" y="50" fill="#E91E63">使用 rx，ry。如果小于 s， 则按 s 进行换算。</text>
+      
+      <!-- <text x="175" y="150" dx="-66" dy="3" fill="#aaa">(175, 150)</text> -->
+      <!-- <text x="225" y="150" dx="10" dy="3" fill="#03A9F4">(300, 150)</text> -->
+
+    </g>
+    <script>
+      <![CDATA[
+       
+
+      ]]>
+    </script>
+  </g>
+</svg>

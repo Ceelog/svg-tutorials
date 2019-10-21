@@ -1,0 +1,10 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 600" width="640" height="300">
+    <g id="v" >
+        <path d="M226.07 41.67L109.14 85L89.14 215L209.14 236.67L189.14 280L69.14 236.67L85.41 63.33L209.14 20L226.07 41.67Z"></path>
+        <path d="M370.45 63.96L342.11 40L260.8 60L286.67 127.69L402.48 180L326.1 280L219.41 260L241.83 237.58L328.56 262.86L376.36 180L264.25 140L238.63 60L353.94 20L376.36 40L370.45 63.96Z"></path>
+        <path d="M538.82 63.96L510.49 40L429.18 60L455.05 127.69L570.86 180L494.47 280L387.78 260L410.2 237.58L496.94 262.86L544.74 180L432.63 140L407 60L522.32 20L544.74 40L538.82 63.96Z"></path>
+    </g>
+    <use xlink:href="#v" x="0" y="60"  fill="#4CAF50" stroke="#0c2d0f" stroke-width="6" style="transform: scale(0.6) rotate(180deg) translate(-20%, -170%);"/>
+    <use xlink:href="#v" x="0" y="60"  fill="#4CAF50" stroke="#0c2d0f" stroke-width="6" style="transform: scale(0.4) rotate(180deg) translate(-150%, -240%);"/>
+    <use xlink:href="#v" x="0" y="60"  fill="#4CAF50" stroke="#0c2d0f" stroke-width="6" style="transform: scale(0.2) rotate(180deg) translate(-460%, -460%);"/>
+</svg>

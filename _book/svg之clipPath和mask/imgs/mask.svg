@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <mask id="mask" x="100" y="50" width="200" height="200" fill="#fff" maskContentUnits="objectBoundingBox" maskUnits="userSpaceOnUse" >
+      <rect class="r" x="0" y="0" width="1" height="1" />
+    </mask>
+    <mask id="m1" x="30" y="260" width="200" height="200" fill="#eee" maskContentUnits="objectBoundingBox" maskUnits="userSpaceOnUse" >
+      <rect x="0" y="0" width="1" height="1" />
+    </mask>
+    <mask id="m2" x="130" y="260" width="200" height="200" fill="#999" maskContentUnits="objectBoundingBox" maskUnits="userSpaceOnUse" >
+      <rect x="0" y="0" width="1" height="1" />
+    </mask>
+    <mask id="m3" x="230" y="260" width="200" height="200" fill="#555" maskContentUnits="objectBoundingBox" maskUnits="userSpaceOnUse" >
+      <rect x="0" y="0" width="1" height="1" />
+    </mask>
+    <mask id="m4" x="330" y="260" width="200" height="200" fill="#111" maskContentUnits="objectBoundingBox" maskUnits="userSpaceOnUse" >
+      <rect x="0" y="0" width="1" height="1" />
+    </mask>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="400" fill="#E1F5FE" />
+  <!-- <rect x="0" y="0" width="200" height="200" fill="#E100FE" /> -->
+  <!-- <rect x="10" y="100" width="200" height="200" fill="#E100FE" /> -->
+  <!-- <circle cx="200" cy="150" r="100" fill="#4c0101" /> -->
+  <circle cx="200" cy="150" r="100" mask="url(#mask)" fill="red" />
+  <text x="150"  y="30" fill="red" style="font-weight: 700;">#fff → #000</text>
+  <g>
+    <circle cx="50" cy="300" r="20" fill="red" mask="url(#m1)" />
+    <text x="50"  y="300" fill="red" dy="40" dx="-15">#eee</text>
+    <circle cx="150" cy="300" r="20" fill="red" mask="url(#m2)" />
+    <text x="150"  y="300" fill="red" dy="40" dx="-15">#999</text>
+    <circle cx="250" cy="300" r="20" fill="red" mask="url(#m3)" />
+    <text x="250"  y="300" fill="red" dy="40" dx="-15">#555</text>
+    <circle cx="350" cy="300" r="20" fill="red" mask="url(#m4)" />
+    <text x="350"  y="300" fill="red" dy="40" dx="-15">#111</text>
+  </g>
+  <style>
+    <![CDATA[
+        *{
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .r {
+          animation: dash 4s linear infinite alternate;
+        }
+        @keyframes dash {
+            from {
+              fill: #000;
+            }
+            to {
+              fill: #fff;
+            }
+        }
+    ]]>
+</style>
+</svg>

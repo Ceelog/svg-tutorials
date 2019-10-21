@@ -1,0 +1,651 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>svg 基础 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../svg基本图形/svg基本图形.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="svg基础.html">
+            
+                <a href="svg基础.html">
+            
+                    
+                    svg 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../svg基本图形/svg基本图形.html">
+            
+                <a href="../svg基本图形/svg基本图形.html">
+            
+                    
+                    svg 基本图形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../svg之path/svg之path.html">
+            
+                <a href="../svg之path/svg之path.html">
+            
+                    
+                    svg 之 path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../svg描边动画/svg描边动画.html">
+            
+                <a href="../svg描边动画/svg描边动画.html">
+            
+                    
+                    svg 描边动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../svg之fill及fill-rule/svg之fill及fill-rule.html">
+            
+                <a href="../svg之fill及fill-rule/svg之fill及fill-rule.html">
+            
+                    
+                    svg 之 fill 及 fill-rule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../svg之viewBox/svg之viewBox.html">
+            
+                <a href="../svg之viewBox/svg之viewBox.html">
+            
+                    
+                    svg 之 viewBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../svg分组与复用/svg分组与复用.html">
+            
+                <a href="../svg分组与复用/svg分组与复用.html">
+            
+                    
+                    svg 分组与复用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../svg之marker/svg之marker.html">
+            
+                <a href="../svg之marker/svg之marker.html">
+            
+                    
+                    svg 之 marker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../svg文本/svg文本.html">
+            
+                <a href="../svg文本/svg文本.html">
+            
+                    
+                    svg 文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../svg之pattern/svg之pattern.html">
+            
+                <a href="../svg之pattern/svg之pattern.html">
+            
+                    
+                    svg 之 pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../svg之clipPath和mask/svg之clipPath和mask.html">
+            
+                <a href="../svg之clipPath和mask/svg之clipPath和mask.html">
+            
+                    
+                    svg 之 clipPath 和 mask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../svg之filter/svg之filter.html">
+            
+                <a href="../svg之filter/svg之filter.html">
+            
+                    
+                    svg 之 filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >svg 基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="svg-&#x57FA;&#x7840;">svg &#x57FA;&#x7840;</h1>
+<p>SVG(Scalable Vector Graphics&#xFF0C;&#x53EF;&#x4F38;&#x7F29;&#x77E2;&#x91CF;&#x56FE;&#x5F62;)&#x662F;&#x4E00;&#x79CD;&#x76F8;&#x5BF9;&#x65B0;&#x7684; W3C &#x6807;&#x51C6;&#x3002;&#x5F53;&#x524D; SVG &#x7248;&#x672C;&#x4E3A; 1.1&#xFF0C;&#x7248;&#x672C; 2.0 &#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x3002;</p>
+<h2 id="svg-&#x4E0E;-&#x4F20;&#x7EDF;&#x7684;&#x4F4D;&#x56FE;&#x76F8;&#x6BD4;&#x6709;&#x5982;&#x4E0B;&#x4F18;&#x52BF;">SVG &#x4E0E; &#x4F20;&#x7EDF;&#x7684;&#x4F4D;&#x56FE;&#x76F8;&#x6BD4;&#x6709;&#x5982;&#x4E0B;&#x4F18;&#x52BF;</h2>
+<ul>
+<li>&#x6BD4;&#x4F4D;&#x56FE;&#x66F4;&#x5C0F;&#xFF0C;&#x4E0B;&#x8F7D;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#x3002;</li>
+<li>&#x7F29;&#x653E;&#x65E0;&#x4E0D;&#x5931;&#x771F;&#xFF0C;&#x9002;&#x5E94;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x5907;&#x3002;</li>
+<li>SVG &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6784;&#x5EFA;&#xFF0C;&#x51CF;&#x5C11;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x548C;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x7684;&#x538B;&#x529B;&#x3002;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x4E0E; SVG &#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x5E76;&#x505A;&#x4FEE;&#x6539;&#xFF0C;&#x65E0;&#x9700;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x3002;</li>
+<li><del>SVG &#x63D0;&#x4F9B; SMIL &#x52A8;&#x753B;&#xFF08;&#x81EA;&#x4ECE; Chrome 45&#xFF0C;SMIL &#x52A8;&#x753B;&#x88AB;&#x5F03;&#x7528;&#x4E86;&#xFF09;</del></li>
+<li>&#x80FD;&#x4F7F;&#x7528; JavaScript/CSS &#x64CD;&#x4F5C; SVG&#x3002;</li>
+<li>SVG &#x662F;&#x6587;&#x672C;&#xFF0C;&#x80FD;&#x88AB;&#x9AD8;&#x6548;&#x538B;&#x7F29;&#x3002;</li>
+<li>SVG &#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x56FE;&#x7247;&#x7F16;&#x8F91;&#x6548;&#x679C;&#xFF0C;&#x5982;&#x906E;&#x7F69;&#x3001;&#x526A;&#x5207;&#x3001;filter &#x7B49;&#x3002;</li>
+</ul>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;-svg-&#x662F;&#x4E00;&#x79CD;-xml-&#x8BED;&#x8A00;&#x57FA;&#x4E8E;-xml-&#x5B9A;&#x4E49;-svg">&#x4E3A;&#x4EC0;&#x4E48; SVG &#x662F;&#x4E00;&#x79CD; XML &#x8BED;&#x8A00;(&#x57FA;&#x4E8E; XML &#x5B9A;&#x4E49; SVG))</h2>
+<ul>
+<li>&#x9075;&#x5B88;&#x4EE3;&#x7801;&#x7F16;&#x5199;&#x53CA;&#x5BA2;&#x6237;&#x7AEF;&#x6E32;&#x67D3;&#x7684;&#x89C4;&#x8303;&#x3002;</li>
+<li>&#x5982; XML &#x4E00;&#x6837;&#xFF0C;SVG &#x4E5F;&#x7528;&#x63CF;&#x8FF0;&#x6587;&#x672C;&#x8868;&#x793A;&#xFF0C;&#x53EF;&#x8BFB;&#x6027;&#x9AD8;&#x3002;</li>
+<li>&#x4E5F;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; JavaScript &#x64CD;&#x4F5C; SVG&#x3002;</li>
+</ul>
+<h2 id="svg-&#x5750;&#x6807;&#x7CFB;">SVG &#x5750;&#x6807;&#x7CFB;</h2>
+<p>SVG &#x7684;&#x5750;&#x6807;&#x7CFB;&#x4E0E; HTML &#x4E00;&#x6837;&#x3002;&#x539F;&#x70B9; <code>(0,0)</code> &#x5728;&#x5DE6;&#x4E0A;&#x89D2;&#x3002;&#x5411;&#x53F3;&#x79FB;&#x52A8;&#xFF0C;x &#x589E;&#x52A0;&#x3002;&#x5411;&#x4E0B;&#x79FB;&#x52A8;&#xFF0C;y &#x589E;&#x52A0;&#x3002;</p>
+<p><img src="imgs/coord.png" alt=""></p>
+<h2 id="svg-&#x7684;&#x4F7F;&#x7528;">SVG &#x7684;&#x4F7F;&#x7528;</h2>
+<p>SVG &#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x5F88;&#x591A;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x79CD;</p>
+<h3 id="img"><code>&lt;img&gt;</code></h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./pine.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;pine&quot;</span> /&gt;</span>
+</code></pre>
+<h3 id="background-image"><code>background-image</code></h3>
+<pre><code class="lang-css"><span class="hljs-selector-class">.pine</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(./pine.svg);
+}
+</code></pre>
+<h3 id="iframe"><code>&lt;iframe&gt;</code></h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./pine.svg&quot;</span>&gt;</span>Your browser does not support iframe<span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+</code></pre>
+<h3 id="embed"><code>&lt;embed&gt;</code></h3>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Img URL --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">embed</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/svg+xml&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./pine.svg&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;svg-embed&quot;</span> /&gt;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x60F3;&#x83B7;&#x53D6;&#x5F53;&#x524D; <code>&lt;embed&gt;</code> &#x6807;&#x7B7E;&#x7684; SVG &#x6587;&#x6863;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;svg-embed&apos;</span>).getSVGDocument();
+</code></pre>
+<h3 id="object"><code>&lt;object&gt;</code></h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">object</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/svg+xml&quot;</span> <span class="hljs-attr">data</span>=<span class="hljs-string">&quot;./pine.svg&quot;</span>&gt;</span>Your browser does not support SVG<span class="hljs-tag">&lt;/<span class="hljs-name">object</span>&gt;</span>
+</code></pre>
+<h3 id="&#x5185;&#x8054;">&#x5185;&#x8054;</h3>
+<ul>
+<li>svg &#x6807;&#x7B7E;&#x5185;&#x8054;<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;512&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 64 64&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;512&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+</li>
+<li>Data URLs<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- img --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;data:image/svg+xml;&lt;DATA&gt;&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;pine&quot;</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- iframe --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;data:image/svg+xml;&lt;DATA&gt;&quot;</span>&gt;</span>Your browser does not support iframe<span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- object --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">object</span> <span class="hljs-attr">data</span>=<span class="hljs-string">&quot;data:image/svg+xml;&lt;DATA&gt;&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/svg+xml&quot;</span>&gt;</span>Your browser does not support SVG<span class="hljs-tag">&lt;/<span class="hljs-name">object</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- embed --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">embed</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/svg+xml&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;data:image/svg+xml;&lt;DATA&gt;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;svg-embed&quot;</span> /&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-class">.pine</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&apos;data:image/svg+xml;&lt;DATA&gt;&apos;</span>);
+}
+</code></pre>
+<strong>&#x5185;&#x8054;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x5730;&#x51CF;&#x5C11; http &#x7684;&#x8BF7;&#x6C42;&#x6570;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x5F88;&#x597D;&#x5730;&#x5229;&#x7528;&#x7F13;&#x5B58;&#xFF0C;&#x540C;&#x65F6;&#x4F1A;&#x589E;&#x52A0;&#x6587;&#x6863;&#x5927;&#x5C0F;&#x3002;</strong></li>
+</ul>
+<h2 id="&#x4EA4;&#x4E92;">&#x4EA4;&#x4E92;</h2>
+<p>SVG &#x4E0E;&#x4F20;&#x7EDF;&#x7684;&#x4F4D;&#x56FE;&#x76F8;&#x6BD4;&#x6700;&#x5927;&#x7684;&#x4EAE;&#x70B9;&#x5728;&#x4E8E;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; JavaScript/CSS &#x5BF9; SVG &#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;&#x901A;&#x5E38;&#x5982;&#x4E0B;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; JavaScript/CSS &#x4E0E; SVG &#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x9075;&#x5B88;&#x540C;&#x6E90;&#x7B56;&#x7565;&#x3002;</p>
+<ul>
+<li>SVG &#x76F4;&#x63A5;&#x5185;&#x8054;&#x4E8E; HTML &#x4E2D;</li>
+<li>SVG &#x901A;&#x8FC7;<code>&lt;iframe&gt;</code>&#x3001;<code>&lt;object&gt;</code>&#x3001;<code>&lt;embed&gt;</code>&#x52A0;&#x8F7D;</li>
+</ul>
+<blockquote>
+<p>singsong: &#x4E3B;&#x6D41;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x80FD;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x5177;&#x4F53;&#x4F9D;&#x8D56;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5B9E;&#x73B0;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x5F81;</th>
+<th>&#x5185;&#x8054;</th>
+<th><code>&lt;iframe&gt;</code>&#x3001;<code>&lt;object&gt;</code>&#x3001;<code>&lt;embed&gt;</code></th>
+<th style="text-align:right"><code>&lt;img&gt;</code>&#x3001;<code>background-image</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x4EA4;&#x4E92;</td>
+<td>&#x2705;</td>
+<td>&#x2705;</td>
+<td style="text-align:right">&#x274C;</td>
+</tr>
+<tr>
+<td>&#x52A8;&#x753B;</td>
+<td>&#x2705;</td>
+<td>&#x2705;</td>
+<td style="text-align:right">&#x2705;</td>
+</tr>
+<tr>
+<td>&#x4EA4;&#x4E92;&#x52A8;&#x753B;</td>
+<td>&#x2705;</td>
+<td>&#x2705;</td>
+<td style="text-align:right">&#x274C;</td>
+</tr>
+<tr>
+<td>&#x6267;&#x884C;&#x5185;&#x8054;&#x811A;&#x672C;</td>
+<td>&#x2705;</td>
+<td>&#x2705;</td>
+<td style="text-align:right">&#x274C;</td>
+</tr>
+<tr>
+<td>&#x88AB;&#x5916;&#x90E8;&#x811A;&#x672C;&#x64CD;&#x4F5C;</td>
+<td>&#x2705;</td>
+<td>&#x274C;</td>
+<td style="text-align:right">&#x274C;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5B9A;&#x5236;&#x6837;&#x5F0F;">&#x5B9A;&#x5236;&#x6837;&#x5F0F;</h2>
+<ul>
+<li>attributes&#xFF1A;<code>fill</code>, <code>fill-opacity</code>, <code>stroke</code>, <code>stroke-width</code> &#x7B49;<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;5&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;30&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;red&quot;</span>&gt;</span>A nice text<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+</li>
+<li>style<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;5&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;30&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;fill: red&quot;</span>&gt;</span>A nice text<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+</li>
+<li>css<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+      <span class="hljs-selector-tag">svg</span> <span class="hljs-selector-tag">text</span>{
+        <span class="hljs-attribute">fill</span>: red;
+      }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;5&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;30&quot;</span>&gt;</span>A nice text<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<strong>&#x4F18;&#x5148;&#x7EA7;&#xFF1A;style &gt; css &gt; attributes</strong></li>
+</ul>
+<h2 id="css-&#x548C;-javascript-&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;">CSS &#x548C; JavaScript &#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;</h2>
+<h3 id="cdata-character-data"><a href="http://www.w3.org/TR/REC-xml/#sec-cdata-sect" target="_blank"><code>CDATA</code></a> (<a href="http://www.w3.org/TR/REC-xml/#dt-chardata" target="_blank">Character Data</a>)</h3>
+<p><code>CDATA</code> &#x8868;&#x793A;&#x90A3;&#x4E9B;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x89E3;&#x6790;&#x4E3A; XML &#x6807;&#x7B7E;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x636E;&#x3002;</p>
+<p><code>CDATA</code> &#x4E0E;&#x6CE8;&#x91CA;&#x7684;&#x533A;&#x522B;</p>
+<ul>
+<li><code>CDATA</code> &#x662F;&#x6587;&#x6863;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x6CE8;&#x91CA;&#x4E0D;&#x662F;</li>
+<li><a href="http://www.w3.org/TR/REC-xml/#NT-CDEnd" target="_blank">&#x5728; <code>CDATA</code> &#x4E2D;&#x4E0D;&#x80FD;&#x5305;&#x62EC;<code>&quot;]]&gt;&quot;</code> &#x7279;&#x6B8A;&#x5B57;&#x7B26;</a>&#xFF0C;<a href="https://www.w3.org/TR/REC-xml/#sec-comments" target="_blank">&#x800C;<code>&quot;--&quot;</code>&#x5728;&#x6CE8;&#x91CA;&#x4E2D;&#x662F;&#x65E0;&#x6548;&#x7684;</a>&#x3002;</li>
+<li><a href="http://www.w3.org/TR/REC-xml/#dt-PERef" target="_blank">&#x5B57;&#x7B26;&#x5B9E;&#x4F53;</a>&#x5728;&#x6CE8;&#x91CA;&#x4E2D;&#x4E0D;&#x80FD;&#x88AB;&#x89E3;&#x6790;</li>
+</ul>
+<p><a href="https://stackoverflow.com/questions/2784183/what-does-cdata-in-xml-mean" target="_blank">&#x66F4;&#x591A;&#x8BE6;&#x89E3;---&gt;</a></p>
+<h3 id="svg-&#x5185;&#x90E8;&#x6837;&#x5F0F;">SVG &#x5185;&#x90E8;&#x6837;&#x5F0F;</h3>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D; CSS &#x6837;&#x5F0F;&#x88AB;&#x89E3;&#x6790;&#x4E3A;XML&#x6807;&#x7B7E;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x6837;&#x5F0F;&#x5199;&#x5728; <code>CDATA</code> &#x4E2D;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="xml">
+    &lt;![CDATA[
+      #rect { fill: blue; }
+    ]]&gt;
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;rect&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;10&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x5728; SVG &#x5185;&#x90E8;&#x5F15;&#x7528; CSS &#x6587;&#x4EF6;</p>
+<pre><code class="lang-html"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> standalone=<span class="hljs-string">&quot;no&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="php"><span class="hljs-meta">&lt;?</span>xml-stylesheet type=<span class="hljs-string">&quot;text/css&quot;</span> href=<span class="hljs-string">&quot;style.css&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;1.1&quot;</span>
+     <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;..&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;..&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;..&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;my-rect&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;10&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<h3 id="svg-&#x5916;&#x90E8;&#x6837;&#x5F0F;">SVG &#x5916;&#x90E8;&#x6837;&#x5F0F;</h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-id">#rect</span> {
+    <span class="hljs-attribute">fill</span>: red
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;blue&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;rect&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><strong>&#x4F18;&#x5148;&#x7EA7;&#xFF1A; SVG &#x5185;&#x90E8;&#x6837;&#x5F0F; &gt; SVG &#x5916;&#x90E8;&#x6837;&#x5F0F;</strong></p>
+<h3 id="svg-&#x5185;&#x90E8;&#x811A;&#x672C;">SVG &#x5185;&#x90E8;&#x811A;&#x672C;</h3>
+<p>&#x53EF;&#x4EE5;&#x5C06; JavaScript &#x5199; SVG &#x5185;&#x90E8;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x4E3A;&#x4E86;&#x907F;&#x514D; JavaScript &#x88AB;&#x89E3;&#x6790;&#x4E3A; XML &#x6807;&#x7B7E;&#xFF0C;&#x9700;&#x8981;&#x5C06; JavaScript &#x5199;&#x5728; <code>CDATA</code> &#x4E2D;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x786E;&#x4FDD;&#x8282;&#x70B9;&#x5DF2;&#x51C6;&#x5907;&#x597D; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="handlebars"><span class="xml">
+    &lt;![CDATA[
+      window.addEventListener(&apos;DOMContentLoaded&apos;, () =&gt; {
+        //...
+      }, false)
+    ]]&gt;
+  </span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;blue&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- &#x6216;&#x653E;&#x7F6E;&#x5E95;&#x90E8; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;blue&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="handlebars"><span class="xml">
+    &lt;![CDATA[
+      //...
+    ]]&gt;
+  </span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<h3 id="svg-&#x5916;&#x90E8;&#x811A;&#x672C;">SVG &#x5916;&#x90E8;&#x811A;&#x672C;</h3>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x786E;&#x4FDD;&#x8282;&#x70B9;&#x5DF2;&#x51C6;&#x5907;&#x597D; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;DOMContentLoaded&apos;</span>, () =&gt; {
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;rect&apos;</span>).setAttribute(<span class="hljs-string">&apos;fill&apos;</span>, <span class="hljs-string">&apos;red&apos;</span>)
+      }, <span class="hljs-literal">false</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;rect&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;100&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;blue&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- &#x6216;&#x653E;&#x7F6E;&#x5E95;&#x90E8; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;rect&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;100&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;blue&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;rect&apos;</span>).setAttribute(<span class="hljs-string">&apos;fill&apos;</span>, <span class="hljs-string">&apos;red&apos;</span>)
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h3 id="svg-vs-canvas">SVG vs Canvas</h3>
+<p>Canvas API &#x662F; Web &#x5E73;&#x53F0;&#x7684;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x8865;&#x5145;&#xFF0C;&#x5B83;&#x5177;&#x6709;&#x4E0E; SVG &#x7C7B;&#x4F3C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x3002;&#x4E0E; SVG &#x7684;&#x4E3B;&#x8981;&#x5DEE;&#x5F02;&#x5728;&#x4E8E; Canvas &#x662F;&#x57FA;&#x4E8E;&#x50CF;&#x7D20;&#x7684;&#x7ED8;&#x56FE;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Canvas</th>
+<th>SVG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5386;&#x53F2;</td>
+<td>&#x65B0;&#x5174;&#xFF0C;&#x7531; Apple &#x79C1;&#x6709;&#x7684;&#x6280;&#x672F;&#x53D1;&#x5C55;&#x800C;&#x6765;</td>
+<td>&#x5386;&#x53F2;&#x60A0;&#x4E45;&#xFF0C;2003 &#x5E74;&#x6210;&#x4E3A; W3C &#x6807;&#x51C6;</td>
+</tr>
+<tr>
+<td>&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;</td>
+<td>&#x57FA;&#x4E8E;&#x50CF;&#x7D20;</td>
+<td>&#x57FA;&#x4E8E;&#x56FE;&#x5F62;&#x5143;&#x7D20;</td>
+</tr>
+<tr>
+<td>&#x9A71;&#x52A8;</td>
+<td>&#x811A;&#x672C;</td>
+<td>&#x811A;&#x672C;&#x548C; CSS</td>
+</tr>
+<tr>
+<td>&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</td>
+<td>&#x50CF;&#x7D20;&#x70B9;</td>
+<td>&#x56FE;&#x5F62;&#x5143;&#x7D20;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;">&#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+<ul>
+<li><a href="https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html" target="_blank">SVG</a></li>
+<li><a href="https://flaviocopes.com/svg/" target="_blank">An in-depth SVG tutorial</a></li>
+<li><a href="https://svgontheweb.com/zh/" target="_blank">svg&#x5E94;&#x7528;&#x6307;&#x5357;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../svg基本图形/svg基本图形.html" class="navigation navigation-next " aria-label="Next page: svg 基本图形">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"svg 基础","level":"1.2","depth":1,"next":{"title":"svg 基本图形","level":"1.3","depth":1,"path":"svg基本图形/svg基本图形.md","ref":"./svg基本图形/svg基本图形.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.MD","ref":"./README.MD","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"svg基础/svg基础.md","mtime":"2019-10-21T03:13:48.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-21T06:03:10.264Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

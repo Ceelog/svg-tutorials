@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100"
+  viewBox="0 0 200 100" preserveAspectRatio="xMinYMin meet">
+<defs>
+  <pattern id="pattern1" x="0" y="0" width="0.1" height="0.2" >
+    <rect x="0" y="0" width="10" height="10" fill="#03A9F4"></rect>
+  </pattern> 
+</defs>
+  <g>
+    <rect x="0" y="0" width="200" height="100" fill="#E1F5FE" />
+    <rect x="0" y="0" width="200" height="100" fill="url(#pattern1)" />
+  </g>
+    <style>
+      <![CDATA[
+        *{
+          font-size: 14px;
+          }
+        .path {
+          stroke-dasharray: 282.84271240234375;
+          stroke-dashoffset: 282.84271240234375;
+          animation: dash 1.6s linear infinite;
+        }
+        #pattern1{
+          patternTransform: rotate(4);
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 282.84271240234375;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+      ]]>
+    </style>
+    <script>
+      document.querySelector('#pattern1').patternTransform = "rotate(4)";
+    </script>
+</svg>

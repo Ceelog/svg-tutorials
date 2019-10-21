@@ -13,66 +13,83 @@ SVG 中文本相关的元素包括 `<text>`、`<tspan>`、`<textPath>`。
 
 - x 与 y
 
-用于指定文本（第一个文字）的横坐标和纵坐标
+  用于指定文本（第一个文字）的横坐标和纵坐标
 
-![text](./imgs/xy0.svg)
+  ![text](./imgs/xy0.svg)
 
-```html
-<text x="150" y="100" fill="red">这是一段文本</text>
-```
-另外，`x` 与 `y` 特性取值也可以是个数列。每个数值表示对应文字的横坐标和纵坐标
+  ```html
+  <text x="150" y="100" fill="red">这是一段文本</text>
+  ```
+  另外，`x` 与 `y` 特性取值也可以是个数列。每个数值表示对应文字的横坐标和纵坐标
 
-```html
-<text x="100 130 160 190 220 250" y="20 50 80 110 140 170" fill="red">这是一段文本</text>
-```
+  ```html
+  <text x="100 130 160 190 220 250" y="20 50 80 110 140 170" fill="red">这是一段文本</text>
+  ```
 
-![xy](./imgs/xy1.svg)
+  ![xy](./imgs/xy1.svg)
 
 - dx 与 dy
 
-`dx`、`dy` 与 `x`、`y` 作用很类似。只是 `x`、`y` 是绝对坐标，而 `dx`、`dy` 是相对于 `(0, 0)` 进行计算。
+  `dx`、`dy` 与 `x`、`y` 作用很类似。只是 `x`、`y` 是绝对坐标，而 `dx`、`dy` 是相对于 `(0, 0)` 进行计算。
 
-![dxy](./imgs/dxy0.svg)
+  ![dxy](./imgs/dxy0.svg)
 
-```html
-<text dx="150" dy="100" fill="red">这是一段文本</text>
-```
+  ```html
+  <text dx="150" dy="100" fill="red">这是一段文本</text>
+  ```
 
-同样， `dx` 与 `dy` 特性取值也可以是个数列。第一个文字相对于 `(0, 0)`，第二个文字相对于第一个文字的坐标，依次类推进行计算。
+  同样， `dx` 与 `dy` 特性取值也可以是个数列。第一个文字相对于 `(0, 0)`，第二个文字相对于第一个文字的坐标，依次类推进行计算。
 
-![dxy](./imgs/dxy1.svg)
+  ![dxy](./imgs/dxy1.svg)
 
-```html
-<text dx="100 14 14 14 14 14" dy="20 30 30 30 30 30" fill="red">这是一段文本</text>
-```
+  ```html
+  <text dx="100 14 14 14 14 14" dy="20 30 30 30 30 30" fill="red">这是一段文本</text>
+  ```
+- text-anchor
+  
+  `text-anchor` 用于指定参考点 `(x, y)` 或 `(dx, dy)` 与字符之间的定位关系。可取值：
+
+  - start(默认值)：文本字符串的开始位置。
+  - middle：文本字符串的中间位置。
+  - end：文本字符串的末尾。
+
+  ```html
+  <text x="200" y="100" text-anchor="start" style="font-size:50px">A</text>
+  <text x="200" y="200" text-anchor="middle" style="font-size:50px">A</text>
+  <text x="200" y="300" text-anchor="end" style="font-size:50px">A</text>
+  ```
+  ![anchor](./imgs/anchor.svg)
+
 
 - rotate
 
-`rotate` 特性可用文字的旋转
+  `rotate` 特性可用文字的旋转
 
-![rotate](./imgs/rotate0.svg)
+  ![rotate](./imgs/rotate0.svg)
 
-```html
-<text x="150" y="100" fill="red" rotate="60">这是一段文本</text>
-```
-同样，`rotate` 特性的取值也可以是个数值，表示对应文字的旋转角度。
+  ```html
+  <text x="150" y="100" fill="red" rotate="60">这是一段文本</text>
+  ```
+  同样，`rotate` 特性的取值也可以是个数值，表示对应文字的旋转角度。
 
-![rotate1](./imgs/rotate1.svg)
+  ![rotate1](./imgs/rotate1.svg)
 
-```html
-<text x="150" y="100" fill="red" rotate="-90 -60 -30 0 30 60">这是一段文本</text>
-```
+  ```html
+  <text x="150" y="100" fill="red" rotate="-90 -60 -30 0 30 60">这是一段文本</text>
+  ```
 
 - textLength 与 lengthAdjust
 
-`textLength` 与 `lengthAdjust` 是密切相关的两个属性，用于设置文本的长度、字间距及字形。
+  `textLength` 与 `lengthAdjust` 是密切相关的两个属性，用于设置文本的长度、字间距及字形。
 
-- `textLength`：设置文本的长度，默认置为 `none`。
-- `lengthAdjust`：设置文本的字间距及字形。
-  - `spacing`：字间距，默认值。
-  - `spacingAndGlyphs`：字间距及字形。
+  - `textLength`：设置文本的长度，默认置为 `none`。
+  - `lengthAdjust`：设置文本的字间距及字形。
+    - `spacing`：字间距，默认值。
+    - `spacingAndGlyphs`：字间距及字形。
 
-![la](./imgs/la.svg)
+  ![la](./imgs/la.svg)
+
+
 
 
 ## `<tspan>` 元素

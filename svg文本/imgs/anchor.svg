@@ -18,9 +18,9 @@
     <text x="200" y="200" text-anchor="middle" style="font-size:50px">A</text>
     <text x="200" y="300" text-anchor="end" style="font-size:50px">A</text>
     <g fill="#2196F3">
-      <text x="200" y="100" dx="-54" dy="14">(200, 100)</text>
-      <text x="200" y="200" dx="-54" dy="14">(200, 200)</text>
-      <text x="200" y="300" dx="-54" dy="14">(200, 300)</text>
+      <text x="200" y="100" dx="-64" dy="14">(200, 100)</text>
+      <text x="200" y="200" dx="-64" dy="14">(200, 200)</text>
+      <text x="200" y="300" dx="-64" dy="14">(200, 300)</text>
     </g>
     <g fill="#E91E63">
       <text x="300" y="50" dx="-54" dy="14">text-anchor: start</text>

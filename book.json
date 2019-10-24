@@ -1,3 +1,25 @@
 {
-  "plugins": ["theme-roadmapedu"]
+  "title": "SVG Tutorial",
+  "author": "singsong",
+  "plugins": [
+    "theme-roadmapedu",
+    "-sharing",
+    "page-footer-ex",
+    "edit-link"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/zhansingsong/svg-tutorials/edit/master/",
+      "label": "修改此页面"
+    },
+    "theme-default": {
+      "showLevel": false
+    },
+    "page-footer-ex": {
+      "copyright": "© Roadmapedu",
+      "markdown": true,
+      "update_label": "文档构建于：",
+      "update_format": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
 }
